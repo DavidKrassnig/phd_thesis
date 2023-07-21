@@ -1,0 +1,921 @@
+\chapter{Negative Polarity Items}\labch{npi}
+Negative polarity items (NPIs)---a term coined by \textcite{Baker1969,Baker1970}---are expressions with a varyingly restrictive distribution: Originally thought to be licensed by negative environments \parencite{Jespersen1917,Klima1964,Baker1969,Baker1970} due to their frequent use in negative contexts, subsequent literature has revealed that the distribution of NPIs is an exceedingly complicated matter that has---as of yet---still not been fully resolved by any contemporary semantic theory.
+
+In this chapter, we explore which NPI licensing approach best models the available data on NPIs (i.e., their distribution and their pragmatic effects) and, in \refch{npi-conditionals}, we later relate this to the debate on whether conditionals should be modelled in a (dynamic) strict or a variably-strict fashion. To this end, we recount the current state of the literature concerning the empirical distribution of NPIs and their pragmatic effects in \refsec{NPI-data}. In \refsec{NPI-accounts-mono} and \refsec{NPI-accounts-even}, we go through individual NPI licensing models: First, we explain \textcite{Fauconnier1975a,Fauconnier1975b}, \textcite{Ladusaw1980}, and \citepos{Fintel1999} monotonicity-based approach to NPI licensing as well as \textcite{Zwarts1995} and \citepos{Giannakidou1998} non-veridicality-based approach to NPI licensing in \refsec{NPI-accounts-mono}, grouping both monotonicity-based and non-veridicality-based approaches together as the \textit{environment-based} approaches to NPI licensing. Finally, in \refsec{NPI-accounts-even}, we explain the \textit{even}-based NPI licensing model, as advocated for and developed by \textcite{Lahiri1998}, \textcite{Crnic2011,Crnic2014-nm,Crnic2014-dogma}, and \textcite{Jeong2021,Jeong2022}.
+
+Note that we do not cover NPIs in conditionals in this chapter but in \refch{npi-conditionals}.
+
+\section{Empirical Data on Negative Polarity Items}\labsec{NPI-data}
+There are four major challenges for any NPI licensing model: First, to find an underlying common factor that licenses NPIs in superficially unrelated environments. Second, that some NPIs are licensed by a narrower amount of contexts. Third, that some less restrictive NPIs' behaviour groups more closely with restrictive NPIs' if they carry some type of accent. Fourth, that more restrictive NPIs sometimes cause different pragmatic effects than less restrictive NPIs.
+
+\subsection{Distribution of Negative Polarity Items}\labsec{npi-dist}
+In this subsection, we examine the distribution of various NPIs in different contexts and environments. To demonstrate the varying degrees of restrictiveness when it comes to NPI licensing, we have chosen five NPIs: the NPI \textit{any}, its accented counterpart \textit{\MakeUppercase{any}} (which is also referred to as \textit{emphatic any}), the minimiser NPI \textit{lifted a finger}, the NPI expression \textit{in years}, and the NPI \textit{one bit}. It should be noted that the environments and contexts examined in this subsection are in no way to be considered to be exhaustive (as an exhaustive list and discussion would far exceed the bounds of this dissertation)---rather, the examples in this section were selected to represent the majority of relevant environmental types with the fewest examples necessary. For a far more detailed discussion on which specific environments and contexts license NPIs, we refer to the preexisting literature on NPI licensing.
+
+When it comes to the distribution of NPIs, the universally accepted view is that all NPIs are licensed in simple negative assertions if they are in the direct scope of negative particle such as \textit{not} or \textit{n't} \parencite[see, amongst many others,][]{Jespersen1917,Klima1964,Baker1969,Baker1970}. This is shown in \refex{npi-negation}.
+\pex\label{ex:npi-negation}
+\a John didn't read any book.
+\a John didn't read \MakeUppercase{any} book.
+\a John didn't lifted a finger to help Mary.
+\a John hasn't read a book in years.
+\a John wasn't one bit happy about that.
+\xe
+All NPIs, on the other hand, are unlicensed in simple affirmative statements that have no negative context whatsoever \parencite[see, amongst many others,][]{Jespersen1917,Klima1964,Baker1969,Baker1970}. This is shown in \refex{npi-um}.
+\pex\label{ex:npi-um}
+\a\ljudge{\#} John read any book.
+\a\ljudge{\#} John read \MakeUppercase{any} book.
+\a\ljudge{\#} John lifted a finger to help Mary.
+\a\ljudge{\#} John has read a book in years.
+\a\ljudge{\#} John was one bit happy about that.
+\xe
+
+Furthermore, most NPIs are also licensed by negative quantifiers such as \textit{nobody}, \textit{nothing}, or \textit{no}. This is shown in \refex{npi-dm}. However, some rare NPIs like \textit{one bit} are only licensed under an overt negation particle and not licensed by negative quantifiers or other more covert forms of negation \parencite{Zwarts1993,Zwarts1998}, as shown in \refex{npi-dm-bit}.
+\pex\label{ex:npi-dm}
+\a No student in my class read any book.
+\a No student in my class read \MakeUppercase{any} book.
+\a No student in my class lifted a finger to help Mary.
+\a No student in my class has read a book in years.
+\a\ljudge{\#} No student in my class was one bit happy about that.\labex{npi-dm-bit}
+\xe
+However, NPIs are not only licensed in explicitly (or implicitly) negative contexts---which renders the term Negative Polarity Item as a slight historical misnomer---as they are also commonly found in the scope of a variety of non-negative quantifiers and other operators \parencite[see, amongst many subsequent others,][]{Klima1964,Ladusaw1980,Hoeksema1983,Linebarger1987,Wouden1997,Giannakidou1998}.
+
+The first non-explicitly negative environment we show---and also the main topic of discussion in \refsec{npi-qbias} and \refsec{even-qbias}---are questions. In polar questions (as well as in wh-questions), most NPIs are licensed; though not as many as under negative quantifiers. This is shown in \refex{npi-question}. 
+\pex\label{ex:npi-question}
+\a Did John read any book?\labex{npi-question-any}
+\a Did John read \MakeUppercase{any} book?\labex{npi-question-ANY}
+\a Did John lifted a finger to help Mary?\labex{npi-question-finger}
+\a\ljudge{\#} Has John read a book in years?\labex{npi-question-years}
+\a\ljudge{\#} Was John one bit happy about that?\labex{npi-question-bit}
+\xe
+Whilst \textit{one bit} remains unlicensed, as shown in \refex{npi-question-bit}, \textit{in years} is also shown to be unlicensed in questions \parencite{Nicolae2015,Roelofsen2018,Jeong2021,Jeong2022}, as shown in \refex{npi-question-years}. This renders NPIs like \textit{in years} more restrictive than the remaining NPIs but less restrictive than NPIs like \textit{one bit}. It should also be noted that \refex{npi-question-ANY} and \refex{npi-question-finger} carry a context-sensitive negative bias reading, leading to a feeling of rhetoricity (at the very least for \refex{npi-question-finger}), that, if contextually unsupported, may degrade their acceptability, whereas this is not the case for \refex{npi-question-any}. This is further explored in \refsec{npi-qbias}.
+
+The next environment in which most NPIs are licensed is in the restrictor of universal quantifiers \parencite{Ladusaw1980,Wouden1997}, as shown in \refex{npi-every-okay}.
+\pex\label{ex:npi-every-okay}
+\a Every student in my class who read any book passed the exam.\labex{npi-every-okay-any}
+\a Every student in my class who read \MakeUppercase{any} book passed the exam.\labex{npi-every-okay-ANY}
+\a Every student in my class who lifted a finger in class passed the exam.\labex{npi-every-okay-finger}
+\a\ljudge{\#} Every student in my class who has read a book in years passed the exam.\labex{npi-every-good-years}
+\a\ljudge{\#} Every student in my class who was one bit happy about that thanked me.\labex{npi-every-good-bit}
+\xe
+Here, the only universally unlicensed NPIs are the ones of the same type as \textit{in years} (see \refex{npi-every-good-years}) or as \textit{one bit} (see \refex{npi-every-good-bit}). However, it appears that only standard \textit{any} is licensed in all possible contexts, as emphatic \textit{any} as well as minimisers display some degree of context-sensitivity \parencite{Heim1984,Schwarz2000,Crnic2011,Crnic2014-dogma,Crnic2014-nm}, as shown in \refex{npi-every-bad}.
+\pex\label{ex:npi-every-bad}
+\a Every student in my class who read any book wore blue jeans.\labex{npi-every-bad-any}
+\a\ljudge{\#} Every student in my class who read \MakeUppercase{any} book wore blue jeans.\labex{npi-every-bad-ANY}
+\a\ljudge{\#} Every student in my class who lifted a finger in class wore blue jeans.\labex{npi-every-bad-finger}
+\a\ljudge{\#} Every student in my class who has read a book in years wore blue jeans.
+\a\ljudge{\#} Every student in my class who was one bit happy about that wore blue jeans.
+\xe
+Here, the use of NPIs in \refex{npi-every-bad-ANY} and \refex{npi-every-bad-finger} appears to be unlicensed in a context where the quantifier's restrictor and the quantifier's matrix verb phrase have no apparent causal link. As such, it would appear that some NPIs---namely emphatic \textit{any} and minimisers---are context-sensitive in their felicity.
+
+With this, we come to the last licensing context that we cover: Most NPIs are licensed in the restrictor of the \textit{exactly $n$} quantifier \textcite{Linebarger1980,Linebarger1987}, as shown in \refex{npi-nm-okay}.
+\pex\label{ex:npi-nm-okay}
+\a Exactly two students in my class read any book.\labex{npi-nm-okay-any}
+\a Exactly two students in my class read \MakeUppercase{any} book.\labex{npi-nm-okay-ANY}
+\a Exactly two students in my class lifted a finger to help Mary.\labex{npi-nm-okay-finger}
+\a\ljudge{\#} Exactly three students in my class have read a book in years.
+\a\ljudge{\#} Exactly two students in my class were one bit happy about that.
+\xe
+However, this is only the case if $n$ is a contextually exceptionally low number. If $n$ does not correspond to such a number, then all NPIs are unlicensed in such a context \parencite{Crnic2011,Crnic2014-dogma,Crnic2014-nm}. This is shown in \refex{npi-nm-bad}
+\pex\label{ex:npi-nm-bad}
+\a\ljudge{\#} Exactly twenty students in my class read any book.
+\a\ljudge{\#} Exactly twenty students in my class read \MakeUppercase{any} book.
+\a\ljudge{\#} Exactly twenty students in my class lifted a finger to help Mary.
+\a\ljudge{\#} Exactly twenty students in my class have read a book in years.
+\a\ljudge{\#} Exactly twenty students in my class were one bit happy about that.
+\xe
+As such, plain \textit{any} displays the same degree of context-sensitivity as emphatic \textit{any} and minimisers in the restrictor of \textit{exactly $n$}, though it does not do so in the restrictor of universal quantification.
+
+With this, we may summarise the empirical data presented in this subsection with \reftab{npi-raw}, below, which indicates the status of NPIs for each environment.
+\begin{table}[!htb]
+\input{content/tables/npi-raw-noconditionals}\labtab{npi-raw}
+\end{table}
+
+\noindent As shown in \reftab{npi-raw}, three environments cause for some NPIs to be context-sensitive in their licensing. This comes down to three different pragmatic effects that each influence the felicity of an NPI in their respective environment. First, \textit{ANY} and \textit{lift a finger} are only licensed in questions if the context allows or supports the \textbf{negative bias} that their use in question induces. This negative bias effect, and its contextual requirements, is further explored in \refsec{npi-qbias}. Second, \textit{ANY} and \textit{lift a finger} are only licensed in the restrictor of universal quantification if there is a \textbf{causal link} between the restrictor and the main matrix verb phrase of the quantifier. Third, \textit{any}, \textit{ANY}, and \textit{lift a finger} are only licensed in the \textit{exactly $n$} environment if $n$ corresponds to a contextually \textbf{low number}.\footnote{As a preview, it can be said that, in general, the environment-based account of NPI licensing fails to account for these pragmatic effects, as is shown in \refsec{NPI-accounts-mono}, because assumed licensing environmental properties remain constant and independent of these pragmatic effects.}
+A table that takes these three pragmatic effects explicitly into account is shown at the beginning of \refsec{npi-taxonomy}, after the exact parameters of the negative bias effect have been quantified in \refsec{npi-qbias}.
+
+\noindent With this table, a hierarchy in NPI restrictiveness becomes readily apparent: There appear to be four levels of NPI restrictiveness. First, NPIs like \textit{any} are the least restrictive kind, as they are available in all non-simple-affirmative environments, though their use in \textit{exactly $n$} is subject to contextual restrictions. Second, emphatic NPIs and minimisers appear to group together to form a single category. They are the second-most permissive type of NPI. They may principally occur in the same environments as the previous category, but they impose contextual restrictions not only on \textit{exactly $n$}, but also upon their use in the restrictor of universal quantifiers. Third, NPIs like \textit{in years} are the second-most restrictive kind of NPI, as they are only licensed under either a negative particle or a negative quantifier. Fourth, NPIs like \textit{one bit} represent the most restrictive kind of NPI, as they are only licensed under the direct scope of a negative particle.
+
+The most common NPI taxonomy, the one proposed by \textcite{Zwarts1998}, which categorises all NPIs as either weak, strong, or superstrong would therefore not suffice, as it lacks at least one level of differentiation. \citepos{Zwarts1998} classical NPI taxonomy labels NPIs like simple \textit{any} as \textit{weak NPIs}, whereas it proposes that emphatic \textit{any}, minimisers, and NPIs like \textit{in years} all constitute a single category: \textit{strong NPIs}. NPIs like \textit{one bit}, then, form a category of their own: \textit{superstrong NPIs}. The issue here is that the category of strong NPIs lumps together NPIs whose distribution is very dissimilar to one another: Emphatic \textit{any} and minimisers are far closer in distribution to simple \textit{any} than they are to \textit{in years} \parencite[see, amongst others,][]{Heim1984,Lahiri1998,Guerzoni2004,Crnic2011}.
+However, before we settle on a taxonomy for NPIs, we first review the pragmatic differences between simple \textit{any}, emphatic \textit{any}, and minimisers like \textit{lift a finger} in polar questions. This is crucial as their difference must be accounted for by any proposed taxonomy.
+
+
+\subsection{Negative Bias in NPI Questions}\labsec{npi-qbias}
+As shown in \refex{npi-question}, the only NPIs that are licensed in questions are the ones sharing a type with \textit{any}, \textit{ANY}, or minimisers. The respective examples are repeated in \refex{npi-question-repeat}.
+\pex\label{ex:npi-question-repeat}
+\a Did John read any book?\labex{npi-question-repeat-any}
+\a Did John read \MakeUppercase{any} book?\labex{npi-question-repeat-ANY}
+\a Did John lifted a finger to help Mary?\labex{npi-question-repeat-finger}
+\xe
+Whilst the use of all NPIs is equally felicitous in \refex{npi-question-repeat}, the pragmatic impact upon their question's flavor is not identical. Whilst NPIs such as simple \textit{any} or \textit{ever} carry little additional pragmatic inferences, NPIs like emphatic \textit{any} and minimisers like \textit{lift a finger} induce a bias towards their question's negative answer  \parencite{Borkin1971,Heim1984,Krifka1995,Abels2003,vanRooij2003,Guerzoni2003,Guerzoni2004,Asher2005,Nicolae2013,Nicolae2015,Jeong2020,Jeong2021,Jeong2022}. As such, the use of emphatic \textit{any} and minimisers in questions is restricted to contexts where such a negative bias is justified. If there is no reason or evidence for the speaker to exhibit any kind of bias, the use of NPIs in questions is unlicensed, as shown in \refex{appleQ-bad} and \refex{fingerQ-bad}, below.
+\ex
+\context{Speaker B saunters into a fruit stand and asks out of the blue:}
+\speaker{B}\#Do you have ANY apples?\labex{appleQ-bad}\hfill\parencite[p.~41]{Jeong2022}
+\xe
+\ex
+\context{Speaker A has no idea how much Speaker B has helped Mary.}
+\speaker{A}\#Did you lift a finger to help Mary?\labex{fingerQ-bad}
+\xe
+The strength of the induced negative bias, however, has been subject to some debate. There are approximately two views regarding the matter: the strong negative bias view and the weak negative bias view. Though both lines of thought attempt to account for the fact that some NPIs cause a feeling of rhetoricity as a result of some negative bias, they deviate in how this feeling of rhetoricity is to derived. The strong view considers these questions to be inherently biased by only having one possible felicitous answer (as such, it derives rhetoricity via presuppositional failure); i.e., that there is an obligatory negative bias in terms of the speaker belief about the question's negative answer itself \parencite{Guerzoni2004,Asher2005}, though this view is often restricted to minimiser questions and agnostic about emphatic NPI questions \parencite[e.g.][]{Guerzoni2004}. The weak view considers these questions' negative bias to be determined by context. The negative bias itself is formulated not as a negative bias towards the question's negative answer itself, but as a bias with regards to the negative answers of some or all alternatives to the original question \parencite{Borkin1971,vanRooij2003,Jeong2020,Jeong2021,Jeong2022}. In other words, the weak view presupposes that, for a polar question \enquote{whether $p$?}, some or all relevant alternative questions \enquote{whether $p'$?} have already been settled negatively (at least for the speaker)---while the issue of whether or not $p$ is true may still be open \parencite{Borkin1971,vanRooij2003,Jeong2020,Jeong2021,Jeong2022}.
+
+Between the two views, the weak one appears to more accurately describe speaker intuitions. Consider the example from \textcite{Jeong2021} in \refex{fruitstand}, below.
+\ex\label{ex:fruitstand}
+\context{Speaker~A is at a small fruit stand, looking for apples to bake an apple pie.}
+\speaker{A}Do you have tart apples?\\
+\speaker{B}No.\\
+\speaker{A}Do you have gala apples?\\
+\speaker{B}No.\\
+\speaker{A}Do you have ANY apples?\hfill\parencite[p.~4]{Jeong2021}
+\xe
+Here, Speaker~A grows exasperated with the lack of specific types of apple they desire, resulting in the final question that asks Speaker~B whether or not they have any type of apple at all. Here, Speaker~A does not necessarily believe that Speaker~B has no apples at all---they only believe that Speaker~B lacks some of the most common apple types. This is in direct opposition to the strong view on negative bias \parencite[see][]{Jeong2020}, which derives an active belief in the negative answer to the actual question (i.e., that Speaker~B has no apples at all) rather than an belief in the negative answers of the relevant alternative questions (i.e., whether or not Speaker~B has tart apples or gala apples). However, there is an apparent difference in required contextual strength between emphatic NPI and minimisers. The negative bias induced by minimisers is far greater, thereby requiring more contextual validation for its use. If only a few relevant alternative questions are settled negatively, the minimiser need not be licensed, as shown in \refex{badminimiserQ}.
+\ex\label{ex:badminimiserQ}
+\context{Speaker~A and Speaker~B discuss the behaviour of their spouses.}
+\speaker{A}\phantom{\#}Does your husband do the dishes?\\
+\speaker{B}\phantom{\#}No.\\
+\speaker{A}\phantom{\#}Does your husband clean the counters?\\
+\speaker{B}\phantom{\#}No.\\
+\speaker{A}\#Does your husband lift a finger to help you in the kitchen?
+\xe
+If the context is appropriately negative, however, excluding all relevant degrees of what constitutes as helping in the kitchen, its use becomes licensed \parencite{vanRooij2003,Jeong2021,Jeong2022}, as shown in \refex{goodminimiserQ}, below.
+\ex\label{ex:goodminimiserQ}
+\context{Speaker~A knows that Speaker~B's husband does nothing normally associated with helping in the kitchen. At best, he might put one plate away when it's directly given to him whilst complaining about it.}
+\speaker{B}My husband fully supports me.\\
+\speaker{A}Not really; I mean, has your husband ever even lifted a finger in the kitchen?
+\xe
+
+In light of this evidence, we follow the weak view on negative bias, as proposed by \textcite{Borkin1971}, \textcite{vanRooij2003}, and \textcite{Jeong2021,Jeong2022}, excluding any further review of proposals that attempt to derive a strong negative bias reading \parencite[e.g.][]{Guerzoni2003,Guerzoni2004,Asher2005}. This also means that this minor difference in distribution between emphatic \textit{any} and minimisers needs to be accounted for in any valid NPI taxonomy.
+
+\subsection{Taxonomy of Negative Polarity Items}\labsec{npi-taxonomy}
+In light of the empirical date provided in \refsec{npi-dist} and \refsec{npi-qbias}, which we summarise below in \reftab{npi-raw-bias}, we adopt \citepos{Jeong2021} proposed taxonomy for NPIs, extending it to include superstrong NPIs (which were not mentioned or accounted for by them). 
+\begin{table}[!htb]
+\input{content/tables/npi-raw-bias-noconditionals}\labtab{npi-raw-bias}
+\end{table}
+
+\noindent Any valid NPI taxonomy needs to account not only for the general environments in which NPIs may be licensed, but also why some environments only license NPIs with a suitable context---and that this context-dependency varies across groups of NPIs.
+
+\textcite{Jeong2021,Jeong2022} proposes that NPIs may be divided into two main categories: \textit{strong NPIs} and \textit{weak NPIs}. Strong NPIs are NPIs that are not licensed in questions (e.g., \textit{in years}), whereas weak NPIs encompasses all remaining NPIs. Weak NPIs, in turn, are subdivided into two categories: \textit{unfocused weak NPIs} (e.g., simple \textit{any}) and \textit{focused weak NPIs} (e.g., emphatic \textit{any} and all minimisers). To account for the difference between emphatic \textit{any} and minimisers with regards to negative bias, they further subdivided focused weak NPIs into inherently focused weak NPIs and contingently focused NPIs. The former represent all minimisers, as they obligatorily carry semantic focus, and the latter category corresponds to the non-obligatory emphatic use of other weak NPIs (e.g., emphatic \textit{any} or emphatic \textit{even}). To further differentiate between NPIs like \textit{in years} and NPIs like \textit{one bit}, we amend \citepos{Jeong2021,Jeong2022} taxonomy to include superstrong NPIs. This hierarchy is visually summarised in the tree structure in \reffig{npi-taxonomy}, and we provide a generalised version of \reftab{npi-raw-bias} in \reftab{npi-taxonomy}.
+\begin{figure}[!htb]
+    \centering
+    \resizebox{\textwidth}{!}{\input{content/graphics/npi-taxonomy.tikz}}
+    \caption{\citepos{Jeong2021,Jeong2022} proposed NPI taxonomy, extended to include superstrong NPIs. Categories are in boldface with example NPIs below them.}
+    \labfig{npi-taxonomy}
+\end{figure}
+\begin{table}[!htb]
+\input{content/tables/npi-taxonomy-noconditional}\labtab{npi-taxonomy}
+\end{table}
+
+\noindent Note that, in this dissertation, we henceforth mostly focus on what we consider to be weak NPIs. We do this because our main contribution in this chapter is to explore the effect of NPIs with regards to question bias in \refsec{even-qbias}, and, as non-weak NPIs are not licensed in questions, they are of no further relevance with regards to that topic. In addition, and more generally, the focus of this dissertation is to examine how to best model conditionals: as strict or as variably-strict constructs. As is later shown in \refch{npi-conditionals}, neither strong nor superstrong NPIs are licensed in the antecedent of conditionals whereas weak NPIs may be licensed in this environment, further reducing the importance of non-weak NPIs (in the context of this dissertation's objectives).\footnote{Note that we entirely sidestep the issue of non-weak NPI licensing with regards to the operator-based approach to NPI licensing, as the \textit{even}-based approach to NPI licensing does not intend to account for the distribution of non-weak NPIs. As such, the mechanisms presented in \refsec{NPI-accounts-even} do not cause an overgeneration of non-weak NPI felicity.}
+
+
+\section{Environment-Based Licensing}\labsec{NPI-accounts-mono}
+In this section, we review the environment-based---or monotonicity-based---approach to NPI licensing, as proposed by \textcite{Fauconnier1975a,Fauconnier1975b}, \textcite{Ladusaw1980}, \textcite{Giannakidou1998}, and \textcite{Fintel1999,Fintel2001}.
+
+\textcite{Fauconnier1975a,Fauconnier1975b} and \textcite{Ladusaw1980} observed that the presumed majority of NPI licensing environments share one fundamental trait: downward monotonicity (also referred to as downward entailingness). Downward monotonicity refers to the characteristic of a function where the relation of logical strength between expressions is reversed (i.e., the entailing relations between expressions are reversed by virtue of occurring in a downward monotone function).
+\ex\label{def:dm}%
+\input{content/definitions/downward-monotonicity}
+\xe
+Consider the expression \textit{read a book}, for example. By itself, \textit{read a book} is logically weaker than the expression \textit{read a strong book}, as the former is less restrictive than the latter, since $\intension{read a good book}\subseteq\intension{read a book}$ (i.e., \textit{read a good book} entails \textit{read a book}). If said expressions were to occur within the confines of some downward monotone function $f_\text{\scshape dm}$, then the entailing relations between them would reverse; i.e., $f_\text{\scshape dm}(\intension{read a book})\subseteq f_\text{\scshape dm}(\intension{read a good book})$. Typical downward monotone functions are the negative particle, negative quantifiers, and the restrictor of universal quantification, as shown below in \refex{dm-neg}, \refex{dm-negquant}, and \refex{dm-every}, respectively, where the first sentence always entail the second sentence but not vice versa.
+\pex\label{ex:dm-neg}
+\a John didn't read a book.
+\a John didn't read a good book.
+\xe
+\pex\label{ex:dm-negquant}
+\a No student in my class read a book.
+\a No student in my class read a good book.
+\xe
+\pex\label{ex:dm-every}
+\a Every student in my class who read a book passed the exam.
+\a Every student in my class who read a good book passed the exam.
+\xe
+As there was a very good overlap between downward monotone environments and NPI-licensing environments, \textcite{Ladusaw1980} proposed that all NPIs are licensed by downward monotone functions. However, \textcite{Fintel1999} pointed out that NPIs are also licensed in some environments which are not traditionally downward monotone but which function like downward monotone environments for all entailed inferences that are defined (i.e., whose presuppositions are fulfilled). He termed this type of environment to be Strawson downward monotone, which is formally defined as in~\refdef{sdm}.
+\ex\label{def:sdm}%
+\input{content/definitions/strawson-downward-monotonicity}%
+\xe
+The classical example of this is kind of NPI-licensing environment is shown in \refex{only-npi}.
+\ex
+Only John ever ate any kale for breakfast.\labex{only-npi}\hfill\parencite[p.~101]{Fintel1999}
+\xe
+\textcite{Fintel1999} correctly argues that \textit{only} is not a regular downward monotone function, as \enquote{Only $\phi$} does not entail \enquote{Only $\psi$} for all $\phi,\psi$ s.t. $\phi\subseteq\psi$. This is demonstrated with the sentences in \refex{only-dm}:
+\pex\label{ex:only-dm}
+\a Only John ate vegetables for breakfast.\labex{only-dm1}
+\a Only John ate kale for breakfast.\labex{only-dm2}
+\xe
+Here, \refex{only-dm1} clearly does not necessarily entail \refex{only-dm2} (e.g., if John did not eat any kale for breakfast). As such, \textit{only} cannot be purely downward monotone. \textcite{Fintel1999} argues that the entailing relation here does not hold true due to the fact that \textit{only} presupposes that its prejacent is considered true: Though the presupposition may be fulfilled or accommodated for for the sentence in \refex{only-dm1}, there is no reason to assume or accommodate for the presupposition of \refex{only-dm2} solely due to \refex{only-dm1} being evaluated as true, rendering \refex{only-dm2} undefined. Crucially, the same reasoning applies to our example of universal quantification in \refex{dm-every}: Assuming that \textit{every} carries an existential presupposition, it would also be classified as a Strawson downward monotone environment \parencite{Fintel1999} rather than as purely downward monotone as previously assumed \parencite{Fauconnier1975a,Fauconnier1975b,Ladusaw1980}. This fact has important ramifications for the operator-based approach to NPI licensing, as later shown in \refsec{even-contextsensitivity}.
+
+
+
+Conversely, NPIs are then not licensed in assertions that are not (Strawson) downward monotone. One such environment are simple unnegated assertions such as \textit{John read a book} and \textit{John read a good book}, where the latter entails the former and not vice versa, as simple assertions such as these maintain the entailing relation between their expressions. This characteristic of a function is referred to as upward monotonicity.
+\ex\label{def:um}%
+\input{content/definitions/upward-monotonicity}
+\xe
+Typical upward monotone environments are, as previously mentioned, simple assertions with no quantification, but also existential quantifiers. This is shown in \refex{um-ass} and \refex{um-some}, respectively, where the examples' first sentence each entail their example's second sentence.
+\pex\label{ex:um-ass}
+\a John read a good book.
+\a John read a book.
+\xe
+\pex\label{ex:um-some}
+\a Some student read a good book.
+\a Some student read a book.
+\xe
+As such, \textcite{Fauconnier1975a,Fauconnier1975b} and \textcite{Ladusaw1980} are able to explain the most general divide in NPI licensing contexts. However, as recounted in the previous sections, not all NPIs are licensed in the same environments. 
+
+Crucially, not all NPIs are licensed in all downward monotone environments: NPIs like \textit{in years} are not licensed in the restrictor of universal quantifiers, and NPIs like \textit{one bit} are licensed neither in the restrictor of universal quantifiers nor in the scope of a negative quantifier, even though both of these environments are downward monotone by nature. To account for this fact, \textcite{Zwarts1998} and \textcite{Wouden1997} proposed that some NPIs have supererogatory licensing conditions that further restrict the environments in which they may occur. To this end, \textcite{Zwarts1998} and \textcite{Wouden1997} suggest that only weak NPIs are licensed solely by downward monotonicity. They propose that strong NPIs are are licensed by downward monotone anti-additive functions and that superstrong NPIs are licensed by functions that are not only downward monotone and anti-additive but also antimorphic, as defined in \refdef{antiadditive} and \refdef{antimorphic}, respectively, building a hierarchy of restrictive properties.
+\ex%
+\input{content/definitions/anti-additivity}\labdef{antiadditive}
+\xe
+\ex%
+\input{content/definitions/antimorphicity}\labdef{antimorphic}
+\xe
+Note that, since antimorphic functions are a proper subset of anti-additive functions, and anti-additive functions are, in turn, a proper subset of all downward monotone functions, we hereafter only characterise functions by their most restrictive property.
+
+With this, \textcite{Zwarts1998} and \textcite{Wouden1997} may explain why strong NPIs are licensed in the scope of a negative quantifier whereas superstrong NPIs are not: Negative quantifiers are anti-additive but not antimorphic. That negative quantifiers are anti-additive is shown with \refex{aa-no}, as either sentence entails the other.
+\pex\label{ex:aa-no}%
+\a No student read a book or looked at the slides.
+\a No student read a book and no student looked at the slides.
+\xe
+That negative quantifiers are not antimorphic is shown with \refex{am-no}, as only \refex{am-no1} entails \refex{am-no2} but \refex{am-no2} does not entail \refex{am-no1}.
+\pex\label{ex:am-no}%
+\a No student read a book and looked at the slides\labex{am-no1}
+\a No student read a book or no student even looked at the slides.\labex{am-no2}
+\xe
+
+To show that strong NPIs are licensed in anti-additive environments but not in merely downward monotone environments, we use the downward monotone quantifier \textit{at most $n$} in \refex{aa-atmost}.
+\pex\label{ex:aa-atmost}%
+\a At most two students read a book or looked at the slides.\labex{aa-atmost1}
+\a At most two students read a book and at most two students looked at the slides.\labex{aa-atmost2}
+\xe
+Here, \refex{aa-atmost1} entails \refex{aa-atmost2} but not vice versa. The quantifier \textit{at most $n$} is, therefore, not an anti-additive one. As such, \textcite{Zwarts1998} and \textcite{Wouden1997} would predict strong NPIs to not be licensed in the scope of \textit{at most $n$}, which is proven correct with \refex{npi-atmost-inyears}, and weak NPIs to be licensed in such an environment, as shown in \refex{npi-atmost-ever}.
+\pex\label{ex:npi-atmost}%
+\a At most two of my students have ever read a book.\labex{npi-atmost-ever}
+\a \ljudge{\#}At most two of my students have read a book in years.\labex{npi-atmost-inyears}
+\xe
+One issue arises for their view however: Strong NPIs are not licensed in the restrictor of universal quantifiers even though it is an anti-additive environment, as shown with \refex{aa-every} where either sentence entails the other.
+\pex\label{ex:aa-every}%
+\a Every student or professor read a book.
+\a Every student read a book and every professor read a book.
+\xe
+One way to account for this was proposed by \textcite{Gajewski2011}. He proposes that strong NPIs must be anti-additive on all levels of meaning: on the assertive level, on the presuppositional level, and on the level of implicatures. The restrictor of universal quantifiers, however, is typically assumed to carry a positive existential presupposition that there is at least one individual in its domain that fulfils the conditions laid out by the restrictor. As such, a universal quantifier would carry some non-at-issue content that is not anti-additive, preventing strong NPIs from being licensed.
+
+With this, the following factors must still be accounted for by the monotonicity-based approach to NPI licensing: NPI licensing in questions, derivation of NPI question bias, the context-sensitivity of some NPI environments, and NPI licensing by \textit{exactly~$n$}.
+
+\subsection{Questions}
+The fact that questions license NPIs is, on the surface level, an issue to a monotonicity-based approach to NPI licensing, as questions themselves are typically not considered to be downward monotone \parencite{vanRooij2003,Guerzoni2007}. Consider the pair of questions in \refex{q-monotone}.
+\pex\label{ex:q-monotone}
+\a Did John read a book?\labex{q-monotone-book}
+\a Did John read \textit{Harry Potter and the Prisoner of Azkaban}?\labex{q-monotone-potter}
+\xe
+If questions were downward monotone, we would assume that asking \refex{q-monotone-book} automatically entails asking \refex{q-monotone-potter}; i.e., by soliciting information about one we automatically solicit for information about the other as well \parencite[p.~366f]{Guerzoni2007}. This is clearly not the case, making the downward monotone nature of question a doubtful status. This is even clearer if we embed questions in a larger structure---thereby making it possible to test for standard logical entailment \parencite[p.~367]{Guerzoni2007}. Consider the sentences in \refex{embeddedq-monotone}.
+\pex\label{ex:embeddedq-monotone}
+\a Bill wonders whether John read a book.\label{ex:embeddedq-monotone1}
+\a Bill wonders whether John read Harry Potter and the Prisoner of Azkaban.\label{ex:embeddedq-monotone2}
+\xe
+\textcite[p.~367f]{Guerzoni2007} argues that, if we were to informally assume that the meaning of \textit{x wonders Q} is approximately equal to \enquote{x wants to know the answer to Q}, it is quite clear that \refex{embeddedq-monotone1} does not entail \refex{embeddedq-monotone2}: Bill can easily want to know the answer to whether or not John has read some book without specifically wanting to know whether or not John has read the third volume of Harry Potter. 
+
+As such, assuming that questions are not downward monotone, we would falsely predict that questions do not license NPIs using \citepos{Ladusaw1980} monotonicity-based approach. Since they clearly do, however, multiple possible solutions have been proposed with regards to this problem. These solutions can be roughly divided into two categories: First, to model questions such that they contain a downward monotone environment that licenses NPIs without being downward monotone themselves. Second, to further relax the licensing restrictions from being licensed by downward monotone environment to some other, weaker requirement \parencite{Giannakidou1998}.
+
+\subsubsection{Monotonicity-Based Approach}
+In the first approach, NPIs are typically licensed by virtue of the downward monotone environment that is created by an operator belonging to the question's negative answer \parencite{Guerzoni2004,Guerzoni2014,Nicolae2013,Nicolae2015}. This is possible due the fact that the meaning of questions is often equated to its set of possible answers \parencite{Hamblin1973}, which, in turn, typically contains at least one answer that contains a downward monotone environment. For a polar question \enquote{Whether $p$?}, for example, this downward monotone operator typically corresponds to the negation found in the negative answer $\neg p$ \parencite{Guerzoni2004,Guerzoni2014} as they are found in the question's set of answers $\intension{Whether $p$?}=\{p,\neg p\}$ \parencite{Hamblin1973}. How this set of answers---or \textit{Hamblin set}---is derived varies between different approaches but is of no greater consequence here. For more details on how the semantics of questions derive corresponding Hamblin sets and how they contain downward monotone environment we refer to \refsec{even-qbias}, where we cover this more extensively (as the specific way of how we derive the Hamblin set creates different predictions for the \textit{even}-based approach of NPI licensing).
+
+\subsubsection{Non-Veridicality-Based Approach}
+In the second approach, \textcite{Giannakidou1998} proposes that weak NPIs are not only licensed by downward monotone environments but also by non-veridical or anti-veridical ones in general; i.e., contexts where some proposition $p$ in the scope of some function $f$ either does not entail $p$ itself or actively entails its negation $\neg p$.
+\ex\label{def:nonveridicality}%
+\input{content/definitions/nonveridicality}
+\xe
+\ex\label{def:antiveridicality}%
+\input{content/definitions/antiveridicality}
+\xe
+Similarly to \citepos{Zwarts1998}, weak NPIs are already licensed via mere non-veridicality whereas strong and superstrong NPIs require non-veridical and anti-veridical environments (also, superstrong NPIs still require anti-morphic environments), if we use \citepos{Giannakidou1998} weaker NPI licensing requirements. This way, NPIs are licensed in questions by virtue of questions not entailing their answers, rendering them non-veridical (e.g., \enquote{Whether $p$?} does not entail $p$ itself).
+
+\subsection{Non-Monotonicity and Context-Sensitivity}
+With this, we arrive at the last two issues that need to be accounted for by any NPI licensing theory: the context-dependent licensing of NPIs under quantifiers like \textit{exactly $n$} that requires \textbf{low numbers} and the general context-dependency of some NPIs in some environments such as in the restrictor of universal quantification that requires a \textbf{causal link}. Expressions such as \textit{exactly $n$} are neither (Strawson) downward monotone nor are they upward monotone. This is demonstrated with \refex{nm-exactly}:
+\pex\label{ex:nm-exactly}
+\a Exactly two students read a book.\labex{nm-exactly1}
+\a Exactly two students read Harry Potter.\labex{nm-exactly2}
+\xe
+Here, \refex{nm-exactly1} clearly does not logically entail \refex{nm-exactly2}---as such, it is not downward monotone---nor does \refex{nm-exactly2} logically entail \refex{nm-exactly1}---as such it is not upward monotone. This kind of environment is referred to as non-monotone, as defined in \refdef{nm}:
+\ex\label{def:nm}%
+\input{content/definitions/non-monotonicity}
+\xe
+The issue here is twofold: First, neither a (Strawson) downward monotonicity nor a non-veridicality based approach may account for why NPIs are licensed in non-monotone environments as is. It also appears quite difficult to come up with any environment-based licensing requirement that does not overgenerate the licensing of NPIs. As such, these cases remain a persistent and well-known issue for these kinds of NPI licensing theories \parencite[see][p.~112, Footnote~1]{Gajewski2011}. Second, even if some environment-based account for NPIs were to successfully account for the possibility of non-monotone NPIs, this would neither account for why their licensing in these environments is entirely dependent upon context nor why Strawson downward environments like the restrictor of universal quantifiers require a causal link between the restrictor and their matrix verb phrase: After all, the context of an expression should not affect either the monotonicity nor the veridicality of any given environment in said expression. As such, environment-based licensing theories are incapable of accounting for the context-based differences in NPI licensing demonstrated in \refsec{npi-dist}. That is, at least they are incapable of doing so without positing some additional operators that influence the licensing of NPIs---which would move us away from an environment-based licensing theory of NPIs toward an operator-based theory of NPI licensing anyway \parencite{Krifka1995,Chierchia2006,Chierchia2013,Crnic2011,Crnic2014-dogma,Crnic2014-nm}.
+
+\section{Operator-Based NPI Licensing}\labsec{NPI-accounts-even}
+In this section, we explore the operator-based approach to NPI licensing (i.e., NPIs are not licensed by an environment but by some covert operator at LF). In essence, the operator-based differs from the environment-based approach to NPI licensing in the following manner: Rather than assuming that NPIs are licensed by the environments themselves simply by virtue of a descriptive analysis, the operator-based approach posits that NPIs carry some uninterpretable feature that is checked by some operator that is covertly generated scoping above the NPI at LF \parencite[see][]{Chierchia2013}. The question of whether or not NPIs are licensed in any given environment is then a natural consequence of its meaning associating with said covert operator, moving away from the environmental approach's purely descriptivist analysis. 
+In this chapter, we exclusively explore the \textit{even}-based approach to (weak) NPI licensing as proposed by \textcite{Lee1994}, \textcite{Lahiri1998}, \textcite{Crnic2011,Crnic2014-dogma,Crnic2014-nm}, and \textcite{Jeong2021,Jeong2022}.\footnote{Note that there are alternative NPI licensing operators proposed in the literature. \textcite{Krifka1995} and \textcite{Chierchia2013}, for example, assume that NPIs may also be licensed by a covert exhaustifying operator rather than solely by a covert instance of \textit{even}. In this dissertation, for the sake of simplicity, we only assume that \textit{even} licenses NPIs as that suffices to account for the empirical data presented in \refsec{NPI-data} \parencite{Crnic2011,Crnic2014-dogma,Crnic2014-nm}. For further information on the multiple licensing operator NPI account, we refer to \textcite{Krifka1995}, \textcite{Chierchia2013}, and \textcite[p.~41ff]{Crnic2014-nm} for details.}\textsuperscript{,}\footnote{Note that the \textit{even}-based approach to NPI licensing does not intend to account for the distribution of non-weak NPIs and restricts itself entirely to the domain of weak NPIs. As such, the mechanisms presented in this chapter should not be assumed to generalise to non-weak NPIs, which would cause an undue overgeneration of their felicity.}
+
+The \textit{even}-based approach to NPI licensing was first considered by \textcite{Heim1984} due the similar distribution of the expression \textit{even \MakeUppercase{one}} in comparison to weak NPIs, though she ultimately ruled it out as a viable approach due to some differences in distribution. We cover this in more detail in \refsec{even-distribution}. However, most of the subsequent literature on the \textit{even}-based approach has managed to account for the majority of these distributional differences in one way or another \parencite{Crnic2011,Crnic2014-dogma,Crnic2014-nm}. We cover how these distributional differences were accounted for in \refsec{even-dm} and \refsec{even-contextsensitivity}. Crucially, one difference in distribution concerns a difference in question bias between the expression \textit{even \MakeUppercase{one}} and weak NPIs has not yet been perfectly accounted for in the literature in the context of this framework: why unfocused weak NPIs in questions do not generate negative bias but the expression \textit{even ONE} does. We cover this difference in more detail and attempt to provide an improved solution in \refsec{even-qbias}. But before we cover these issues, we first explain the basics of the \textit{even}-based account in \refsec{even-basics} and show how it may account for the most rudimentary of NPI behaviours in \refsec{even-um} and \refsec{even-dm}---namely the behaviour in upward monotone and downward monotone environments, respectively.
+
+\subsection{Distribution of \textit{Even ONE}}\labsec{even-distribution}
+In this section, we show the distribution of the expression \textit{even \MakeUppercase{one}} in comparison to the distribution of weak NPIs, ignoring the distribution of strong and superstrong NPIs as the \textit{even}-based NPI licensing theory does not address the issue of their licensing criteria.
+The expression \textit{even \MakeUppercase{one}} patterns closely with the distribution of weak NPIs---especially with focused weak NPIs, as will be shown later. For the sake of comparative clarity, we provide a repetition of the relevant NPI example from \refsec{NPI-data} alongside each \textit{even \MakeUppercase{one}} expression. 
+
+To start with, \textit{even \MakeUppercase{one}} is generally not licensed in upward monotone contexts such as in simple affirmative assertions. This is shown in \refex{even-um}.
+\pex\label{ex:even-um}
+\a\ljudge{\#} John read any book.
+\a\ljudge{\#} John read \MakeUppercase{any} book.
+\a\ljudge{\#} John lifted a finger to help Mary.
+\a\ljudge{\#} John read even \MakeUppercase{one} book.
+\xe
+But, just like all weak NPIs, \textit{even ONE} is universally licensed in clearly negative downward monotone expressions such as directly under a negative particle, shown in \refex{even-negation}, or in the scope of a negative quantifier, as shown in \refex{even-dm}.
+\pex\label{ex:even-negation}
+\a John didn't read any book.
+\a John didn't read \MakeUppercase{any} book.
+\a John didn't lifted a finger to help Mary.
+\a John didn't read even \MakeUppercase{one} book.
+\xe
+\pex\label{ex:even-dm}
+\a No student in my class read any book.
+\a No student in my class read \MakeUppercase{any} book.
+\a No student in my class lifted a finger to help Mary.
+\a No student in my class read even \MakeUppercase{one} book.
+\xe
+
+However, when it comes to the downward monotone environment of being licensed in the restrictor of universal quantification, the expression \textit{even \MakeUppercase{one}} patterns along the lines of weak focused NPIs. That is to say \textit{even \MakeUppercase{one}} may or may not be licensed in such an environment depending on whether or not there is a contextually clear relation between the restrictor of the universal quantifier and the claims the sentence makes about the quantifier's domain \parencite{Crnic2014-dogma}. This is shown with \refex{even-every-okay}, where there is a clear relation between reading (relevant) books and passing the exam and where \textit{even \MakeUppercase{one}} is licensed, and with \refex{even-every-bad}, where there is no clear relation between reading books as a student and wearing blue jeans and where \textit{even \MakeUppercase{one}} is not licensed.
+\pex\label{ex:even-every-okay}
+\a Every student in my class who read any book passed the exam.
+\a Every student in my class who read \MakeUppercase{any} book passed the exam.
+\a Every student in my class who lifted a finger in class passed the exam.
+\a Every student in my class who read even \MakeUppercase{one} book passed the exam.\labex{even-every-okay-one}
+\xe
+\pex\label{ex:even-every-bad}
+\a Every student in my class who read any book wore blue jeans.
+\a\ljudge{\#} Every student in my class who read \MakeUppercase{any} book wore blue jeans.\labex{even-every-bad-ANY}
+\a\ljudge{\#} Every student in my class who lifted a finger in class wore blue jeans.\labex{even-every-bad-finger}
+\a\ljudge{\#} Every student in my class who read even \MakeUppercase{one} book wore blue jeans.\labex{even-every-bad-one}
+\xe
+
+Regarding non-monotone environments such as \textit{exactly $n$}, \textit{even \MakeUppercase{one}} patterns exactly alike with all weak NPIs: being contextually restricted to lower numbers, as shown with the difference between \refex{even-nm-okay} and \refex{even-nm-bad}.
+\pex\label{ex:even-nm-okay}
+\a Exactly two students in my class have read any book.
+\a Exactly two students in my class have read \MakeUppercase{any} book.
+\a Exactly two students in my class have lifted a finger to help Mary.
+\a Exactly two students in my class have read even \MakeUppercase{one} book.
+\xe
+\pex\label{ex:even-nm-bad}
+\a\ljudge{\#} Exactly twenty students in my class have read any book.
+\a\ljudge{\#} Exactly twenty students in my class have read \MakeUppercase{any} book.
+\a\ljudge{\#} Exactly twenty students in my class have lifted a finger to help Mary.
+\a\ljudge{\#} Exactly twenty students in my class have read even \MakeUppercase{one} book.
+\xe
+
+Finally, the expression \textit{even \MakeUppercase{one}} is also licensed in questions, same as the other weak NPIs, as shown in \refex{even-question}.
+\pex\label{ex:even-question}
+\a Did John read any book?\labex{even-question-any}
+\a Did John read \MakeUppercase{any} book?\labex{even-question-ANY}
+\a Did John lifted a finger to help Mary?\labex{even-question-finger}
+\a Did John read even \MakeUppercase{one} book?\labex{even-question-one}
+\xe
+However, aside from being licensed, \refex{even-question-one} also invokes a negative bias to its question. In this, \textit{even \MakeUppercase{one}} patterns once more with focused weak NPIs. Specifically, \textit{even \MakeUppercase{one}} invokes a strong negative bias reading similar to inherently focused weak NPIs such as \refex{even-question-finger}, patterning closer with these NPIs rather than with contingently focused weak NPIs. This is shown by comparing \refex{fruitstand} and \refex{badminimiserQ}, repeated below as \refex{even-fruitstand} and \refex{even-badminimiserQ} respectively, with the question containing \textit{even \MakeUppercase{one}} in \refex{even-badoneQ}.
+\ex\label{ex:even-fruitstand}
+\context{Speaker~A is at a small fruit stand, looking for apples to bake an apple pie.}
+\speaker{A}Do you have tart apples?\\
+\speaker{B}No.\\
+\speaker{A}Do you have gala apples?\\
+\speaker{B}No.\\
+\speaker{A}Do you have ANY apples?\hfill\parencites{Jeong2021}[p.~4]{Jeong2022}
+\xe
+\ex\label{ex:even-badminimiserQ}
+\context{Speaker~A and Speaker~B discuss the behaviour of their spouses.}
+\speaker{A}\phantom{\#}Does your husband do the dishes?\\
+\speaker{B}\phantom{\#}No.\\
+\speaker{A}\phantom{\#}Does your husband clean the counters?\\
+\speaker{B}\phantom{\#}No.\\
+\speaker{A}\#Does your husband lift a finger to help you in the kitchen?
+\xe
+\ex\label{ex:even-badoneQ}
+\context{Speaker~A and Speaker~B discuss the behaviour of their spouses.}
+\speaker{A}\phantom{\#}Does your husband do the dishes?\\
+\speaker{B}\phantom{\#}No.\\
+\speaker{A}\phantom{\#}Does your husband clean the counters?\\
+\speaker{B}\phantom{\#}No.\\
+\speaker{A}\#Does your husband do even \MakeUppercase{one} thing in the kitchen?
+\xe
+
+As such, \textit{even \MakeUppercase{one}} patterns very closely with all weak NPIs. In fact, its distribution is an exact match for inherently focused weak NPIs, with the next closest match being the contingently focused weak NPIs---their only difference being a difference in question bias strength \parencite{Jeong2021,Jeong2022}. It also patterns closely with unfocused weak NPIs but lacks their focus sensitivity in certain environments \parencite{Crnic2011,Crnic2014-dogma,Crnic2014-nm}. This is shown in a summarised fashion in \reftab{even-taxonomy}.
+\begin{table}[!htb]
+\input{content/tables/even-taxonomy-noconditionals}\labtab{even-taxonomy}
+\end{table}
+
+Given this distribution, it has been rather conventional to treat either all focused weak NPIs or only inherently focused weak NPIs as being licensed by some covert {\scshape even}-like operator---without assuming that unfocused weak NPIs are licensed by it \parencite[see, amongst many others,][]{Heim1984,Krifka1995,Guerzoni2003,Guerzoni2004,Chierchia2013}.
+
+Therefore, it must be motivated why even unfocused weak NPIs should be licensed by \textit{even} though it doesn't pattern exactly alike with it. \textcite{Crnic2011,Crnic2014-dogma,Crnic2014-nm} does this by showing (i) that the \textit{even}-operator is required to explain the context-dependent licensing of unfocused weak NPIs in non-monotone environments (see \refsec{even-nm}) and (ii) that the context-sensitivity in Strawson downward monotone environments is not actually caused by the meaning of \textit{even} itself but additional pragmatic inferences that are caused by it in its more overt instances (see \refsec{even-contextsensitivity}).
+
+\subsection{Basic Framework}\labsec{even-basics}
+The \textit{even}-based approach to NPI licensing relies on four important pillars: First, it assumes that NPIs are to be treated as existential quantifiers over contextually determined domains \parencite{Krifka1995,Chierchia2013}. 
+\ex
+\input{content/definitions/any}\labdef{any}
+\xe
+Note that this differs from \citepos{Lee1994} original proposal that merely equates \textit{any} with simple existential quantification---i.e., $\intension{any}=\intension{one}$---which did not quantify over a contextually determined domain. We follow the definition in \refdef{any} due to it better capturing the domain widening effects that are frequently displayed by the use of NPIs \parencite[see][]{Krifka1995}.
+
+Second, it assumes that NPIs generate alternatives that must serve as the input for a covert {\scshape even}-operator that associates with them \parencite{Krifka1995,Crnic2011,Crnic2014-dogma,Crnic2014-nm,Chierchia2013}. Here, there are two possible sets of alternatives for each weak NPI, depending on which part of meaning is targeted by the context, using standard \citepos{Rooth1985} alternative semantics. They either induce alternative domains, as proposed by \textcite{Krifka1995} and \textcite{Chierchia2013} and as seen in \refdef{any-focus}, or they induce scalar alternatives, as proposed by \textcite{Lee1994} and \textcite{Lahiri1998} and as shown in \refdef{any-focus-scalar}.
+\ex
+\resizebox{0.923\linewidth}{!}{\input{content/definitions/any-focus}}\labdef{any-focus}
+\xe
+\ex
+\resizebox{0.923\linewidth}{!}{\input{content/definitions/any-focus-scalar}}\labdef{any-focus-scalar}
+\xe
+That both readings are available can be seen by \refex{even-domain} and \refex{even-scalar}:
+\ex
+\speaker{A}Do you have tart apples?\\
+\speaker{B}No.\\
+\speaker{A}Do you have \emph{any} apples?\hfill\parencite[p.~14]{Jeong2021}\labex{even-domain}
+\xe
+\ex
+\speaker{A}Did you bring all the books?\\
+\speaker{B}No.\\
+\speaker{A}Did you bring \emph{any}?\hfill\parencite[p.~14]{Jeong2021}\labex{even-scalar}
+\xe
+In \refex{even-domain}, Speaker~A clearly uses an NPI to inquire whether or not Speaker~B has any kind of apples (i.e., a domain-based reading). In \refex{even-scalar}, on the other hand, Speaker~A uses an NPI to inquire whether or not Speaker~B has brought any non-zero number of books, having learned that they at least did not bring all of them (i.e., a scalar reading based on numerical alternatives).
+
+Third, it assumes that \textit{even} carries a probability-based scalar presupposition that requires its prejacent to be the least likely option available in the set of alternatives generated by the weak NPI. We formally define this probability presupposition of \textit{even} in \refdef{even-crnic}, where $\lprob_c$ represents the relation of \enquote{given an information state provided by the context $c$, $p$ is less likely than $q$}. Furthermore, we assume that the relevant alternatives need to be defined in the context for a comparison of their probabilities relative to that context to be possible \parencite[p.~118]{Crnic2014-dogma}.
+\ex
+\input{content/definitions/even-crnic}\labdef{even-crnic}
+\xe
+
+Fourth, \textit{even} and the covert {\scshape even}-operator may move at LF to scope outside of its immediate place of generation \parencite[see, amongst others,][]{Karttunen1979,Wilkinson1996,Lahiri1998}. That is that a sentence such as \enquote{John didn't read even \MakeUppercase{one} book} is evaluated as in \refex{even-movement}.
+\pex\label{ex:even-movement}
+\a John didn't read even \MakeUppercase{one} book.
+\a[] [even\textsubscript{C} [not \sout{even\textsubscript{C}} [John read one\textsubscript{F} book]]]
+\xe
+This is a necessary assumption, as \textit{even} needs to scope above negation to be able to fulfil its presupposition. This is shown in \refsec{even-um} and \refsec{even-dm}.
+
+At this point, the careful reader might wonder how the different types of NPIs and the expression \textit{even ONE} may yield different predictions in the same environments, given that they are licensed by the same factors, excepting that \textit{even~ONE} does not carry the possible domain-based reading that NPIs may do. For example, unfocused NPIs cause neither context-sensitivity in Strawson downward monotone environments nor negative bias in questions, whereas focused NPIs as well as \textit{even~ONE} do cause these pragmatic effects (to differing degrees with regards to the negative bias in questions). While we provide the details on the motivation and implementation of these effects later in \refsec{even-contextsensitivity} and \refsec{even-qbias}, we can preview that both phenomena are caused by the presence of overt focus: It introduces covert exhaustification in Strawson downward monotone environments, rendering them non-monotone by nature \parencite{Klecha2014,Klecha2015}, for reasons to be examined in \refsec{even-contextsensitivity}, and it introduces an additive inference which derives varying degrees of negative bias in questions \parencite{Jeong2021,Jeong2022} as detailed in \refsec{even-qbias}.
+
+\subsection{Upward Monotone Environments}\labsec{even-um}
+As shown in \refsec{even-distribution}, \textit{even \MakeUppercase{one}} is generally unlicensed in upward monotone environments. The reason for this lies with the scalar probability presupposition of \textit{even}. \textit{Even} presupposes that its original prejacent is the least likely available option amongst its associated set of alternatives. However, in an upward monotone environment, this is an unfulfillable requirement. According to \citepos{Kolmogorov1933} third axiom of probability, entailment serves an upper limit to probability: No proposition can be more probable than any of its entailments.
+\ex
+\input{content/definitions/kolmogorov}\labdef{kolmogorov}
+\xe
+This is due to the fact that if $\phi$ entails $\psi$, that all worlds that are $\phi$-worlds also must be $\psi$-worlds. As such, the probability that the actual world is contained by the set of all $\psi$-worlds must be at least equal to the probability that the actual world is contained by the set of all $\phi$-worlds, as the former set contains all of the worlds of the former (i.e., $\phi\subseteq\psi$). As the set of $\psi$-worlds may additionally contain worlds that are not $\phi$-worlds, the probability of the actual world being in its set may even be higher than for the set of $\phi$-worlds. In reverse, this enforces a limit to the probability of $\phi$. Since, in an upward monotone environment, the entailing relations are simply maintained, associating \textit{even} with a lexical entry that is entailed by all of its alternatives ensures that said lexical entry may never be the least probable option amongst its set of alternatives. As \textit{(at least) one} and \textit{any} both share this trait, neither could ever be a felicitous target for \textit{even}'s scalar presupposition so long as the entailing relations are neither reversed nor suspended.
+
+We illustrate this point via the sentence in \refex{even-um-demo-sentence}, its corresponding LF in \refex{even-um-demo-lf}, and the assertive meaning in \refex{even-um-demo-assertion}, which would generate the set of alternatives in \refex{even-um-demo-alternative-list} and \refex{even-um-demo-alternative}, where we make use of the $\exists_nxP(x)$ notation to indicate that there are at least $n$ individuals such that $P(x)=1$.
+\pex
+\a\ljudge{\#} John read even \MakeUppercase{one} book.\labex{even-um-demo-sentence}
+\a[] [even\textsubscript{C} [John read one\textsubscript{F} book]\labex{even-um-demo-lf}
+\a $\intension[g,c]{John read one\textsubscript{F} book}=[\lambda{w_s}.\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$\labex{even-um-demo-assertion}
+\a $\intension[f,g,c]{John read one\textsubscript{F} book}=\{[\lambda{w_s}.\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]],$\\
+\phantom{$\intension[f,g,c]{John read one\textsubscript{F} book}=\{$}$[\lambda{w_s}.\exists_2{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]],$\\
+\phantom{$\intension[f,g,c]{John read one\textsubscript{F} book}=\{$}$[\lambda{w_s}.\exists_3{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]],$\\
+\phantom{$\intension[f,g,c]{John read one\textsubscript{F} book}=\{$}$\ldots\}$\labex{even-um-demo-alternative-list}
+\a $\intension[f,g,c]{John read one\textsubscript{F} book}=$\\\emptyfill$\{[\lambda{w_s}.\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$~| $n\in\mathbb{N}\geqslant1\}$\labex{even-um-demo-alternative}
+\xe
+Given the LF in \refex{even-um-demo-lf} and the generated set of alternatives in \refex{even-um-demo-alternative-list} and \refex{even-um-demo-alternative}, \textit{even}'s presupposition would require \enquote{John read one book} to be less likely than \enquote{John read $n>1$ books}, as shown in \refex{even-um-demo-even}.
+\ex
+\resizebox{0.9249\textwidth}{!}{$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John read one\textsubscript{F} book})(w)$ is defined in $w$ only if for all $n\in\mathbb{N}>1$:}\\$\exists_1{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\lprob_c\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]$\labex{even-um-demo-even}
+\xe
+Naturally, this is an impossibility given \citepos{Kolmogorov1933} third axiom of probability. Since, for all $n\in\mathbb{N}>1$, $\intension[g,c]{John read n books}\subseteq\intension[g,c]{John read one book}$, the probability that the actual world is part of the latter's set of worlds could never be lower than the probability of it being in any of the former's sets of worlds.
+
+For NPIs, we have, as previously discussed, two possible alternative sets: we either derive a scalar reading or a domain reading. The scalar reading is---for all intents and purposes here---equal to the reading of \refex{even-um-demo-sentence} and, as such, is not reiterated separately here or in any of the subsequent environments. For the domain reading, we also run into the same issue of the original prejacent being entailed by all of its alternatives, rendering \textit{even}'s presupposition impossible to be fulfilled in entailment-preserving contexts. We demonstrate this with the sentence in \refex{even-npi-um-demo-sentence}, with its LF in \refex{even-npi-um-demo-lf}, and its assertive meaning in \refex{even-npi-um-demo-assertion}, which derives the set of alternatives in \refex{even-npi-um-demo-alternative}.
+\pex
+\a\ljudge{\#} John read any book.\labex{even-npi-um-demo-sentence}
+\a[] [even\textsubscript{C} [John read any book]\labex{even-npi-um-demo-lf}
+\a $\intension[g,c]{John read any book}=[\lambda{w_s}.\exists{x\in{D^c}}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$\labex{even-npi-um-demo-assertion}
+\a $\intension[g,c]{John read any book}_{\text{\scshape alt}}=$\\\emptyfill$\{[\lambda{w_s}.\exists{x\in{D'}}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]~|~D'\subseteq D^c\}$\labex{even-npi-um-demo-alternative}
+\xe
+Given the set of alternatives in \refex{even-npi-um-demo-alternative} and the original prejacent's assertive meaning in \refex{even-npi-um-demo-assertion}, the {\scshape even}-operator associating with \textit{any} would derive the presupposition that using the contextually supplied domain $D^c$ should result in a proposition less probable than substituting it with any domain $D'\subset D^c$, as shown in \refex{even-npi-um-demo-even}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John read any book})(w)$ is defined in $w$ only if for all $D'\subset D^c$:\\$\exists{x\in D^c}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\lprob_c\exists{x\in D'}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]$\labex{even-npi-um-demo-even}
+\xe
+Naturally, this is an impossible presupposition as $D'\subset D^c$ ensures that the original prejacent---which uses the domain $D^c$---is entailed by all of its alternatives, ensuring that it is equally probable or more probable for it to contain the actual world than that it is for the alternatives to do so. As such, since either reading presupposes an impossible relation between alternatives, weak NPIs are always unlicensed in entailment-preserving contexts such as upward monotone statements.
+
+\subsection{Downward Monotone Environments}\labsec{even-dm}
+For downward monotone environments, which reverse any entailing relations between alternatives, \citepos{Kolmogorov1933} enforces the opposite: Since, in an downward monotone environment, \textit{(at least) one} and weak NPIs such as \textit{any} are entailed by all of their alternatives, the scalar probability presupposition of \textit{even} is guaranteed to succeed, ensuring that NPIs are always licensed in such contexts.
+
+We demonstrate this with the sentence in \refex{even-dm-demo-sentence}, with its LF in \refex{even-dm-demo-LF}, and its assertive meaning in \refex{even-dm-demo-assertion}, which generates the set of alternatives in \refex{even-dm-demo-alternative-list} and \refex{even-dm-demo-alternative}.
+\pex
+\a John didn't read even \MakeUppercase{one} book.\labex{even-dm-demo-sentence}
+\a[] [even\textsubscript{C} [not [John read one\textsubscript{F} book]]\labex{even-dm-demo-LF}
+\a $\intension[g,c]{John didn't read one\textsubscript{F} book}=[\lambda{w_s}.\neg\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$\labex{even-dm-demo-assertion}
+\a $\intension[f,g,c]{John didn't read one\textsubscript{F} book}=$\resizebox{0.45\textwidth}{!}{$\{[\lambda{w_s}.\neg\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]],$}\\
+\phantom{$\intension[f,g,c]{John didn't read one\textsubscript{F} book}=$}\resizebox{0.45\textwidth}{!}{\phantom{$\{$}$[\lambda{w_s}.\neg\exists_2{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]],$}\\
+\phantom{$\intension[f,g,c]{John didn't read one\textsubscript{F} book}=$}\resizebox{0.45\textwidth}{!}{\phantom{$\{$}$[\lambda{w_s}.\neg\exists_3{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]],$}\\
+\phantom{$\intension[f,g,c]{John didn't read one\textsubscript{F} book}=\{$}$\ldots\}$\labex{even-dm-demo-alternative-list}
+\a $\intension[f,g,c]{John didn't read one\textsubscript{F} book}=$\\\emptyfill$\{[\lambda{w_s}.\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$~| $n\in\mathbb{N}\geqslant1\}$\labex{even-dm-demo-alternative}
+\xe
+Given the LF in \refex{even-dm-demo-LF} and the generated set of alternatives in \refex{even-dm-demo-alternative-list} and \refex{even-dm-demo-alternative}, \textit{even}'s presupposition would require \enquote{John didn't read one book} to be less likely than \enquote{John didn't read $n>1$ books}, as shown in \refex{even-dm-demo-even}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John didn't read one\textsubscript{F} book})(w)$ is defined in $w$ only if for all\linebreak\resizebox{0.9249\textwidth}{!}{$n\in\mathbb{N}>1$:$\neg\exists_1{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\lprob_c\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]$}\labex{even-dm-demo-even}
+\xe
+Since $\intension[g,c]{John didn't read one book}\subseteq\intension[g,c]{John didn't read n books}$ for all $n\in\mathbb{N}>1$, the probability that the actual world is part of the original prejacent must be less than the probability of any of the alternatives---as the sets of worlds codified by the alternatives are all necessarily larger than the set of worlds codified by the original prejacent. As such, \citepos{Kolmogorov1933} third axiom of probability enforces the scalar probability presupposition of \textit{even} in downward monotone contexts.
+
+This also explains why \textit{even} must be able to move at the level of LF: If it did not, it would typically scope below the downward monotone operator, associating with an upward monotone environment instead, forcing an impossible presupposition \parencite[see, amongst others,][]{Karttunen1979,Lee1994,Crnic2011}.
+
+For NPIs, for the domain reading, the same naturally applies, given that downward monotone operators reverse the entailing relations between alternatives. We demonstrate this with the sentence in \refex{even-npi-dm-demo-sentence}, with its LF in \refex{even-npi-dm-demo-LF}, and its assertive meaning in \refex{even-npi-dm-demo-assertion}, which generates the set of alternatives in \refex{even-npi-dm-demo-alternative}.
+\pex
+\a John didn't read any book.\labex{even-npi-dm-demo-sentence}
+\a[] [even\textsubscript{C} [not [John read any book]]\labex{even-npi-dm-demo-LF}
+\a $\intension[g,c]{John didn't read any book}=$\\\emptyfill$[\lambda{w_s}.\neg\exists{x\in D^c}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$\labex{even-npi-dm-demo-assertion}
+\a $\intension[g,c]{John didn't read any book}_{\text{\scshape alt}}=$\\\emptyfill$\{[\lambda{w_s}.\neg\exists{x\in D'}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$~| $D'\subseteq D^c\}$\labex{even-npi-dm-demo-alternative}
+\xe
+Given the set of alternatives in \refex{even-npi-dm-demo-alternative} and the original prejacent's assertive meaning in \refex{even-npi-dm-demo-assertion}, the {\scshape even}-operator associating with \textit{any} would derive the presupposition that using the contextually supplied domain $D^c$ should result in a proposition less probable than substituting it with any domain $D'\subset D^c$, as shown in \refex{even-npi-dm-demo-even}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John didn't read any book})(w)$ is defined in $w$ only if for all\linebreak\resizebox{0.9249\textwidth}{!}{$D'\subset D^c$:$\neg\exists{x\in D^c}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\lprob_c\neg\exists{x\in D'}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]$}\labex{even-npi-dm-demo-even}
+\xe
+This presupposition is automatically satisfied by \citepos{Kolmogorov1933} third axiom of probability: The probability that the actual world is not found in the largest domain $D^c$ is naturally less than the probability that the actual world is not found in any smaller subdomain $D'\subseteq D^c$, as the former entails the latter via the sentence's negation. As such, NPIs are also necessarily licensed in downward monotone environments due to \citepos{Kolmogorov1933} third axiom of probability.
+
+\subsection{Context-Sensitivity of Strawson Downward Monotone Environments}\labsec{even-contextsensitivity}
+With this, we arrive at the context-sensitivity that \textit{even ONE} as well as inherently and contingently focused weak NPIs exhibit in some (Strawson) downward monotone environments, as exemplified by the restrictor of universal quantification in \refex{even-every-okay-one} and \refex{even-every-bad-one}, repeated below as \refex{even-every-okay-one-repeat} and \refex{even-every-bad-one-repeat}, respectively.
+\pex
+\a Every student in my class who read even \MakeUppercase{one} book passed the exam.\labex{even-every-okay-one-repeat}
+\a\ljudge{\#}Every student in my class who read even \MakeUppercase{one} book passed wore blue jeans.\labex{even-every-bad-one-repeat}
+\xe
+Here, the connection between the restrictor of the universal quantifier and the verb phrase of the sentence appears to determine the felicity of the expression \textit{even \MakeUppercase{one}}. This is unexpected in a downward monotone environment, as the reversed entailing relations should ensure \textit{even}'s scalar probability presupposition's fulfilment \parencite{Crnic2014-dogma,Crnic2014-nm}. We demonstrate this with the sentence in \refex{even-sdm-demo-sentence}, where VP represents any possible verb phrase, with its LF in \refex{even-sdm-demo-LF}, and its assertion in \refex{even-sdm-demo-assertion}, which generates the set of alternatives in \refex{even-sdm-demo-alternative}.
+\pex\label{ex:even-sdm-demo}
+\a Every student (in my class) who read even \MakeUppercase{one} book VP.\labex{even-sdm-demo-sentence}
+\a[] [even\textsubscript{C} [every student who read one\textsubscript{F} book VP]]\labex{even-sdm-demo-LF}
+\a $\intension[g,c]{Every student who read one\textsubscript{F} book VP}=$\\\emptyfill$[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$\labex{even-sdm-demo-assertion}
+\a $\intension[f,g,c]{Every student who read one\textsubscript{F} book VP}=$\\$\{[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$\\\emptyfill~| $n\in\mathbb{N}\geqslant1\}$\labex{even-sdm-demo-alternative}
+\xe
+Given the LF in \refex{even-sdm-demo-LF}, the assertion of \textit{even}'s original prejacent in \refex{even-sdm-demo-assertion}, and the generated set of alternatives in \refex{even-sdm-demo-alternative}, \textit{even} would presuppose that the proposition  \enquote{Every student who read (at least) one book does VP} is less probable than \enquote{Every student who read (at least) $n>1$ books does VP} for $n>1$, as shown in \refex{even-sdm-demo-even}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who read one\textsubscript{F} book VP})(w)$\\is defined in $w$ only if for all $n\in\mathbb{N}>1$:\\$\forall{x}[\predicate{student}(x,w)\land\exists_1{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]\lprob_c$\\\emptyfill$\forall{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]$\labex{even-sdm-demo-even}
+\xe
+Given that all the alternatives entail the original prejacent, the original assertion should be the least probable member of the set of alternatives, due to \citepos{Kolmogorov1933} third axiom of probability.
+
+\textcite{Crnic2014-dogma,Crnic2014-nm} proposes to correct this erroneous prediction by introducing\linebreak mandatory exhaustification for overt instances of \textit{even} in Strawson downward monotone environments. \textcite{Crnic2014-dogma,Crnic2014-nm} motivates this operation by claiming that the overt use of \textit{even} in Strawson downward monotone environments---such as in the restrictor of \textit{every}---violates the economy principle that prohibits vacuous occurrences of focus-sensitive expressions that are not required on structural grounds \parencite{Crnic2011-meaning,Spector2013}. This violation is then to be remedied via the use of covert exhaustification.
+\ex
+\extitle{Principle of Non-Vacuity}
+An occurrence of a focus-sensitive expression is felicitous only if its semantic import is non-vacuous or if it is required on structural grounds.\\\emptyfill\parencite[p.~133]{Crnic2014-dogma}\labdef{nonvacuity}
+\xe
+Here, he proposed that the semantic import of a focus-sensitive expression is non-vacuous if the following conditions are met: (i) there is some context in which the alternatives over which the expression quantifies are defined, (ii) the structure to which it is adjoined can be used, and (iii) said structure does not contextually entail the meaning of the structure with \textit{even}. This principle was formally defined as \refdef{semanticvacuity}.
+\ex
+\extitle{Non-Vacuous Semantic Import}
+An occurrence of a focus-sensitive expression, $F$, has non-vacuous import with respect to
+its argument $S$ and a set of alternatives $C$ if there is a context $c$ in which $S$ can be used and
+in which the alternatives in $C$ are defined such that $S\not\Rightarrow_c F(C)(S)$.\hfill\parencite[p.~134]{Crnic2014-dogma}\labdef{semanticvacuity}
+\xe
+But how is the semantic import of \textit{even} vacuous in the restrictor of universal quantification? To explain this, \textcite{Crnic2014-dogma} appealed to the generally acknowledged principle of maximising presuppositions---as it was proposed by, amongst others, \textcite{Heim1991}, \textcite{Percus2006}, \textcite{Sauerland2006}, and \textcite{Singh2011}. The principle of maximising presuppositions mandates that, if there is a contextually equivalent alternative $S$ to some expression $S'$ and the former's presuppositions entail the presuppositions of the latter but not vice versa, then the use of $S'$ is infelicitous and the use of $S$ is required instead. This principle was summarised as shown in \refdef{maxpresup}.
+\ex
+\extitle{Maximise Presupposition}
+If $S$ and $S'$ are contextually equivalent alternatives, and the presuppositions of $S$ asymmetrically entail those of $S'$ and are satisfied in the context, then you must use $S$.\hfill\parencite[p.~134]{Crnic2014-dogma}\labdef{maxpresup}
+\xe
+To illustrate this principle, \textcite[p.~134]{Crnic2014-nm} argued that this principle explained why the use of an indefinite is infelicitous when referring to some contextually uniquely identifiable entity, as shown in \refex{maxpresup}, where the alternative in \refex{maxpresup-infelicitous} is disallowed and the alternative in \refex{maxpresup-felicitous} must be used instead.
+\pex\label{ex:maxpresup}
+\a\ljudge{\#} A sun is shining.\labex{maxpresup-infelicitous}
+\a The sun is shining.\labex{maxpresup-felicitous}\hfill\parencite[p.~134]{Crnic2014-dogma}
+\xe
+This principle of maximising presuppositions has a direct effect on Strawson downward monotone expressions, as Strawson downward monotonicity is defined by the criterion that it is only downward monotone with regards to those of its alternatives whose presuppositions are fulfilled. As such, Strawson downward monotone environments obligatorily carry some presupposition that defines them. This presupposition is, of course, also subject to the principle of maximising presuppositions. For \textit{every}, this would be the presupposition that there exists at least one element that matches the criteria laid out by \textit{every}'s restrictor. Consider the sentence in \refex{stilldoingthis}.
+\ex
+Every student who read (at least) one book VP.\labex{stilldoingthis}
+\xe
+Here, \refex{stilldoingthis} presupposes that there exists at least one student that has read (at least) one book. As such, to determine the felicity of this sentence, the principle of maximising presuppositions would require us to check if there are any contextually equivalent alternatives to \refex{stilldoingthis} whose presupposition asymmetrically entails those of \refex{stilldoingthis}. If, for example, all students that have read one book have also read a second book, then \refex{stilldoingthisagain} would be contextually equivalent to \refex{stilldoingthis}, as both sentences would be quantifying over the exact same individuals.
+\ex
+Every student who read (at least) two books VP.\labex{stilldoingthisagain}
+\xe
+However, the presupposition of \refex{stilldoingthisagain}---that there is at least one student who has read at least two books---asymmetrically entails the presupposition of \refex{stilldoingthis}. As such, the principle of maximising presuppositions would force us to use \refex{stilldoingthisagain} in such contexts, rendering the use of \refex{stilldoingthis} infelicitous in these cases. \textcite{Crnic2014-dogma} illustrated this using \refex{maxpresup2}.
+\pex\label{ex:maxpresup2}\contextpex{For someone to be admitted to the elite school they had to either read at least two books or write at least two essays on their intellectual influences.}
+\a\ljudge{\#} Every student who read (at least) one book did well.
+\a Every student who read (at least) two books did well.\labex{maxpresup2-2}
+\xe
+As such, the felicitous use of \textit{(at least) one book} over some greater number of books read indicates something about the necessary underlying discourse assumptions: \enquote{Every student who read (at least) one book VP} must asymmetrically contextually entail \enquote{Every student who read (at least) $n$ books VP} for all $n>1$ whose sentence is defined. If this were not the case, the $n$-alternative that contextually entails $n=1$ would be the only felicitous utterance in this context. As such, the principle of maximising presuppositions makes indirect statements about the structure of the set of alternatives: The uttered sentence must entail all of its alternatives, but must not be entailed by any of them. This requirement is what \textcite{Crnic2014-dogma} uses to render the semantic import of \textit{even} vacuous, as we now show.
+
+Naturally, these required contextual entailing relations between alternatives have an appreciable impact on the probability relations between them: Since \enquote{Every student who read (at least) $n$ books VP} must asymmetrically contextually entail \enquote{Every student who read (at least) $n+1$ books VP} to be felicitous when both alternatives are defined, the former alternative must therefore necessarily be evaluated as less probable than the latter alternative \parencite{Kolmogorov1933} when both of them are defined \parencite[p.~135]{Crnic2014-dogma}. This would mean that \enquote{Every student who read one book VP} must necessarily be the least probable alternative when maximise presupposition is not violated and thus the sentence is felicitous. \textcite{Crnic2014-dogma} argues that this enforced probability relation amongst alternatives would render the use of \textit{even} semantically vacuous. Recall the assertive and presuppositional meaning of \enquote{Every student who read even \MakeUppercase{one} book VP} in \refex{even-sdm-demo} and \refex{even-sdm-demo-even}, repeated below as \refex{even-sdm-demo-repeat2} and \refex{even-sdm-demo-even-repeat2}, respectively.
+\pex\label{ex:even-sdm-demo-repeat2}
+\a Every student (in my class) who read even \MakeUppercase{one} book VP.\labex{even-sdm-demo-sentence-repeat2}
+\a[] [even\textsubscript{C} [every student who read one\textsubscript{F} book VP]]\labex{even-sdm-demo-LF-repeat2}
+\a $\intension[g,c]{Every student who read one\textsubscript{F} book VP}=$\\\emptyfill$[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$\labex{even-sdm-demo-assertion-repeat2}
+\a $\intension[f,g,c]{Every student who read one\textsubscript{F} book VP}=$\\$\{[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$\\\emptyfill~| $n\in\mathbb{N}\geqslant1\}$\labex{even-sdm-demo-alternative-repeat2}
+\a $\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who read one\textsubscript{F} book VP})(w)$\\is defined in $w$ only if for all $n\in\mathbb{N}>1$:\\$\forall{x}[\predicate{student}(x,w)\land\exists_1{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]\lprob_c$\\\emptyfill$\forall{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]$\labex{even-sdm-demo-even-repeat2}
+\xe
+Here, \textit{even} would make no assertive contribution but presupposes that its prejacent is the least likely alternative available to us \parencite{Karttunen1979,Kay1990}. However, this presupposition can already be derived via the existential presupposition of \textit{every} and the principle of maximising presuppositions: While \enquote{Every student who read (at least) one book VP} necessarily entails all of its alternatives due to its logical form---which would mean that it is either less or equal probable than any of its alternatives---the principle of maximising presuppositions necessitates that it is not contextually entailed by any of its alternatives, entailing that it must be strictly less probable than all of its alternatives \parencite{Kolmogorov1933}. As such, the presuppositional contribution of \textit{even} would be contextually redundant and therefore superfluous. Since its presence is also not required on any structural grounds, \textcite{Crnic2014-dogma} argues that this would render its use in violation of the principle of non-vacuous semantic import as it was defined in \refdef{semanticvacuity}.\footnote{Here it is crucial to note that the semantic import of \textit{even} was only rendered vacuous because its presupposition can be derived via the presupposition that characterises the Strawson downward monotone environment in which it occurs. As pure downward monotone environments do not have such a characterising presupposition, they remain entirely unaffected from the content of this section.}
+
+To avoid this violation, \textcite{Crnic2014-dogma} proposes that these expressions induce covert exhaustification inside the universal quantifier's restrictor to render the relationship between alternatives non-monotonous, using the covert operator {\scshape exh} proposed by \textcite{Chierchia2012}, as defined in \refdef{exh}.
+\ex\labdef{exh}\input{content/definitions/exh}\xe
+The {\scshape exh}-operator asserts the original assertion of its prejacent as well as the negation of all of the assertion's alternatives that are not entailed by it. By using {\scshape exh} inside of the universal quantifier's restrictor, we end up with a logical form as in \refex{universalrestrictorexh-lf}, where the meaning of {\scshape exh}'s prejacent is as in \refex{universalrestrictorexh-assert}, with a focus value of \refex{universalrestrictorexh-focus}, resulting in {\scshape exh}'s modified meaning in \refex{universalrestrictorexh-exh}, where all non-entailed alternatives are negated, resulting in an \enquote{exactly one} reading.
+\pex
+\a[] [even\textsubscript{C'} [every student wh\textsubscript{1} [{\scshape exh}\textsubscript{C} t\textsubscript{1} read one\textsubscript{F} book] VP]]\labex{universalrestrictorexh-lf}
+\a $\intension[g,c]{t\textsubscript{1} read one\textsubscript{F} book}=[\lambda{w_s}.\exists{x}[\predicate{read}(g(1),x,w)\land\predicate{book}(x,w)]]$\labex{universalrestrictorexh-assert}
+\a $\intension[f,g,c]{t\textsubscript{1} read one\textsubscript{F} book}=$\\\emptyfill$\{[\lambda{w_s}.\exists_n{x}[\predicate{read}(g(1),x,w)\land\predicate{book}(x,w)]]~|~n\in\mathbb{N}\geqslant1\}$\labex{universalrestrictorexh-focus}
+\a $\intension[g,c]{{\scshape exh}\textsubscript{C} t\textsubscript{1} read one\textsubscript{F} book}=[\lambda{w_s}.\exists!_1{x}[\predicate{read}(g(1),x,w)\land\predicate{book}(x,w)]]$\labex{universalrestrictorexh-exh}
+\xe
+With this, the final assertive meaning of \refex{universalrestrictorexh-lf} would be as shown in \refex{universalrestrictorexh-final}, with its definedness conditions introduced by the \textit{even}-operator in \refex{universalrestrictorexh-even}.
+\ex
+$\intension[g,c]{Every student who\textsubscript{1} {\scshape exh}\textsubscript{C} t\textsubscript{1} read one\textsubscript{F} book VP}=$\\\emptyfill$[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists!_1{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$\labex{universalrestrictorexh-final}
+\xe
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who\textsubscript{1} {\scshape exh}\textsubscript{C} t\textsubscript{1} read one\textsubscript{F} book VP})(w)$\\is defined in $w$ only if for all $n\in\mathbb{N}>1$:\\$\forall{x}[\predicate{student}(x,w)\land\exists!_1{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]\lprob_c$\\\emptyfill$\forall{x}[\predicate{student}(x,w)\land\exists!_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]$\labex{universalrestrictorexh-even}
+\xe
+Here, {\scshape exh} suspended the entailing relations of the quantifier's restrictor, thereby ensuring that \citepos{Kolmogorov1933} third axiom of probability does not automatically enforce a felicitous reading of the sentence (as it would do without exhaustification). Instead, the felicity of this sentence type rests entirely upon whether or not our expectations of the world align with the generated scalar probability presupposition. In other words, the felicity of the expression becomes context-sensitive: If the VP of the sentence is such that we would expect \enquote{Every student who read one book VP} to be less likely than \enquote{Every student who read $n\geqslant2$ books VP}, the expression would be considered felicitous. For this to be the case, however, there needs to be some perceived causal relation between the universal quantifier's restrictor and the VP such that, in our example, the probability of the expression increases with the number of books read by students. If, on the other hand, no such causal link exists---either due to there not being any clear causal link or there being an inverse correlation---then the expression would be rendered infelicitous \parencite[p.~136]{Crnic2014-dogma}
+
+With this, the difference in (in-)felicity between \refex{even-every-okay-one} and \refex{even-every-bad-one}, repeated below as \refex{even-every-okay-one-repeat2} and \refex{even-every-bad-one-repeat2}, may be accounted for.
+\pex
+\a Every student in my class who read even \MakeUppercase{one} book passed the exam.\labex{even-every-okay-one-repeat2}
+\a\ljudge{\#}Every student in my class who read even \MakeUppercase{one} book passed wore blue jeans.\labex{even-every-bad-one-repeat2}
+\xe
+The sentence in \refex{even-every-okay-one-repeat2} would yield the following definedness condition in \refex{everydefinedness1}:
+\ex
+\resizebox{401pt}{!}{$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who\textsubscript{1} {\scshape exh}\textsubscript{C} t\textsubscript{1} read one\textsubscript{F} book passed the exam})(w)$}\\is defined in $w$ only if for all $n\in\mathbb{N}>1$:\\\resizebox{401pt}{!}{$\forall{x}[\predicate{student}(x,w)\land\exists!_1{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{pass}(x,\iota{z}[\predicate{exam}(z,w)],w)]\lprob_c$}\\\resizebox{401pt}{!}{$\forall{x}[\predicate{student}(x,w)\land\exists!_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{pass}(x,\iota{z}[\predicate{exam}(z,w)],w)]$}\labex{everydefinedness1}
+\xe
+This scalar presupposition is easily fulfilled or accommodated for: There is a clear causal link between reading (relevant) books and passing some exam. As such, the fact that every student who has read only one book passing the exam being less probable than the alternatives of every student who have read more than one book passing the exam seems to be reasonable assumption given our world expectations. For the sentence \refex{even-every-bad-one-repeat2}, on the other hand, whose definedness condition is given in \refex{everydefinedness2} below, the situation looks rather different.
+\ex
+\resizebox{401pt}{!}{$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who\textsubscript{1} {\scshape exh}\textsubscript{C} t\textsubscript{1} read one\textsubscript{F} book wore blue jeans})(w)$}\\is defined in $w$ only if for all $n\in\mathbb{N}>1$:\\\resizebox{0.9249\textwidth}{!}{$\forall{x}[\predicate{student}(x,w)\land\exists_1{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\exists{z}[\predicate{wear}(x,z,w)\land\predicate{jeans}(z,w)]]\lprob_c$}\\\resizebox{0.9249\textwidth}{!}{$\forall{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\exists{z}[\predicate{wear}(x,z,w)\land\predicate{jeans}(z,w)]]$}\labex{everydefinedness2}
+\xe
+Here, there is no clear causal relation between students reading books and them wearing blue jeans. As such, we cannot readily assume that the probability of every student who read only one book wearing blue jeans is going to be less than the probabilities of every students who read more than one book wearing blue jeans (for each number of books read). As such, given our expectations about the world, this presupposition would not be fulfilled, explaining the expression's infelicity.
+
+Having accounted for the context-sensitivity of \textit{even \MakeUppercase{one}} expressions in Strawson downward monotone environments such as the restrictor of universal quantification, we turn to how \textcite{Crnic2014-dogma} accounts for the context-insensitivity of unfocused weak NPIs, as shown in \refex{npi-every-okay-any} and \refex{npi-every-bad-any}, repeated below as \refex{npi-every-okay-any-repeat} and \refex{npi-every-bad-any-repeat}, as well as for the context-sensitivity of focused weak NPIs, as shown in \refex{npi-every-okay-ANY} and \refex{npi-every-bad-ANY} for contingently focused weak NPIs and as shown in \refex{npi-every-okay-finger} and \refex{npi-every-bad-finger} for inherently focused weak NPIs, repeated below respectively as \refex{npi-every-okay-ANY-repeat}, \refex{npi-every-bad-ANY-repeat}, \refex{npi-every-okay-finger-repeat}, and \refex{npi-every-bad-finger-repeat}.
+\pex\label{ex:npi-every-okay-repeat}
+\a Every student in my class who read any book passed the exam.\labex{npi-every-okay-any-repeat}
+\a Every student in my class who read \MakeUppercase{any} book passed the exam.\labex{npi-every-okay-ANY-repeat}
+\a Every student in my class who lifted a finger in class passed the exam.\labex{npi-every-okay-finger-repeat}
+\xe
+\pex\label{ex:npi-every-bad-repeat}
+\a Every student in my class who read any book wore blue jeans.\labex{npi-every-bad-any-repeat}
+\a\ljudge{\#} Every student in my class who read \MakeUppercase{any} book wore blue jeans.\labex{npi-every-bad-ANY-repeat}
+\a\ljudge{\#} Every student in my class who lifted a finger in class wore blue jeans.\labex{npi-every-bad-finger-repeat}
+\xe
+For unfocused NPIs, which are felicitous in Strawson downward monotone environments regardless of context, \citepos{Crnic2014-dogma} account is as follows: Since weak NPIs are obligatorily licensed by the covert {\scshape even}-operator, its presence is justified due to being required on structural grounds---which renders otherwise vacuous and therefore infelicitous focus-sensitive expressions non-vacuous and felicitous, as defined in \refdef{nonvacuity}. As such, in these expressions, the presence of {\scshape even} does not induce covert exhaustification to justify its existence. Therefore, the resulting scalar probability presuppositions would remain downward monotone, ensuring that the required probability ordering is enforced by \citepos{Kolmogorov1933} axiom of probability. The general respective LF, assertive meaning, domain-based alternatives, as well as the domain-based scalar presupposition of such sentences is shown below in \refex{any-sdm-demo}.
+\pex\label{ex:any-sdm-demo}
+\a Every student (in my class) who read any book VP.\labex{any-sdm-demo-sentence}
+\a[] [even\textsubscript{C} [every student who read any book VP]]\labex{any-sdm-demo-LF}
+\a $\intension[g,c]{Every student who read any book VP}=$\\\resizebox{375pt}{!}{$[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists{y\in{D^c}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$}\labex{any-sdm-demo-assertion}
+\a $\intension[g,c]{Every student who read any book VP}_{\text{\scshape alt}}=$\\\resizebox{375pt}{!}{$\{[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists{y\in{D'}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$}\\\emptyfill~| $D'\subseteq D^c\}$\labex{any-sdm-demo-alternative-domain}
+\a $\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who read any book VP})(w)$\\is defined in $w$ only if for all $D'\subset D^c$:\\$\forall{x}[\predicate{student}(x,w)\land\exists{y\in{D^c}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]\lprob_c$\\$\forall{x}[\predicate{student}(x,w)\land\exists{y\in{D'}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]$\labex{any-sdm-demo-even-domain}
+\xe
+
+This leaves us with the context-sensitivity of contingently and inherently focused weak NPIs, which is not explicitly accounted for by \textcite{Crnic2014-dogma}, though he postulated that his account could probably be extended to also account for the case of inherently focused weak NPIs \parencite[p.~143]{Crnic2014-dogma}. The issue with the current proposal is that the overt presence of \textit{even} only induces covert exhaustification because its presence is not required on structural grounds: for weak NPIs, regardless of whether or not they are focused, this is not the case, as the \textit{even} licensing theory of NPIs does require the presence of {\scshape even} on structural grounds for the licensing of the respective NPI. As such, the proposal by \textcite{Crnic2014-dogma} would erroneously predict focused NPIs to be context-insensitive, same as unfocused NPIs. One way to rectify this would be to alter \citepos{Crnic2014-dogma} principle of non-vacuity, previously defined in \refdef{nonvacuity}, such that the exception to infelicity based upon being required on structural grounds is exclusive to overtly unfocused expressions. To this end, we provide a revised definition in \refdef{nonvacuity-revised}.
+\ex
+\extitle{Principle of Non-Vacuity (Revised)}
+An occurrence of a focus-sensitive expression is felicitous only if its semantic import is non-vacuous or if it is required on structural grounds to satisfy the licensing conditions of an overtly unfocused expression.\labdef{nonvacuity-revised}
+\xe
+The main question then would be why the exception is restricted to unfocused expressions. We would argue that the increased emphasis that is placed on focused expressions increases the scrutiny placed upon them: We ignore the contextual redundancy of {\scshape even} for unfocused NPIs specifically because (i) it is required on structural grounds and (ii) the NPI is not the main focus of the sentence that contains it. As such, we accept weak NPIs in these contexts solely due to the fact that we do not wish to waste resources on processing potentially unnecessary pragmatic inferences and checks of a lexical item that is not the main emphasis of the evaluated sentence. For focused NPIs of any type, however, the emphasis placed upon the NPI forces us to go through with checking whether or not {\scshape even} is semantically vacuous in this context, leading to the same situation as with the overt expression \textit{even \MakeUppercase{one}} in the same context, where we attempt to justify {\scshape even}'s presence via covert exhaustification. %
+
+Accepting, for the sake of argument, our revised definition in \refex{any-sdm-demo-even-domain}, the derivation of context-sensitivity for focused weak NPIs becomes rather straightforward---at least for the numerical reading of focused weak NPI sentences.\footnote{For the domain-based reading of universally quantifying sentences that contain a focused weak NPI in the restrictor, this extension is less straightforward. \textcite{Crnic2014-dogma} did not specifically address domain-based readings, and it is unclear to us how his exhaustification-based approach can be extended to such cases. See \refapp{appendix-crnic} for some attempts at such an extension.} Here, the derivation would follow along the lines of the overt expression \textit{even \MakeUppercase{one}}, making use of covert exhaustification: By using {\scshape exh} inside of the universal quantifier's restrictor, we end with a logical form as in \refex{universalrestrictorexh-lf-satan}, where the meaning of {\scshape exh}'s prejacent is as in \refex{universalrestrictorexh-assert-satan}, with a focus value of \refex{universalrestrictorexh-focus-satan}, resulting in {\scshape exh}'s modified meaning in \refex{universalrestrictorexh-exh-satan}, where all non-entailed alternatives are negated, resulting in a non-monotone reading.
+\pex
+\a[] [even\textsubscript{C'} [every student wh\textsubscript{1} [{\scshape exh}\textsubscript{C} t\textsubscript{1} read any\textsubscript{F} book] VP]]\labex{universalrestrictorexh-lf-satan}
+\a $\intension[g,c]{t\textsubscript{1} read any\textsubscript{F} book}=[\lambda{w_s}.\exists{x\in{D^c}}[\predicate{read}(g(1),x,w)\land\predicate{book}(x,w)]]$\labex{universalrestrictorexh-assert-satan}
+\a $\intension[f,g,c]{t\textsubscript{1} read any\textsubscript{F} book}=$\\\emptyfill$\{[\lambda{w_s}.\exists_n{x\in{D^c}}[\predicate{read}(g(1),x,w)\land\predicate{book}(x,w)]]~|~n\in\mathbb{N}\geqslant1\}$\labex{universalrestrictorexh-focus-satan}
+\a $\intension[g,c]{{\scshape exh}\textsubscript{C} t\textsubscript{1} read any\textsubscript{F} book}=$\\\emptyfill$[\lambda{w_s}.\exists!_1{x\in{D^c}}[\predicate{read}(g(1),x,w)\land\predicate{book}(x,w)]]$\labex{universalrestrictorexh-exh-satan}
+\xe
+With this, the final assertive meaning of \refex{universalrestrictorexh-lf-satan} would be as shown in \refex{universalrestrictorexh-final-satan}, with its definedness conditions introduced by the \textit{even}-operator in \refex{universalrestrictorexh-even-satan}.
+\ex
+$\intension[g,c]{Every student who\textsubscript{1} {\scshape exh}\textsubscript{C} t\textsubscript{1} read any\textsubscript{F} book VP}=$\\\emptyfill$[\lambda{w_s}.\forall{x}[\predicate{student}(x,w)\land\exists!_1{y\in{D^c}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]]$\labex{universalrestrictorexh-final-satan}
+\xe
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Every student who\textsubscript{1} {\scshape exh}\textsubscript{C} t\textsubscript{1} read any\textsubscript{F} book VP})(w)$\\is defined in $w$ only if for all $n\in\mathbb{N}>1$:\\$\forall{x}[\predicate{student}(x,w)\land\exists!_1{y\in{D^c}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]\lprob_c$\\\emptyfill$\forall{x}[\predicate{student}(x,w)\land\exists!_n{y\in{D^c}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]\rightarrow\predicate{vp}(x,w)]$\labex{universalrestrictorexh-even-satan}
+\xe
+Naturally, as \refex{universalrestrictorexh-even-satan} is direct analogue to the definedness condition of its \textit{even \MakeUppercase{one}} equivalent in \refex{universalrestrictorexh-even}, the same context-sensitivity is derived (and we refer back to that section for details).
+
+
+
+
+
+\subsection{Non-Monotone Environments}\labsec{even-nm}
+For non-monotone environments such as \textit{exactly $n$}, which license both weak NPIs and the overt expression \textit{even \MakeUppercase{one}} depending on the context, as previously shown in \refex{even-nm-okay} and \refex{even-nm-bad}, repeated below as \refex{even-nm-okay-repeat} and \refex{even-nm-bad-repeat} respectively, \citepos{Crnic2011,Crnic2014-dogma,Crnic2014-nm} account is relatively straightforward.
+\pex\label{ex:even-nm-okay-repeat}
+\a Exactly two students in my class have read any book.\labex{even-nm-okay-repeat-any}
+\a Exactly two students in my class have read \MakeUppercase{any} book.
+\a Exactly two students in my class have lifted a finger to help Mary.
+\a Exactly two students in my class have read even \MakeUppercase{one} book.\labex{even-nm-okay-repeat-evenone}
+\xe
+\pex\label{ex:even-nm-bad-repeat}
+\a\ljudge{\#} Exactly twenty students in my class have read any book.\labex{even-nm-bad-repeat-any}
+\a\ljudge{\#} Exactly twenty students in my class have read \MakeUppercase{any} book.
+\a\ljudge{\#} Exactly twenty students in my class have lifted a finger to help Mary.
+\a\ljudge{\#} Exactly twenty students in my class have read even \MakeUppercase{one} book.\labex{even-nm-bad-repeat-evenone}
+\xe
+First, we start with the expression \textit{even ONE} in \refex{even-nm-okay-repeat-evenone} and \refex{even-nm-bad-repeat-evenone}, before we move on to the weak NPIs in \refex{even-nm-okay-repeat} and \refex{even-nm-bad-repeat}. As previously mentioned, \textit{even} moves at LF to include its associated proposition in its scope. As such, the generalised sentence in \refex{nonmonotone-even-sentence} would have the LF in \refex{nonmonotone-even-lf}, the assertive meaning in \refex{nonmonotone-even-assertion}, and the set of alternatives in \refex{nonmonotone-even-alternatives}, resulting in the scalar probability presupposition in \refex{nonmonotone-even-presupposition}.
+\pex
+\a Exactly $n$ students have read even \MakeUppercase{one} book.\labex{nonmonotone-even-sentence}
+\a[] [even\textsubscript{C} [exactly $n$ students read one\textsubscript{F} book]]\labex{nonmonotone-even-lf}
+\a $\intension[g,c]{Exactly n students read one\textsubscript{F} book}=$\\\emptyfill$[\lambda{w_s}.\exists!_n{x}[\predicate{students}(x,w)\land\exists{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]]]$\labex{nonmonotone-even-assertion}
+\a $\intension[f,g,c]{Exactly n students read one\textsubscript{F} book}=$\\\emptyfill\resizebox{375pt}{!}{$\{[\lambda{w_s}.\exists!_n{x}[\predicate{students}(x,w)\land\exists_z{y}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]]]~|~z\in\mathbb{N}\geqslant1\}$}\labex{nonmonotone-even-alternatives}
+\xe
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Exactly n students read one\textsubscript{F} book})(w)$ is defined in $w$ only if for all $z\in\mathbb{N}>1$: $\exists!_n{x}[\predicate{student}(x,w)\land\exists_1{y}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]\lprob_c$\\\emptyfill$\exists!_n{x}[\predicate{student}(x,w)\land\exists_z{y}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]$\labex{nonmonotone-even-presupposition}
+\xe
+Since non-monotone environments suspend entailing relations, \citepos{Kolmogorov1933} third axiom of probability does not apply in either direction, ensuring that these expressions are felicitous only if the original utterance is, via context, deemed to be the least probable option amongst the set of alternatives. The expression \textit{even \MakeUppercase{one}} is then contextually restricted to low numbers due to the way we generally structure our expectations of how many students have read how many books.
+\begin{figure}[!htb]
+    \input{content/graphics/crnic-probability.tikz}
+    \caption{The epistemic probability distribution (or expectation) of how many students read how many books.}
+    \labfig{crnic-probability}
+\end{figure}
+As shown in \reffig{crnic-probability}, we generally expect a higher number of students to have read (at least) a lower number of books. The more books a group of students has read, the lower we necessarily expect the number of students in that group to be due to an indirect application of \citepos{Kolmogorov1933} third axiom of probability: We can't expect more people to have read at least two books than we expect people to have read at least one book, since the former entails the latter. Knowing that the expectation of students having read the lowest number of books necessarily peaks at a higher number of students than any other amounts of books, it follows that the expectation of a very low number of students having read the lowest number of books is lower than the same number of students having read more than that number of books. This is also shown in \reffig{crnic-probability}. This way, \textcite{Crnic2011,Crnic2014-dogma,Crnic2014-nm} can easily account for why \refex{even-nm-okay-repeat-evenone} is felicitous but \refex{even-nm-bad-repeat-evenone} is not. For \refex{even-nm-okay-repeat-evenone}, where \enquote{exactly $n=2$ students}, the resulting scalar probability presupposition would be as shown in \refex{nonmonotone-even-presupposition-n2}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Exactly two students read one\textsubscript{F} book})(w)$ is defined in $w$ only if for all $n\in\mathbb{N}>1$: $\exists!_2{x}[\predicate{student}(x,w)\land\exists_1{y}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]\lprob_c$\\\emptyfill$\exists!_2{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]$\labex{nonmonotone-even-presupposition-n2}
+\xe
+As can be easily surmised using \reffig{crnic-probability}, where \enquote{exactly $n=2$ students} is marked with a vertical line, the probability of exactly two students having read one book is less likely than the probability of exactly two students having read any other higher number of books. As such, \refex{even-nm-okay-repeat-evenone} is predicted to be felicitous.
+
+For \refex{even-nm-bad-repeat-evenone}, where \enquote{exactly $n=20$ students}, the resulting scalar probability presupposition would be as shown in \refex{nonmonotone-even-presupposition-n20}.
+\ex
+\resizebox{395.1pt}{!}{$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Exactly twenty students read one\textsubscript{F} book})(w)$ is defined in $w$ only}\\if for all $n\in\mathbb{N}>1$: $\exists!_{20}{x}[\predicate{student}(x,w)\land\exists_1{y}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]\lprob_c$\\\emptyfill$\exists!_{20}{x}[\predicate{student}(x,w)\land\exists_n{y}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]$\labex{nonmonotone-even-presupposition-n20}
+\xe
+Again, using \reffig{crnic-probability}, where \enquote{exactly $n=20$ students} is marked with another vertical line, it can be easily surmised that the expected probability of exactly twenty students having read one book is not less likely than all of the other available alternatives. As such, \refex{even-nm-bad-repeat-evenone} is predicted to be infelicitous.
+
+For weak NPIs, the same basic analysis applies. For the generalised NPI sentence in \refex{nonmonotone-any-sentence} would have the LF in \refex{nonmonotone-any-lf}, the assertive meaning in \refex{nonmonotone-any-assertion}, and the set of domain alternatives in \refex{nonmonotone-any-alternatives}, resulting in the domain-based scalar probability presupposition in \refex{nonmonotone-any-presupposition}.
+\pex
+\a Exactly $n$ students have read any book.\labex{nonmonotone-any-sentence}
+\a[] [even\textsubscript{C} [exactly $n$ students read any book]]\labex{nonmonotone-any-lf}
+\a $\intension[g,c]{Exactly n students read any book}=$\\\emptyfill$[\lambda{w_s}.\exists!_n{x}[\predicate{students}(x,w)\land\exists{y\in{D}^c}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]]]$\labex{nonmonotone-any-assertion}
+\a $\intension[g,c]{Exactly n students read any book}_{\text{\scshape alt}}=$\\\emptyfill\resizebox{374.5pt}{!}{$\{[\lambda{w_s}.\exists!_n{x}[\predicate{students}(x,w)\land\exists{y\in{D'}}[\predicate{read}(x,y,w)\land\predicate{book}(y,w)]]]~|~D'\subseteq{D^c}\}$}\labex{nonmonotone-any-alternatives}
+\xe
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Exactly n students read any book})(w)$ is defined in $w$ only if for all $D'\subset D^c$: $\exists!_n{x}[\predicate{student}(x,w)\land\exists{y\in{D^c}}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]\lprob_c$\\\emptyfill$\exists!_n{x}[\predicate{student}(x,w)\land\exists{y\in{D'}}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]$\labex{nonmonotone-any-presupposition}
+\xe
+As shown in \reffig{crnic-probability-any}, we necessarily expect a higher number of students to have read at least one of the books belonging to domain $D^c$, since an indirect application of \citepos{Kolmogorov1933} third axiom of probability mandates that the probability of any of $D^c$'s subdomains must generally be lower than the probability of $D^c$.  We can't expect more people to have read at least one book from $D'\subset D^c$ than we expect people to have read at least one book from any $D^c$, since the latter entails the former. As such, same as before, knowing that the expectation of students having read some $D^c$ book must necessarily peak at a higher number of students than any other domain, it follows that the expectation of a very low number of students having read only some book from $D^c$ is lower than the same number of students having read only some book from any $D'\subset D^c$. This is also illustrated with \reffig{crnic-probability-any}.
+\begin{figure}[!htb]
+    \input{content/graphics/crnic-probability-any.tikz}
+    \caption{The epistemic probability distribution (or expectation) of how many students read at least one book from different domains of books, where $D'\subset D''\subset D^c$.}
+    \labfig{crnic-probability-any}
+\end{figure}
+This way, \textcite{Crnic2011,Crnic2014-dogma,Crnic2014-nm} can easily account for why \refex{even-nm-okay-repeat-any} is felicitous but why \refex{even-nm-bad-repeat-any} is not. For \refex{even-nm-okay-repeat-any}, where \enquote{exactly $n=2$ students}, the resulting scalar probability presupposition would be as shown in \refex{nonmonotone-any-presupposition-n2}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Exactly 2 students read any book})(w)$ is defined in $w$ only if for all $D'\subset D^c$: $\exists!_2{x}[\predicate{student}(x,w)\land\exists{y\in{D^c}}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]\lprob_c$\\\emptyfill$\exists!_2{x}[\predicate{student}(x,w)\land\exists{y\in{D'}}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]$\labex{nonmonotone-any-presupposition-n2}
+\xe
+As can once more be easily surmised using \reffig{crnic-probability-any}, where \enquote{exactly $n=2$ students} is marked with a vertical line, the probability of exactly two students having read some book from $D^c$ is less likely than the probability of exactly two students having read some book from any other alternative subdomain. As such, \refex{even-nm-okay-repeat-any} is predicted to be felicitous.
+
+For \refex{even-nm-bad-repeat-any}, where \enquote{exactly $n=20$ students}, the resulting scalar probability presupposition would be as shown in \refex{nonmonotone-any-presupposition-n20}.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Exactly 2 students read any book})(w)$ is defined in $w$ only if for all $D'\subset D^c$: $\exists!_{20}{x}[\predicate{student}(x,w)\land\exists{y\in{D^c}}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]\lprob_c$\\\emptyfill$\exists!_{20}{x}[\predicate{student}(x,w)\land\exists{y\in{D'}}[\predicate{book}(y,w)\land\predicate{read}(x,y,w)]]$\labex{nonmonotone-any-presupposition-n20}
+\xe
+As can, for one final time, be surmised using \reffig{crnic-probability-any}, the probability of exactly twenty students having read some book from $D^c$ is not less likely than all of the other available subdomains. As such, \refex{even-nm-bad-repeat-any} is predicted to be infelicitous.
+
+\subsection{Questions and Question Bias}\labsec{even-qbias}
+With this, we may turn our attention to the last empirical facts to account for: (i) Why \textit{even \MakeUppercase{one}} and weak NPIs are licensed in questions, and (ii) why \textit{even \MakeUppercase{one}} and focused weak NPIs induce a negative bias in questions whereas unfocused weak NPIs do not. In this dissertation, we exclusively focus on polar questions, as previously mentioned. To model the licensing of NPIs in polar questions, there are approximately three main approaches available to us \parencite{Crnic2014-dogma,Crnic2014-nm,Jeong2021,Jeong2022}: the \textit{answers to questions} approach \parencite{Guerzoni2003,Guerzoni2004}, the inquisitive \textit{cumulative answer probability} approach \parencite{Jeong2021,Jeong2022}, and the \textit{environments in questions} approach \parencite{Guerzoni2014-enviro,Nicolae2013}. We review each respective approach in turn. 
+
+\subsubsection{Answers to Questions Approach}
+First is the \textit{answers to questions approach}, which was first popularised by \textcite{Guerzoni2003,Guerzoni2004} and was originally intended to derive a strong negative bias in questions for \textit{even \MakeUppercase{one}} expressions and inherently focused weak NPIs (i.e., minimisers). \citepos{Guerzoni2003,Guerzoni2004} model is based upon the work of \textcite{Hamblin1973} and \citepos{Heim1994-questions} adaptation of \textcite{Karttunen1977}. First, we briefly give an overview on how \textcite{Guerzoni2003,Guerzoni2004} handles regular polar questions, followed by an explanation of how she tries to account for the negative bias induced by \textit{even \MakeUppercase{one}} and inherently focused weak NPIs. \textcite{Guerzoni2003,Guerzoni2004} argues that polar questions are a specific subtype of Wh-questions and that they have the LF in \refex{q-lf}.
+\pex
+\a Did John read a book?
+\a[] [ whether-(or-not) [ 1 [ Q [ t\textsubscript{1} [ John read a book ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\labex{q-lf}
+\xe
+As can be seen from \refex{q-lf}, \textcite{Guerzoni2003,Guerzoni2004} follows \citepos{Karttunen1977} assumption that all Wh-operators are covertly raised out of their respective syntactic position and that, in doing so, they leave behind a trace of varying semantics types in their stead. In the case of polar questions, this trace $t_n$ has the semantic type such that $\intension[]{t\textsubscript{n}}\in D_{\langle\langle s,t\rangle,\langle s,t\rangle\rangle}$. We then form the proto-question via the interrogative morpheme $\intension[g,c]{Q}$, as it is defined in \refdef{protoquestion}, which lays the foundations for the derivation of the question's Hamblin set.
+\ex
+$\intension[g,c]{Q}=[\lambda{p}_{\langle s,t\rangle}.\{p\}]$\labdef{protoquestion}
+\xe
+Having formed the proto-question structure, we then specify the type of question we wish to derive via different operators that combine with the predicate abstraction of the proto-question. In our case, \textcite{Guerzoni2003,Guerzoni2004} assumes polar questions to make use of the operator \enquote{whether (or not)}, as defined in \refdef{whether}, as she considers polar questions to be alternative questions where \enquote{whether} is silent.
+\ex
+\resizebox{395pt}{!}{$\intension[g,c]{whether}=[\lambda{f_{\langle\langle\langle s,t\rangle,\langle s,t\rangle\rangle,\langle s,t\rangle\rangle}}.\exists{h_{\langle\langle s,t\rangle,\langle s,t\rangle\rangle}}[(h=[\lambda{p_{\langle s,t\rangle}}.p]\lor h=[\lambda{p_{\langle s,t\rangle}}.\neg p])\land p\in f(h)]]$}\\\emptyfill\parencite[p.~331]{Guerzoni2004}\labdef{whether}
+\xe
+This way, the function that was introduced to the proto-question via predicate abstraction must be rendered equal to the identity function or negation function, deriving a Hamblin set that contains the affirmative and the negative answer to our polar question. This is briefly shown in the shortened derivation tree in \reffig{guerzonitree}.
+\begin{figure}[!htb]
+    \centering
+    \input{content/graphics/guerzonitree.tikz}
+    \caption{Derivation tree of the Hamblin set for the question \enquote{Did John read a book?} according to \textcite{Guerzoni2003,Guerzoni2004}.}
+    \labfig{guerzonitree}
+\end{figure}
+Now, given this semantics, how does \textcite{Guerzoni2003,Guerzoni2004} account for the negative question bias induced by \textit{even \MakeUppercase{one}} and inherently focused weak NPIs? Given \citepos{Guerzoni2003,Guerzoni2004} semantics, there are only two possible placements for the {\scshape even}-operator at LF: It either scopes directly above the trace left behind by the Wh-operator or the trace scopes directly above the {\scshape even}-operator. This is shown in \refex{guerzoni-even-lf}.
+\pex\label{ex:guerzoni-even-lf}
+\a[] [ whether-(or-not) [ 1 [ Q [ t\textsubscript{1} [ even\textsubscript{C} [ John read a book ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\labex{guerzoni-even-lf-bad}
+\a[] [ whether-(or-not) [ 1 [ Q [ even\textsubscript{C} [ t\textsubscript{1} [ John read a book ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\labex{guerzoni-even-lf-good}
+\xe
+Here, the issue quickly becomes apparent: In \refex{guerzoni-even-lf-bad}, the negation introduced by the Wh-operator via the trace it left behind would scope above {\scshape even}, ensuring that the scalar particle would be forced to associate with an upward monotone environment---the proposition that John read (at least) one book---which guarantees that its presupposition cannot succeed (see \refsec{even-um} for details). As such, using \refex{guerzoni-even-lf-bad}, neither answer would be defined. Using \refex{guerzoni-even-lf-good}, the negation introduced by the Wh-operator via the trace it left behind would scope below {\scshape even}, ensuring that the scalar particle may associate with a downward monotone environment in the negative answer and an upward-monotone environment in the affirmative answer. This would leave the former defined but the latter undefined. This is shown in \refex{guerzoni-even-lf-hamblin}, where the derived Hamblin set of \refex{guerzoni-even-lf-bad} is shown in \refex{guerzoni-even-lf-bad-hamblin} and where the derived Hamblin set of \refex{guerzoni-even-lf-good} is shown in \refex{guerzoni-even-lf-good-hamblin}.
+\pex\label{ex:guerzoni-even-lf-hamblin}
+\a \resizebox{375pt}{!}{$\{\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John read one\textsubscript{F} book}),\neg\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John read one\textsubscript{F} book})\}$}\labex{guerzoni-even-lf-bad-hamblin}
+\a \resizebox{375pt}{!}{$\{\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John read one\textsubscript{F} book}),\intension[g,c]{even\textsubscript{C}}(\neg\intension[g,c]{John read one\textsubscript{F} book})\}$}\labex{guerzoni-even-lf-good-hamblin}
+\xe
+As such, \textcite{Guerzoni2003,Guerzoni2004} would derive a strong bias for the expression \textit{even \MakeUppercase{one}} by virtue of deriving only one defined answer: the negative answer. She derives the negative bias of inherently focused weak NPIs in the same fashion by assuming that they are also licensed by {\scshape even}. Here, two issues immediately come to my mind for the {\scshape even}-based account of NPI licensing: First, contrary to \textcite{Guerzoni2003,Guerzoni2004}, we assume that not only inherently focused weak NPIs are licensed by {\scshape even} but that all weak NPIs are licensed in this manner. As such, her account would predict a strong negative bias for all weak NPIs when merged with this NPI licensing account. Second, \textcite{Guerzoni2003,Guerzoni2004} derives solely a very strong negative bias, whereas \refsec{npi-qbias} has shown that the negative bias induced by focused weak NPIs varies in its strength in accordance to context. Given the former, \textcite{Crnic2014-dogma,Crnic2014-nm} ruled out this account as a possible explanation for the negative bias in questions. This position is only reinforced when we also consider the latter.
+
+\subsubsection{Cumulative Answer Probability Approach}
+With this, we come to the second approach to deriving the negative bias in questions: the \textit{cumulative answer probability approach}. This type of approach was spearheaded by \textcite{Jeong2021,Jeong2022}, using the inquisitive semantics framework developed by \textcite{Ciardelli2009}, \textcite{Groenendijk2009}, \textcite{Mascarenhas2009}, \textcite{CiardelliRoelofsen2009}, and \textcite{GroenendijkRoelofsen2009}---and compiled in the form of a general handbook by \textcite{Ciardelli2019}. In inquisitive semantics, the assertive meaning of some sentence $\phi$ is not equal to its corresponding proposition but to a set of propositions such that it contains the sentences' proposition as its single maximal element and all subsets of this proposition---i.e., the set of propositions in inquisitive semantics is downwards closed (which is indicated via the symbol~$\downarrow$). So, whilst in standard generative semantics \enquote{John read a book} is evaluated as the proposition $\intension[g,c]{John read a book}=[\lambda{w_s}.\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]]$, which may also be rendered as $\intension[g,c]{John read a book}=\{w|\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$, in inquisitive semantics, it is evaluated as the downwards closed set, as defined in \refdef{downward-closed}, that contains aforementioned proposition as its single maximal element, as shown in \refex{inquisitive-johnreadbook}.
+\ex\label{def:downward-closed}
+\extitle{Downward Closedness}
+A set $P$ is downward closed, indicated as $P^\downarrow$, iff for any $p\in P$ and $q\subset p$ it also follows that $q\in P$. That is, $P^\downarrow\coloneqq\{q~|~q\subset p\text{ for some }p\in P\}$.
+\xe
+\ex
+$\intension[g,c]{John read a book}=\{~\{w|\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}~\}^\downarrow$\\
+\hbox{}\hspace{114pt}$=\{q~|~q\subseteq \{w~|~\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}$\labex{inquisitive-johnreadbook}
+\xe
+As such, in inquisitive semantics, an expression $\phi$ does not only convey its informative proposition, which is referred to as the informative content of the expression and is equal to $\cup\intension[]{$\phi$}$, but also the issue raised by $\phi$, which is referred to as the inquisitive content. The fact that we now have sets of propositions instead of propositions brings forth the question of how {\scshape even} associates with such elements, as, ostensibly, it would take a set of propositions as its input instead of a proposition as in standard generative semantics. \textcite{Roelofsen2018} proposed that the licensing {\scshape even} operator compares the probability of the informative content of an expression against the probability respective informative content of each of its alternatives. The probability relation is formally defined in \refdef{inquisitive-probability} and the inquisitive definition of \textit{even} is defined in \refdef{inquisitive-even}.
+\ex
+\input{content/definitions/inquisitive-probability}\labdef{inquisitive-probability}
+\xe
+\ex 
+\input{content/definitions/inquisitive-even}\labdef{inquisitive-even}
+\xe
+As such, in inquisitive semantics, the sentence \enquote{John didn't read even \MakeUppercase{one} book} from \refex{even-negation} has the inquisitive assertive meaning in \refex{inquisitive-assertion-negation}, the alternatives in \refex{inquisitive-alternatives-negation}, as well as the scalar probability presupposition in \refex{inquisitive-even-negation}.
+\pex
+\a $\intension[g,c]{John didn't read one\textsubscript{F} book}=$\\\emptyfill$\{~\{w|\neg\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}~\}^\downarrow$\labex{inquisitive-assertion-negation}
+\a $\intension[f,g,c]{John didn't read one\textsubscript{F} book}=$\\\emptyfill$\{\{\{w|\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow|~n\in\mathbb{N}\}$\labex{inquisitive-alternatives-negation}
+\xe
+\ex
+\resizebox{395pt}{!}{$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John didn't read one\textsubscript{F} book})$ is defined only if for all $n\in\mathbb{N}>1$:}\\
+$\{\{w|\neg\exists_1{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow$\\\emptyfill$\lprob_c\{\{w|\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow$\labex{inquisitive-even-negation}
+\xe
+As such, for the moment, nothing has changed for definedness predictions concerning declaratives, since the cumulative probability of a statement is equal to the probability of its single maximal element (the proposition derived by standard generative semantics). In other words, since $\{w~|~\phi(w)\}=\cup\{\{w~|~\phi(w)\}\}^\downarrow$, we now have a functionally equivalent implementation of our previous standard generative semantics account of {\scshape even} in an inquisitive framework for declaratives. With this, we may turn our attention to {\scshape even} in questions. In inquisitive semantics, questions are handled as being of the same semantic type as declaratives. The main difference between declaratives and interrogatives is that the former is characterised by a single maximal element whereas the latter is characterised by multiple maximal elements. This is shown by the inquisitive at-issue meaning of the question \enquote{Did John read a book?} in \refex{inquisitive-q}, which, as a polar question, is characterised by an affirmative and a negative maximal element.
+\ex
+$\intension[g,c]{Did John read a book?}=\left\{\begin{tabular}{@{}l@{}}
+  $\{w|\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$, \\
+  $\{w|\neg\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$
+  \end{tabular}
+\right\}^\downarrow$\labex{inquisitive-q}
+\xe
+The elegance of the inquisitive approach then is that {\scshape even} may simply associate with questions in the same way that it does with declaratives, since both utterance types have the same semantic type in an inquisitive semantics. There is only one issue: The probability of the informative content of a polar question is necessarily $Pr^c(\cup\intension[g,c]{$\phi$?})=1$ since the affirmative and the negative answer to the question together exhaust the entirety of logical space. To circumvent this issue, \textcite{Roelofsen2018} and \textcite{Jeong2021,Jeong2022} propose that the requirement of {\scshape even} is relaxed such that it no longer requires its prejacent to be the least likely element of its set of alternatives but that it also allows for the possibility that its prejacent may also be equal in probability to some or all of its alternatives. Here, it should be noted that \textcite{Jeong2021,Jeong2022} only explicitly make this change for the covert {\scshape even} operator without making any commitments on whether or not overt \textit{even} makes use of the same scalar presupposition. However, as this change is required for \textit{even} to even work in their framework, we tentatively extend their account to overt \textit{even} as well, rendering both definitions equal\footnote{Note that we revisit whether or not this causes issues for overt \textit{even} in statements only later on---namely at the end of this section. To preview, this change has more grave consequences for overt \textit{even} in statements than it does for the licensing {\scshape even} for NPIs in statements. But there is no obvious   sensible way for \textcite{Jeong2021,Jeong2022} to decouple the two definitions and retain one fully functioning system.} This revised definition is shown in \refdef{inquisitive-even-equal}.
+\ex 
+\input{content/definitions/inquisitive-even-equal}\labdef{inquisitive-even-equal}
+\xe
+This way, {\scshape even}'s presupposition would always be defined by associating with a polar question, since its prejacent and the compared alternatives, also being polar questions, would all be equal in their probability, due to $Pr^c(\cup\intension[g,c]{$\phi$?})=1$. This way, they derive the licensing of \textit{even} in (polar) questions. 
+
+But how do they derive the negative bias in questions? Because, so far, there is no component that would to so. To remedy this, \textcite{Jeong2021,Jeong2022} propose to reintroduce an additive presupposition to the definition of {\scshape even}, similarly to \textcite{Crnic2019}, which has previously been argued for in the literature (see \textcite[p.~110ff]{Guerzoni2003}~Section~2.7.3 for an overview), and use this additive presupposition to derive a negative bias, similar to \textcite{vanRooij2003}. This additive component traditionally presupposes, in addition to the probability-based scalar presupposition, that either at least one or all of the alternatives are already considered to be true. However, to make the additive presupposition work with interrogatives, \textcite{Jeong2021,Jeong2022} relax this requirement so that there must only be at least one contextually salient alternative and that all of the contextually salient alternatives are merely \textit{settled} in the speaker's doxastic state. Here settledness is defined such that a sentence $\phi$ is considered settled in an information state $s$ only if (i) the information conveyed by $\phi$ is already available in $s$ and (ii) the issue raised by $\phi$ is already resolved by the information in $s$. This entails for statements, that the salient alternatives must already be considered true, and, for questions, that at least one alternative question is already settled either affirmatively or negatively. This supplemented definition of {\scshape even} is shown in \refdef{inquisitive-even-equal-add}, where $\predicate{dox}^{Sp}_w$ is the speaker's doxastic state in $w$.
+\ex
+\input{content/definitions/inquisitive-even-equal-add}\labdef{inquisitive-even-equal-add}
+\xe
+How does the additive component derive the negative bias in questions? Consider the inquisitive meaning of the polar question in \refex{even-question-one}, repeated below as \refex{even-question-one-inquisitive}, as shown in \refex{even-question-one-inquisitive-assertion}, with the corresponding set of alternatives in \refex{even-question-one-inquisitive-alternatives}.
+\pex
+\a Did John read even \MakeUppercase{one} book?\labex{even-question-one-inquisitive}
+\a $\intension[g,c]{Did John read one\textsubscript{F} book?}=$\resizebox{205pt}{!}{$\left\{\begin{tabular}{@{}l@{}}
+  $\{w|\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$, \\
+  $\{w|\neg\exists{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$
+  \end{tabular}
+\right\}^\downarrow$}\labex{even-question-one-inquisitive-assertion}
+\a $\intension[f,g,c]{Did John read one\textsubscript{F} book?}=$\\\emptyfill$\left\{\left\{\begin{tabular}{@{}l@{}}
+  $\{w|\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$, \\
+  $\{w|\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}$
+  \end{tabular}
+\right\}^\downarrow|~n\in\mathbb{N}\right\}$\labex{even-question-one-inquisitive-alternatives}
+\xe
+In this case, the presuppositions yielded by {\scshape even} would be as follows:
+\ex
+\resizebox{392pt}{!}{$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{Did John read one\textsubscript{F} book?})$ is defined only if for all $n\in\mathbb{N}>1$:}\\\resizebox{392pt}{!}{$\{\{w|\exists_1{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\},\{w|\neg\exists_1{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow$}\\\resizebox{392pt}{!}{$\leqprob\hspace{-1mm}_c\hspace{0.5mm}\{\{w|\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\},\{w|\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow$}\\
+and at least one salient $n\in\mathbb{N}>1$ exists s.t.:\\
+\resizebox{392pt}{!}{$\{\{w|\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\},\{w|\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow$}\\
+and for all salient $n\in\mathbb{N}>1$:\\
+\resizebox{392pt}{!}{$\predicate{dox}^{Sp}_w\in\{\{w|\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\},\{w|\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\}\}^\downarrow$} \labex{even-question-one-inquisitive-presupposition}
+\xe
+The scalar presupposition would be tautological, as previously discussed. The additive inference presupposes that the question of \enquote{Did John read $n$ books?} is settled for all contextually salient $n\in\mathbb{N}>1$, of which at least one such instance exists. Whilst, from a technical point of view, this question may be settled towards either the affirmative or the negative, pragmatics would imply that said question has been settled towards the negative. \citepos{Jeong2021,Jeong2022} reasoning regarding this is as follows: 
+If the speaker believed in the affirmative answer to the alternative question, they must also believe in the affirmative answer to the original question. As such, the act of raising the current issue itself would suggest that the alternative question must be settled negatively in her doxastic state. This, \textcite{Jeong2021,Jeong2022} would reason, is why \textit{even \MakeUppercase{one}} induces a negative bias: Pragmatics would enforce that we need all salient alternatives to have been negatively settled already, rendering the range of books John could have read in \refex{even-question-one-inquisitive} to the lower ranges, as we would argue that the overt utterance of \textit{ONE} raises to salience all contextually feasible alternative numbers. This reasoning is also how \textcite{vanRooij2003} argues negative bias is derived for what he considers to be minimally information-seeking questions. This way, \textcite{Jeong2021,Jeong2022} would derive the negative bias for \textit{even \MakeUppercase{one}} questions. 
+
+But what about the negative bias induced by focused NPI questions? Here, \textcite{Jeong2021,Jeong2022} applies the same reasoning, assuming our standard meaning for NPIs. As such, the basic derivation of negative bias is not treated separately here. 
+
+The more interesting question is how \textcite{Jeong2021,Jeong2022} differentiates the strong bias induced by inherently focused NPI questions from the weak bias induced by contingently focused NPI questions. Here, \textcite{Jeong2021,Jeong2022} derives the difference as follows: For contingently focused NPI questions, the alternative question that is settled negatively is entirely up to context. For inherently focused NPI questions, however, they argue that the salient settled alternative must always be its neutral non-NPI counterpart---i.e., the use of \enquote{Did John lift a finger?} is justified if the alternative question of its neutral counterpart \enquote{Did John help?} has already been negatively settled (leaving only unsettled whether John has done a degree of helping that is not typically counted as truly being helpful). As such, the issues settled by inherently focused NPI questions are far more restrictive than the issues that may be settled when we use contingently focused NPI questions. Therefore, the former has a stronger negative bias than the latter. 
+
+With this, we only need to account for the unbiased questions using unfocused weak NPIs. \textcite{Jeong2021,Jeong2022} propose to achieve this by making the additive component contingent on the presence of focus; i.e., the additive component, contrary to the scalar presupposition, only associates with alternatives that have been generated via focus. Since unfocused weak NPIs generate alternatives without overt focus, the additive component does not contribute anything to the definedness conditions of expressions containing it. Therefore, questions with unfocused weak NPIs do not derive a negative bias, because the additive component does not presuppose that some alternative question must already be settled.\footnote{This is a bit of an oversimplification, as \textcite{Jeong2021,Jeong2022} derive a way in which the additive component is actually always present but is equal to a tautology when it associates with an unfocused expression. For our present purposes, however, our description above suffices and we would refer to \textcite[p.~12ff]{Jeong2021} or \textcite[p.~27ff]{Jeong2022} for details, as these would needlessly complicate matters here.}This way, \textcite{Jeong2021,Jeong2022} account for all of the known data regarding NPIs in questions. 
+
+However, there are some possible issues we perceive with \citepos{Jeong2021,Jeong2022} proposal. Most notably, it requires a relaxing of {\scshape even} from inducing a \textit{less-probable-than} relation to a \textit{less-or-equally-probable-to} relation. Whilst \textcite[p.~8,~Footnote~6]{Jeong2021} believes that this should not impact the analysis of declaratives, at least for NPIs, we are not as certain when it comes to the overt construction \textit{even ONE}. %
+
+Let us review the issue of the probability relation. Traditionally, \textit{even} was posited to presuppose that its prejacent is the definitive least likely option amongst its set of alternatives. This was posited because overt \textit{even} has been observed to require non-trivial hierarchy of propositions of which its prejacent is the most noteworthy one. By weakening the probability relation, \textcite{Jeong2021,Jeong2022} would explicitly allow \textit{even} to not only associate with a highly noteworthy proposition but also with a proposition that belongs to a trivial hierarchy such that all of its alternatives are equal in probability with one another. Consider the scenarios in \refex{stupidscenario1} and \refex{stupidscenario2}.
+\ex\context{John has thrown a perfectly balanced Laplace dice.}
+Look at that: \#John has even rolled a \MakeUppercase{three}.\labex{stupidscenario1}
+\xe
+\ex\context{John is throwing a party. He invited Anna, Berta, and Charlie. All three of them have a respective chance of showing up of 50\%, completely unaffected by each others' behaviour.}
+John's party was a success. \#Even \MakeUppercase{Anna} has shown up.\labex{stupidscenario2}
+\xe
+Arguably, the use of \textit{even} should be justified in these scenarios---contrary to observed fact. After all, rolling a three is not any more or less probable than any other available number. Neither is there any person to show up for John's party less probable than Anna. As such, we would tentatively rule out that the relaxation of overt \textit{even}'s scalar presupposition as a valid option. A possible response to this may be that covert {\scshape even} and overt \textit{even} introduce slightly different scalar presuppositions, and that \citepos{Jeong2021,Jeong2022} account remains intact for NPIs and that \textit{even ONE} simply requires an alternative explanation within the same framework. However, as the system currently stands, the dilution of the scalar presupposition is absolutely required in order for it to have any hope of being fulfilled in polar questions. Considering that \textit{even ONE} and inherently focused NPIs such as \textit{lift a finger} are perfectly equal in distribution and pragmatic effects, any explanation for overt \textit{even} that lets it retain its traditional scalar presupposition would function equally well for said NPIs. This would eliminate the need for a separate explanation between the two phenomena, making it dubious to believe that there are two differing definitions for overt \textit{even} and covert {\scshape even} from an economy point of view. As such, we would not only tentatively rule out the relaxation of overt \textit{even}'s scalar presupposition, but also the relaxation of its covert counterpart's scalar presupposition. As this elimination would critically clash with \citepos{Jeong2021,Jeong2022} account for questions, this would naturally also force us to abandon their inquisitive framework in general---at least until another way to handle questions has been found, which seems unlikely at the moment---requiring the use of an alternative model for questions.\footnote{Note that this also eliminates the need for \citepos{Jeong2021,Jeong2022} diluted variant of \textit{even}'s additive component. We revert to the undiluted variant for the sake of keeping our assumptions more traditional, but the choice between the two variants would not make any different predictions at this point.}
+
+
+\subsubsection{Environments in Questions Approach}
+With this, we come to the third approach to NPI licensing in questions: the \textit{environments in questions approach}. This approach was spearheaded by \textcite{Guerzoni2014-enviro} and \textcite{Nicolae2013}, who propose very similar question semantics that would license NPIs by containing a (Strawson) downward monotone environments in the LF of polar questions. In fact, somewhat oversimplified, they mostly differ only with regards to what operator they use to induce aforementioned downward monotone environment. For the sake of simplicity, we follow \textcite{Guerzoni2014-enviro}, who uses negation to produce a downward monotone environment. \textcite{Guerzoni2014-enviro} propose that a question of the form \enquote{Did John read a book} is actually a partially elided alternative question where both of its answers are spelled out at the level of LF, as shown in \refex{gs-q-lf}, where elision is marked by the respective component being crossed out.
+\ex
+[] [whether\textsuperscript{L} [ 1 [ Q [ [John read a book] (or\textsubscript{1} [ not) \sout{[John read a book]} ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\labex{gs-q-lf}
+\xe
+Here, in polar questions, the disjunction separating the two possible answers to the question is co-indexed to the trace that is left behind by the movement of \textit{whether\textsuperscript{L}} and is considered to be a Heimian indefinite\footnote{A Heimian indefinite is a restricted variable bound by another operator further up in the LF. We refer to \textcite{Heim1982} for further details on this topic.} as proposed by \textcite{Rooth1982}. The relevant lexical entries are defined in \refex{gs-definitions}.
+\pex\label{ex:gs-definitions}
+\a $\intension[w,g]{Q}=[\lambda{q_{\langle s,t\rangle}}.[\lambda{p_{\langle s,t\rangle}}.p=q]]$
+\a $\intension[w,g]{or\textsubscript{n}}=[\lambda{P_{\langle\sigma,t\rangle}}.[\lambda{Q_{\langle\sigma,t\rangle}}.[\lambda{z_{\sigma}}.(g(n)=P\lor g(n)=Q)\land g(n)(z)=1]]]$
+\a $\intension[w,g]{whether\textsuperscript{L}}=[\lambda{Q_{\langle\langle s,t\rangle,\langle\langle s,t\rangle,t\rangle}}.[\lambda{q_{\langle s,t\rangle}}.\exists{r_{\langle s,t\rangle}[Q(r)(q)=1\land q(w)=1]}]]$
+\xe
+The Hamblin set of the question \enquote{Did John read a book?} would then be derived as shown in \reffig{gs-derivation}, where the derived top node is converted to its equivalent Hamblin set \parencite[cf.][p.~206,~Footnote~7]{Guerzoni2014-enviro}.\footnote{Note that \textcite{Guerzoni2014-enviro} technically derive a singleton answer set for their questions. We follow \textcite{Crnic2014-nm} in converting this into a regular non-singleton Hamblin set for the sake of uniformity. We show this conversion in \reffig{gs-derivation} via the symbol \enquote{$\approx$}.}
+\begin{figure}[!htb]
+    \centering
+    \resizebox{\linewidth}{!}{\input{content/graphics/guerzonisharvittree.tikz}} 
+    \caption{Derivation tree of the Hamblin set for the question \enquote{Did John read a book?} according to \textcite{Guerzoni2014-enviro}.}
+    \labfig{gs-derivation}
+\end{figure}
+
+\noindent This way, the LF of polar questions contain a downward monotone environment which licenses NPIs (either via {\scshape even} or, as \textcite{Guerzoni2014-enviro} assumed, by the environment itself). \textcite{Guerzoni2014-enviro} partly motivated their model due to the following fact: polar questions that contain an NPI may not end with \enquote{or not?}, as regular polar questions may do. However, when embedded both regular polar questions and NPI polar questions may be prefixed with \enquote{whether or not}. This is shown in \refex{q-elision-restriction}.
+\pex\label{ex:q-elision-restriction}
+\a Did John read a book, or not?
+\a \ljudge{\#}Did John read any book, or not?
+\a I asked whether or not John has read a book.
+\a I asked whether or not John has read any book.
+\xe
+This can all be accounted for with their model, since the NPI is part of the negative answer, and the negative answer is typically the elided constituent for unembedded polar questions---and the pronunciation of \enquote{or not} is rendered optional. When we use an NPI in polar questions, we would therefore have to elide the affirmative answer, since only the negative answer overtly contains the NPI form. Since \enquote{or not} precedes the negative answer, we cannot append it to polar questions where it is the affirmative answer that is elided. This is shown in \refex{gs-q-lf-neg}.
+\ex
+[] [whether\textsuperscript{L} [ 1 [ Q [ \sout{[John read a book]} (or\textsubscript{1} [ not) [John read any book] ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\labex{gs-q-lf-neg}
+\xe
+\textcite{Crnic2014-dogma,Crnic2014-nm} then posited the LF in \refex{gs-lf-crnic-even} for polar questions containing \textit{even \MakeUppercase{one}} and the LF in \refex{gs-lf-crnic} for polar NPI questions using the {\scshape even}-based NPI licensing theory.
+\ex
+[] \resizebox{395pt}{!}{[whether\textsuperscript{L} [ 1 [ Q [ \sout{[John read a book]} (or\textsubscript{1} [ even [ not) [John read one\textsubscript{F} book] ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]]}\labex{gs-lf-crnic-even}
+\xe
+\ex
+[] \resizebox{395pt}{!}{[whether\textsuperscript{L} [ 1 [ Q [ \sout{[John read a book]} (or\textsubscript{1} [ even [ not) [John read any book] ]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]\hspace{0.5mm}]]}\labex{gs-lf-crnic}
+\xe
+This way, we would end up with the following Hamblin sets for \refex{gs-lf-crnic-even} and \refex{gs-lf-crnic} in, respectively, \refex{gs-lf-crnic-even-hamblin} and \refex{gs-lf-crnic-hamblin}:
+\ex
+$\intension[g,c]{Did John read even \MakeUppercase{one} book?}=\{\intension[g,c]{John read one book},$\\\emptyfill$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John didn't read one\textsubscript{F} book})\}$\labex{gs-lf-crnic-even-hamblin}
+\xe
+\ex
+$\intension[g,c]{Did John read any book?}=\{\intension[g,c]{John read one book},$\\\emptyfill$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John didn't read any book})\}$\labex{gs-lf-crnic-hamblin}
+\xe
+As such, the scalar presupposition of {\scshape even} would automatically succeed as it associates with a downward monotone environment due to \citepos{Kolmogorov1933} third axiom of probability---we refer to \refsec{even-nm} for details. However, as \textcite{Crnic2014-dogma,Crnic2014-nm} noted, this would not derive the negative bias for questions containing \textit{even \MakeUppercase{one}} and inherently focused weak NPIs.
+
+To rectify this situation, we propose to adopt a semantics and reasoning akin to the one previously proposed by \textcite{Jeong2021,Jeong2022}: We reintroduce the additive component to {\scshape even} in its undiluted form (though we do restrict its use to focus-generated sets of alternatives same as \textcite{Jeong2021,Jeong2022})\footnote{Note that \textcite{Crnic2011,Crnic2014-dogma,Crnic2014-nm} already accounted for the fulfilment of the additive component of \textit{even} in downward monotone environments. We mostly follow his reasoning, but add the additional restrictions placed upon the additive component by \textcite{Jeong2021,Jeong2022}.} as well as maintain the undiluted form of the scalar probability presupposition. This way, we would modify our definition of {\scshape even} in \refdef{even-crnic} as shown in \refdef{even-our}:
+\ex
+$\intension[g,c]{even\textsubscript{C}}=[\lambda{p_{\langle s,t\rangle}}:\forall{q\in C}[p\neq q\rightarrow p\lprob\hspace{-1mm}_c\hspace{0.5mm} q]$ and $\exists{q\in C}[p\neq q\land q$ is salient in~$c]$ and $\forall{q\in C}[p\neq q\land q$ is salient in $c\rightarrow q(w)=1].p(w)=1]$\labdef{even-our}
+\xe
+This way, the negative answer in \refex{gs-lf-crnic-even-hamblin} would be defined under the conditions posited in \refex{gs-lf-crnic-even-defined}, whereas \refex{gs-lf-crnic-hamblin} only presupposes the scalar probability relation.
+\ex
+$\intension[g,c]{even\textsubscript{C}}(\intension[g,c]{John didn't read one\textsubscript{F} book})(w)$ is defined in $w$ only if for all\linebreak\resizebox{395pt}{!}{$n\in\mathbb{N}>1$:$\neg\exists_1{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]\lprob_c\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]$}\\%
+and at least one salient alternative $n\in\mathbb{N}>1$ exists s.t.\\%
+$\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]$\\%
+and for all salient $n\in\mathbb{N}>1:\neg\exists_n{x}[\predicate{book}(x,w)\land\predicate{read}(j,x,w)]=1$ \labex{gs-lf-crnic-even-defined}
+\xe
+Contrary to \textcite{Jeong2021,Jeong2022}, we do not require pragmatic reasoning to determine that the question is settled negatively, as the undiluted additive component necessarily presupposes that all salient alternative negative answers must be true (as {\scshape even} associates only with the question's negative answer). We would assume that the overt use of \textit{even \MakeUppercase{one}} renders most if not all subsequent numbers salient. This way, the negative bias for \textit{even \MakeUppercase{one}} is derived. 
+
+For focused polar questions, the negative bias is derived in the same way. The only noteworthy difference is which alternative question's negative answer is presupposed to be true, same as in \textcite{Jeong2021,Jeong2022}. 
+For contingently focused weak NPIs, all salient alternative questions' negative answers are presupposed to be true. As such, the strength of its bias is entirely dependent on context and how many alternative questions are contextually salient and therefore negatively settled.
+
+For inherently focused weak NPIs such as \enquote{lift a finger}, the salient alternative would always be its neutral counterpart, as \textcite{Jeong2021,Jeong2022} claim that inherently focused NPIs are always contrastively stressed against their neutral counterparts (which is why they are obligatorily focused in the first place). In the case of \enquote{lift a finger}, that counterpart would be \enquote{to help}. The former expression is used to express that some degree of help was done greater than zero. The latter expression is used to express that some degree of help was done greater than some contextually determined threshold that determines what amount of help is evaluated to actually starts being counted as being helpful. The obligatory strong negative bias of inherently focused weak NPIs is then derived due to this, as we negate, in our example, that the person in question has done anything that we would qualify as actual help (though they may have done some things that fall short of the contextually determined threshold of being helpful). This reasoning is along the lines of \textcite{vanRooij2003}. Unfocused NPIs do not derive any bias, as the additive component only interacts with alternatives generated by overt focus. 
+
+This way, we can derive all of the known empirical data, same as \textcite{Jeong2021,Jeong2022}: Why unfocused weak NPI questions are unbiased, why the focused weak NPI questions are biased, and why the focused weak NPI questions display differing strengths of negative bias. In addition, contrary to \textcite{Jeong2021,Jeong2022}, we may account for this data without weakening any of the presuppositions of {\scshape even}, eliminating a possible source of overprediction.
+
+\section{Intermediate Conclusion}
+With this, we can draw the intermediate conclusion of this chapter. As we have shown in \refsec{NPI-accounts-mono}, the environment-based account of NPI licensing (i.e., the Strawson downward monotone account) is insufficient in many regards---most specifically all issues that involve context-sensitivity. Its only major advantage appears to be that it extends its reach beyond weak NPIs and also attempts to account for strong and superstrong NPIs. The {\scshape even}-based NPI licensing theory, on the other hand, appears to be capable of deriving all of the known empirical data concerning the distribution of both \textit{even} and the distribution of weak NPIs. The preliminary concerns shown in \refsec{even-distribution} that there are some differences in distribution and pragmatics between \textit{even \MakeUppercase{one}} and some weak NPIs were resolved using either known explanations from the literature \parencite{Crnic2011,Crnic2014-dogma,Crnic2014-nm,Jeong2021,Jeong2022} or adaptations of said explanations in a slightly modified way (see \refsec{even-qbias}). As such, the {\scshape even}-based NPI licensing theory appears to win out over the environment-based approach to NPI licensing. We therefore continue only with the former approach to NPI licensing in this dissertation.
+
+With this, we may turn our attention in \refch{npi-conditionals} to how the {\scshape even}-based NPI licensing theory interacts with conditionals; or, more specifically, what different predictions arise between its use in conjunction with a variably-strict conditionals semantics and a (semi-)dynamic strict conditional semantics.

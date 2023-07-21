@@ -1,0 +1,45 @@
+\chapter{Domain-Based Readings of Focused Weak NPIs in the Restrictor of Universal Quantification}\labapp{appendix-crnic}
+In this appendix, we briefly sketch out how covert exhaustification and its various possible applications do not work out for a domain-based reading of focused weak negative polarity items, assuming an \textit{even}-based framework along the lines of \citet{Crnic2011,Crnic2014-dogma,Crnic2014-nm}.
+\section{No Exhaustification}
+\pex
+\a Every student who read \MakeUppercase{any} book, CP.\labex{appendix-sentence1}
+\a $\intension[g,c]{\refex{appendix-sentence1}}=\forall{x}[S(x)\land\exists{y\in D^c}[R(x,y)\land B(y)]\rightarrow CP(x)]$
+\a $\intension[g,c]{\refex{appendix-sentence1}}$ is defined only if for all $D'\subset D^c$:\\$\forall{x}[S(x)\land\exists{y\in D^c}[R(x,y)\land B(y)]\rightarrow CP(x)]\lprob_c$\\\emptyfill$\forall{x}[S(x)\land\exists{y\in D'}[R(x,y)\land B(y)]\rightarrow CP(x)]$\labex{appendix-scalar1}
+\xe
+\citepos{Kolmogorov1933} third axiom of probability would guarantee the fulfilment of \refex{appendix-scalar1}. No context-sensitivity is derived. Not a viable candidate.\pagebreak
+\section{Exhaustification}
+\pex
+\a Every student who\textsubscript{1} {\scshape exh} t\textsubscript{1} read \MakeUppercase{any} book, CP.\labex{appendix-sentence2}
+\a $\intension[g,c]{t\textsubscript{1} read ANY book}=\exists{y\in D^c}[R(g(1),y),\land B(y)]$
+\a $\intension[f,g,c]{t\textsubscript{1} read ANY book}=\{\exists{y\in D'}[R(g(1),y),\land B(y)]|D'\subseteq D^c\}$
+\a $\intension[g,c]{{\scshape exh} t\textsubscript{1} read ANY book}=\intension[g,c]{t\textsubscript{1} read ANY book}=$\\\emptyfill$\exists{y\in D^c}[R(g(1),y),\land B(y)]$
+\a $\intension[g,c]{\refex{appendix-sentence2}}=\forall{x}[S(x)\land\exists{y\in D^c}[R(x,y)\land B(y)]\rightarrow CP(x)]$
+\a $\intension[g,c]{\refex{appendix-sentence2}}$ is defined only if for all $D'\subset D^c$:\\$\forall{x}[S(x)\land\exists{y\in D^c}[R(x,y)\land B(y)]\rightarrow CP(x)]\lprob_c$\\\emptyfill$\forall{x}[S(x)\land\exists{y\in D'}[R(x,y)\land B(y)]\rightarrow CP(x)]$\labex{appendix-scalar2}
+\xe
+Since no alternatives are innocently excludable, the covert exhaustification has no notable impact upon the semantics of the sentence. As \refex{appendix-scalar2} are therefore the same definedness as \refex{appendix-scalar1}, \citepos{Kolmogorov1933} third axiom of probability would guarantee the fulfilment of \refex{appendix-scalar1}. No context-sensitivity is derived. Not a viable candidate.
+\section{Double Exhaustification}
+\pex
+\a Every student who\textsubscript{1} {\scshape exh} {\scshape exh} t\textsubscript{1} read \MakeUppercase{any} book, CP.\labex{appendix-sentence3}
+\a $\intension[g,c]{t\textsubscript{1} read ANY book}=\exists{y\in D^c}[R(g(1),y),\land B(y)]$
+\a $\intension[f,g,c]{t\textsubscript{1} read ANY book}=\{\exists{y\in D'}[R(g(1),y),\land B(y)]|D'\subseteq D^c\}$
+\a $\intension[g,c]{{\scshape exh} t\textsubscript{1} read ANY book}=\exists{y\in D^c}[R(g(1),y),\land B(y)]$
+\a $\intension[f,g,c]{{\scshape exh} t\textsubscript{1} read ANY book}=$\\\emptyfill$\{\predicate{exh}(\exists{y\in D'}[R(g(1),y),\land B(y)])|D'\subseteq D^c\}$
+\a Assuming for simplicity $D^c=\{a,b\}$:\\$\intension[g,c]{{\scshape exh} {\scshape exh} t\textsubscript{1} read ANY book}=\predicate{exh}(\exists{y\in D^c}[R(g(1),y),\land B(y)])\land$\\$\neg\predicate{exh}(\exists{y\in \{a\}}[R(g(1),y),\land B(y)])\land\neg\predicate{exh}(\exists{y\in \{b\}}[R(g(1),y),\land B(y)])$\\
+$=\exists{y\in D'}[R(g(1),y),\land B(y)]\land$\\\emptyfill$\neg(\exists{y\in\{a\}}[R(g(1),y),\land B(y)]\land\neg\exists{y\in\{b\}}[R(g(1),y),\land B(y)])\land$\\\emptyfill$\neg(\exists{y\in\{b\}}[R(g(1),y),\land B(y)]\land\neg\exists{y\in\{a\}}[R(g(1),y),\land B(y)])\phantom{\land}$\\
+$=\exists{y\in D'}[R(g(1),y),\land B(y)]\land\exists{y\in\{a\}}[R(g(1),y),\land B(y)]\land$\\\emptyfill$\exists{y\in\{b\}}[R(g(1),y),\land B(y)]$\\
+$=\forall{y\in D'}[R(g(1),y),\rightarrow B(y)]$
+\a $\intension[g,c]{\refex{appendix-sentence3}}=\forall{x}[S(x)\land\forall{y\in D^c}[R(x,y)\rightarrow B(y)]\rightarrow CP(x)]$
+\a $\intension[g,c]{\refex{appendix-sentence3}}$ is defined only if for all $D'\subset D^c$:\\$\forall{x}[S(x)\land\forall{y\in D^c}[R(x,y)\rightarrow B(y)]\rightarrow CP(x)]\lprob_c$\\\emptyfill$\forall{x}[S(x)\land\forall{y\in D'}[R(x,y)\rightarrow B(y)]\rightarrow CP(x)]$\labex{appendix-scalar3}
+\xe
+As monotonicity is reversed, this definedness condition is impossible to satisfy due to \citepos{Kolmogorov1933} third axiom of probability. Not a viable candidate.
+
+\section{{\scshape exh} uses a numerical scale of alternatives but {\scshape even} uses domain-based alternatives}
+\pex
+\a Every student who\textsubscript{1} {\scshape exh} t\textsubscript{1} read \MakeUppercase{any} book, CP.\labex{appendix-sentence4}
+\a $\intension[g,c]{t\textsubscript{1} read ANY book}=\exists{y\in D^c}[R(g(1),y),\land B(y)]$
+\a $\intension[f,g,c]{t\textsubscript{1} read ANY book}=\{\exists_n{y\in D^c}[R(g(1),y),\land B(y)]|n\in\mathbb{N}\}$
+\a $\intension[g,c]{{\scshape exh} t\textsubscript{1} read ANY book}=\exists!_1{y\in D^c}[R(g(1),y),\land B(y)]$
+\a $\intension[g,c]{\refex{appendix-sentence4}}=\forall{x}[S(x)\land\exists!_1{y\in D^c}[R(x,y)\land B(y)]\rightarrow CP(x)]$
+\a $\intension[g,c]{\refex{appendix-sentence1}}$ is defined only if for all $D'\subset D^c$:\\$\forall{x}[S(x)\land\exists!_1{y\in D^c}[R(x,y)\land B(y)]\rightarrow CP(x)]\lprob_c$\\\emptyfill$\forall{x}[S(x)\land\exists!_1{y\in D'}[R(x,y)\land B(y)]\rightarrow CP(x)]$\labex{appendix-scalar4}
+\xe
+This definedness condition is context-sensitive. However, this scalar presupposition yields highly unintuitive predictions. Not a viable candidate.

@@ -1,0 +1,10 @@
+\Tree [.{\textbf{\scshape id\textsubscript{$\boldsymbol{\phi}$}}} {\underline{\scshape id\textsubscript{closest-$\phi$}}}  {\textbf{\scshape id\textsubscript{closest-$\boldsymbol{\phi\land\psi_1}$}}} {\textbf{\scshape id\textsubscript{closest-$\boldsymbol{\phi\land\psi_2}$}}}  {\textbf{\dots}} ]
+
+\hbox{}\vspace{2.5mm}
+\hspace{55mm}\begin{tikzpicture}
+\coordinate (O) at (0,0);
+\draw [-{Stealth[scale=1]},line width=0.8mm](0,-0.5) -- (0,-2);
+\node at (2,-1.25) {\textbf{\scshape Restructure}};
+\end{tikzpicture}
+
+\resizebox{\linewidth}{!}{\Tree [.{{\scshape id\textsubscript{$\phi$}}} [.{\textbf{\scshape id\textsubscript{closest-$\boldsymbol{\phi}$}}} {\underline{\scshape id\textsubscript{closest-$\phi\land\psi_3$}}} {\textbf{\scshape id\textsubscript{closest-$\boldsymbol{\phi\land\neg\psi_3}$}}} ] [.{{\scshape id\textsubscript{closest-$\phi\land\psi_1$}}} {\dots} {\dots} ] [.{{\scshape id\textsubscript{closest-$\phi\land\psi_2$}}} {\dots} {\dots} ] {\dots} ]}

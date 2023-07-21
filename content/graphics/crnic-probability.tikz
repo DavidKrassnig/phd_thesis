@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+    \begin{axis}[every axis plot post/.append style={
+        mark=none,domain=0:65,samples=50,smooth}, %
+        axis x line*=bottom, %
+        width=0.99\linewidth,
+        height=7cm,
+        xtick={0,2,5,10,15,20,25,30,35,40,45,50,55,60,65,70},
+        axis y line*=left, %
+        ytick style={draw=none},
+        yticklabels={,,},
+        enlargelimits=upper,
+        ylabel={Expectation},
+        xlabel={Exact Number of Students},
+        legend cell align={left}] %
+        \addplot [ultra thick,dotted,blue] {gauss(5,0.8)};
+        \addplot [ultra thick,dashed,brown] {gauss(15,1)};
+        \addplot [ultra thick,red] {gauss(30,1.25)};
+        \draw [lightgray] (2,0) -- (2,1);
+        \draw [lightgray] (20,0) -- (20,1);
+        \legend{read at least three books, read at least two books, read at least one book}
+    \end{axis}
+\end{tikzpicture}

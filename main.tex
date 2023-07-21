@@ -1,0 +1,211 @@
+\documentclass[12pt,twoside,a4paper,leftblank,vi,openright]{mitthesis}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[main=english,ngerman,esperanto]{babel}
+\usepackage[english=british]{csquotes}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{expex}
+\usepackage{graphicx}
+\usepackage[final,colorlinks]{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage[backend=biber,style=authoryear-comp,natbib=true]{biblatex}
+\addbibresource{content/matter/bibliography.bib}
+\AtBeginRefsection{\GenRefcontextData{sorting=ynt}}
+\AtEveryCite{\localrefcontext[sorting=ynt]}
+\usepackage{stmaryrd}
+\SetSymbolFont{stmry}{bold}{U}{stmry}{m}{n}
+\usepackage{tikz}
+\usepackage{pgfplots}\pgfplotsset{compat=1.17}
+\usepackage{qtree}
+\usepackage{bbm}
+\usepackage{mfirstuc}
+\usepackage{stackengine,scalerel}
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage[section,notbib]{tocbibind}
+\usepackage{changepage}
+\usepackage{svg}
+\usepackage{microtype}
+\hbadness=99999
+\vbadness=99999
+\hfuzz=100pt
+\clubpenalty10000
+\widowpenalty10000
+\displaywidowpenalty=10000
+\pagestyle{plain}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\addtolength{\skip\footins}{1pc plus 5pt}
+\captionsetup[table]{skip=10pt}
+\captionsetup{labelfont=bf}
+\graphicspath{{content/graphics/}}
+\usetikzlibrary{decorations.text,calc,arrows.meta,shapes.geometric}
+\newcommand*{\blankpage}{%
+\vspace*{\fill}
+{\centering THIS PAGE INTENTIONALLY LEFT BLANK\par}
+\vspace{\fill}}
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\blankpage
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+\newcommand{\leadingzero}[1]{\ifnum #1<10 0\the#1\else\the#1\fi}
+\newcommand{\todayI}{\the\year-\leadingzero{\month}-\leadingzero{\day}}
+\newcommand{\labpage}[1]{\label{page:#1}}
+\newcommand{\labpart}[1]{\label{part:#1}}
+\newcommand{\labch}[1]{\label{ch:#1}}
+\newcommand{\labapp}[1]{\label{app:#1}}
+\newcommand{\labsec}[1]{\label{sec:#1}}
+\newcommand{\labfig}[1]{\label{fig:#1}}
+\newcommand{\labtab}[1]{\label{tab:#1}}
+\newcommand{\labdef}[1]{\label{def:#1}}
+\newcommand{\labex}[1]{\label{ex:#1}}
+\newcommand{\refpage}[1]{\hyperref[page:#1]{Page \ref*{page:#1}}}
+\newcommand{\refpart}[1]{\hyperref[part:#1]{Part \ref*{part:#1}}}
+\newcommand{\refch}[1]{\hyperref[ch:#1]{Chapter~\ref*{ch:#1}}}
+\newcommand{\refapp}[1]{\hyperref[app:#1]{Appendix~\ref*{app:#1}}}
+\newcommand{\refsec}[1]{\hyperref[sec:#1]{Section~\ref*{sec:#1}}}
+\newcommand{\reffig}[1]{\hyperref[fig:#1]{Figure~\ref*{fig:#1}}}
+\newcommand{\reftab}[1]{\hyperref[tab:#1]{Table~\ref*{tab:#1}}}
+\newcommand{\refdef}[1]{(\ref*{def:#1})}
+\newcommand{\refex}[1]{\hyperref[ex:#1]{(\ref*{ex:#1})}}
+
+\DeclareNameFormat{labelname:poss}{%
+  \nameparts{#1}%
+  \ifcase\value{uniquename}%
+    \usebibmacro{name:family}{\namepartfamily}{\namepartgiven}{\namepartprefix}{\namepartsuffix}%
+  \or
+    \ifuseprefix
+      {\usebibmacro{name:given-family}{\namepartfamily}{\namepartgiveni}{\namepartprefix}{\namepartsuffixi}}
+      {\usebibmacro{name:given-family}{\namepartfamily}{\namepartgiveni}{\namepartprefixi}{\namepartsuffixi}}%
+  \or
+    \usebibmacro{name:given-family}{\namepartfamily}{\namepartgiven}{\namepartprefix}{\namepartsuffix}%
+  \fi
+  \usebibmacro{name:andothers}%
+  \ifnumequal{\value{listcount}}{\value{liststop}}{'s}{}}
+\DeclareFieldFormat{shorthand:poss}{%
+  \ifnameundef{labelname}{#1's}{#1}}
+\DeclareFieldFormat{citetitle:poss}{\mkbibemph{#1}'s}
+\DeclareFieldFormat{label:poss}{#1's}
+\newrobustcmd*{\citeposalias}{%
+  \AtNextCite{%
+    \DeclareNameAlias{labelname}{labelname:poss}%
+    \DeclareFieldAlias{shorthand}{shorthand:poss}%
+    \DeclareFieldAlias{citetitle}{citetitle:poss}%
+    \DeclareFieldAlias{label}{label:poss}}}
+\newrobustcmd*{\citepos}{%
+  \citeposalias%
+  \textcite}
+\newrobustcmd*{\Citepos}{\bibsentence\citepos}
+\newrobustcmd*{\citeposs}{%
+  \citeposalias%
+  \textcites}
+\def\beginsubsub{%
+\par
+\begingroup
+\advance\leftskip by 2em
+\def\b##1{\par\leavevmode\llap{\hbox to 2em{##1\hfil}}\ignorespaces}}
+\def\endsubsub{\par\endgroup}
+\newcommand{\intension}[2][g]{\llbracket\text{#2}\rrbracket^{#1}}
+\newcommand{\predicate}[1]{\text{\scshape{#1}}}
+\newcommand{\textiff}{1\text{~~iff~~}}
+\newcommand{\cf}{\ensuremath{\mathrel{\Box\kern-1.5pt\raise1pt\hbox{$\mathord{\rightarrow}$}}}}
+\stackMath
+\def\trianglelefteqslant{\ThisStyle{\mathrel{%
+  \stackinset{r}{.75pt+.15\LMpt}{t}{.1\LMpt}{\rule{.3pt}{1.1\LMex+.2ex}}{\SavedStyle\leqslant}%
+}}}
+\newcommand{\lprob}{\triangleleft}
+\newcommand{\leqprob}{\trianglelefteqslant}
+\newcommand{\speaker}[1]{\textbf{#1:~}}
+\newcommand{\context}[1]{\textit{#1}\\}
+\newcommand{\contextpex}[1]{\textit{#1}}
+\newcommand{\extitle}[1]{\underline{#1}\\}
+\newcommand{\pextitle}[1]{\underline{#1}}
+\newcommand{\emptyfill}{\hbox{}\hfill}
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(144*#2^2))}%
+}
+
+\def\tmp#1#2#3{%
+  \definecolor{Hy#1color}{#2}{#3}%
+  \hypersetup{#1color=Hy#1color}}
+\tmp{link}{HTML}{800006}
+\tmp{cite}{HTML}{2E7E2A}
+\tmp{file}{HTML}{131877}
+\tmp{url} {HTML}{8A0087}
+\tmp{menu}{HTML}{727500}
+\tmp{run} {HTML}{137776}
+\def\tmp#1#2{%
+  \colorlet{Hy#1bordercolor}{Hy#1color#2}%
+  \hypersetup{#1bordercolor=Hy#1bordercolor}}
+\tmp{link}{!60!white}
+\tmp{cite}{!60!white}
+\tmp{file}{!60!white}
+\tmp{url} {!60!white}
+\tmp{menu}{!60!white}
+\tmp{run} {!60!white}
+
+\makeatletter
+\newcommand{\ChapterOutsidePart}{%
+   \def\toclevel@chapter{-1}\def\toclevel@section{0}\def\toclevel@subsection{1}}
+\newcommand{\ChapterInsidePart}{%
+   \def\toclevel@chapter{0}\def\toclevel@section{1}\def\toclevel@subsection{2}}
+\makeatother
+
+\makeatletter
+\def\@endpart{\vfil\newpage\if@twoside \if@openright
+\mbox{}
+\vspace*{\fill}
+\begin{center}
+{THIS PAGE INTENTIONALLY LEFT BLANK}
+\end{center}
+\vspace{\fill}
+\thispagestyle{empty}
+\newpage\fi\fi
+\if@tempswa\twocolumn\fi}
+\makeatother
+
+\makeatletter
+\protected\def\blx@langsetup#1{%
+  \blx@lbxinput{#1}
+    {\edef\blx@languagename{#1}}
+    {}}
+\makeatother
+
+\DeclareQuoteStyle{esperanto}{\guillemotleft}{\guillemotright}{\guilsinglleft}{\guilsinglright}
+
+\begin{document}\pagenumbering{roman}
+\include{content/matter/cover}
+\pagestyle{plain}
+\include{content/matter/contents}\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{content/chapters/introduction}\cleardoublepage
+\part{Negative Polarity Items}\cleardoublepage
+\include{content/chapters/npi-1}\cleardoublepage
+\include{content/chapters/npi-2}\cleardoublepage
+\part{Sobel Sequences}\cleardoublepage
+\include{content/chapters/sobel-1}\cleardoublepage
+\include{content/chapters/sobel-2}\cleardoublepage
+\include{content/chapters/sobel-3}\cleardoublepage
+\ChapterOutsidePart
+\include{content/chapters/conclusion}\cleardoublepage
+\appendix
+\part*{Appendix}
+\include{content/appendices/appendix-crnic}\cleardoublepage
+\include{content/appendices/appendix-items}\cleardoublepage
+\nocite{Eckardt2021}
+\include{content/matter/bibliography}
+\end{document}

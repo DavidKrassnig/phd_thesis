@@ -1,0 +1,1 @@
+\Tree [.{{\scshape id\textsubscript{$\phi$}}} [.{{\scshape id\textsubscript{closest-$\phi$}}} {{\scshape id\textsubscript{closest-$\phi\land\psi_3$}}} {{\scshape id\textsubscript{closest-$\phi\land\neg\psi_3$}}} ] [.{{\scshape id\textsubscript{closest-$\phi\land\psi_1$}}} {\dots} {\dots} ] [.{{\scshape id\textsubscript{closest-$\phi\land\psi_2$}}} {\dots} {\dots} ] {\dots} ]
