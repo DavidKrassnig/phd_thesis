@@ -12,7 +12,7 @@ As shown in \refsec{ASS}, there are two different strategies to derive a valid f
 \a\phantomsection\speaker{Martina}But if Karlos had \MakeUppercase{come} to the party, it would have been a good time.\hfill\parencite[p.~151]{Klecha2014}
 \xe
 As previously mentioned in \refsec{ASS}---as it was originally argued by \textcite[p.~52]{Klecha2014}---the contrastive stress on \textit{come} may lead to an exhaustified reading such as the one in \refex{contrast-host-exh}.
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection\speaker{Ben}If Karlos had hosted the party, it would not have been a
 good time.
 \a\phantomsection\speaker{Martina}But if Karlos had \MakeUppercase{come} to \textit{(but not hosted)} the party, it would have been a good time.\labex{contrast-host-exh}
@@ -45,12 +45,12 @@ $\intension[gx/i]{{\scshape verum}\textsubscript{i}} = \lambda{p_{s,t}}.\lambda{
 Here, $\text{Epi}_x(w)$ would be the set of worlds conforming to $x$’s knowledge in $w$; $\text{Conv}_x(w')$ is the set of worlds where all of $x$'s conversational goals in $w'$ are fulfilled (e.g., attaining maximal information whilst preserving truth); and where $\text{CG}_w''$ is the common ground; i.e.,~the set of propositions that the speakers assume in $w''$ to be true \parencite{Stalnaker1978}.
 
 However, a {\scshape verum}-based analysis would present a number of issues: To know whether or not the stress on the auxiliary verb is actually a case of verum focus, we must look at the known effects of {\scshape verum} in the antecedents of conditionals. For example, \textcite[p.~533]{Romero2015} observed that {\scshape verum} appears to render conditionals that make use of counterfactual morphology to lead to a non-counterfactual conclusion (hereafter referred to as Anderson-style conditionals) infelicitous. This was demonstrated via two phenomena that, in conditionals, are nearly unambiguously known to be instances of {\scshape verum}: the particle \textit{really}---which is identical in meaning to {\scshape verum} \parencite[p.~625]{Romero2004}---and high negation in the antecedent. First, we demonstrate \citepos{Romero2015} observed effect of {\scshape verum} on Anderson-style conditionals with \textit{really} with the contrasting conditionals in \refex{anderson} and \refex{anderson-verum-really}:
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection If Jones had taken arsenic, he would have shown the symptoms that he indeed showed. So, it is likely that he took arsenic.\hfill\parencite{Anderson1951}\labex{anderson}
 \a\phantomsection\ljudge{\#} If Jones really \MakeUppercase{had} taken arsenic, he would have shown the symptoms that he indeed showed. So, it is likely that he took arsenic.\labex{anderson-verum-really}
 \xe
 Second, we demonstrate \citepos{Romero2015} observed effect of {\scshape verum} on Anderson-style conditionals with high negation in the antecedent with the contrast between \refex{nevergonnausethisagain1} and \refex{nevergonnausethisagain2}:
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection If there hadn’t\textsubscript{Low} been any / had been no\textsubscript{Low} oil in the tank, the furnace would have made exactly the noise that it in fact did. So, it’s likely that the tank was empty.\hfill\parencite[p.~521]{Romero2015}\labex{nevergonnausethisagain1}
 \a\phantomsection \ljudge{\#} If there hadn’t\textsubscript{High} been some\textsubscript{PPI} oil in the tank, the furnace would have made exactly the noise that it in fact did. So, it’s likely that the tank was empty.\hfill\parencite[p.~521]{Romero2015}\labex{nevergonnausethisagain2}
 \xe
@@ -61,8 +61,8 @@ Yes, if Jones had taken arsenic and he had been immune to its effects, he would 
 Therefore, we tentatively exclude verum focus as a possible candidate, as reverse Sobel sequences fail to pattern with other known cases of {\scshape verum}.%
 
 The third focus option would be a contrastive tense-aspect-mood (hereafter TAM) focus, as is possible with stress on auxiliary verbs \parencite[p.~12f, footnote~3]{Goodhue2018}. Such contrastive focus is most frequently used to contrast a difference in tense: E.g., by emphasising that some proposition does not apply to the present, but to the past, as demonstrated by \refex{tensefocus}:
-\pex\phantomsection
-\speaker{A} Dinah is buying yogurt.\labex{tensefocus}
+\pex[nopreamble=true]\phantomsection%
+\a\phantomsection \speaker{A} Dinah is buying yogurt.\labex{tensefocus}
 \a\phantomsection \speaker{B} No, she \MakeUppercase{was} buying yogurt.
 \a\phantomsection \speaker{B} No, she (already) \MakeUppercase{did} buy yogurt.\\\emptyfill\parencite[p.~13, footnote~3]{Goodhue2018}
 \xe
@@ -156,7 +156,7 @@ However, as noted by \textcite{Jacobson2000,Jacobson2004} and \textcite{Sauerlan
 Every fourth grade boy loves Jack's mother, and every fifth grade boy$_j$ loves \MakeUppercase{his}$_j$ mother.\labex{jacobson-contrast-identity}
 \xe
 When a pronoun is contrasted against another bound pronoun, the set of alternatives consists of (partial) identity functions of different domains, mapping elements of their restricted domain to themselves, deriving an obligatory contrast in domains between the two pronouns.
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection $\intension[g,c]{his\textsubscript{1}}$ is defined if $g(1)\in{D_R}$, where $D_R$ is the domain that binds the pronoun. When defined, $\intension[g,c]{his\textsubscript{1}}=g(1)$.
 \a\phantomsection $\intension[g,c]{his\textsubscript{1}}=\predicate{id\textsubscript{R}}(g(1))$
 \a\phantomsection $\intension[f,g,c]{his\textsubscript{1}}=\{\predicate{id\textsubscript{R'}}(g(1))~|~\predicate{id\textsubscript{R'}}\subseteq \predicate{id}_{\langle e,e\rangle}\}$
@@ -168,13 +168,13 @@ Crucially, \textcite{Jacobson2000,Jacobson2004} posits that the two contrasting 
 \xe
 
 \textcite{Jacobson2000,Jacobson2004} further argues for the existence of these two readings using sentences where contrastive stress is placed upon a reflexive pronoun, where the two different readings manifest themselves as variant stress patterns: If the contrast between the mapping from an individual to self vs. others is desired, the contrastive stress falls upon the \textit{self} of the reflexive pronoun, as shown in \refex{identity-good}. If, on the other hand, the contrast between domains is required, then the contrastive stress falls upon the pro-form part of the reflexive pronoun, as shown in \refex{domain-good}.
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection Every third grade boy loves Mary, and every \MakeUppercase{fourth} grade boy loves him\MakeUppercase{self} (as opposed to someone else). \labex{identity-good}
 \a\phantomsection Every third grade boy loves himself, and every \MakeUppercase{fourth} grade boy loves \MakeUppercase{him}self \labex{domain-good}
 \emptyfill\parencite[adapted from][p.~68]{Jacobson2000}
 \xe
 This placement of contrastive stress appears obligatory, as using the opposite stress pattern for either case would yield illicit readings, as shown in \refex{identity-bad} and \refex{domain-bad}.
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection\ljudge* Every third grade boy loves Mary, and every \MakeUppercase{fourth} grade boy loves \MakeUppercase{him}self.\labex{domain-bad}
 \a\phantomsection\ljudge* Every third grade boy loves himself, and every \MakeUppercase{fourth} grade boy loves him\MakeUppercase{self} (*as opposed to someone else).\labex{identity-bad}\\
 \emptyfill\parencite[adapted from][p.~68]{Jacobson2000}
@@ -288,8 +288,8 @@ With this, we may take stock of the data accounted so far. We can accurately pre
     \input{content/tables/lessconfusedmaribel-rssonly}\labtab{less-confused-maribel-table-rssonly}
 \end{table}
 With this, we may finally consider the factor of denigration of $\psi$, which appears to ensure validity, regardless of all other factors, with the notable exception of contrastive stress. This was shown by reverse Sobel sequences such as \refex{acausalncfdenigrated}, \refex{causalncfdenigrated}, \refex{match-acausal-denigrated}, and \refex{match-causal-denigrated}, which are repeated below as \refex{superman1}, \refex{superman2}, \refex{superman3}, and \refex{superman4}, respectively.
-\pex\phantomsection
-\a\phantomsection \context{Concerning a dry match in a room with a large open source of water.}
+\pex[nopreamble=true]\phantomsection%
+\a\phantomsection\context{Concerning a dry match in a room with a large open source of water.}
     If I struck this match tomorrow and it was wet, it wouldn't light. But there is little chance of this match becoming wet; so, if I \MakeUppercase{were} to strike this match tomorrow, it would light.\labex{superman1}
 \a\phantomsection\context{Holding up a dry match (with no water around).}If I struck this match and it snapped, it would not light. But the chances of me snapping a match are really, really low; so, if I \MakeUppercase{were} to strike this match, it would light.\labex{superman2}
 \a\phantomsection\context{Holding up a dry match, with no water around}If I had struck this match and it had been soaked, it would not have lit. But, as we know, this match is dry, so if I \MakeUppercase{had} struck this match, it would have lit.\labex{superman3}
@@ -517,7 +517,7 @@ We refer to \refsec{showitworks} for further details. With this, we may take sto
 \end{table}
 
 With this, we move on to the factor of denigration, which serves as a catch-all rescue operation that renders any contrastively stressed reverse Sobel sequence felicitous. Here, we, again, reason along the lines of the respective part of \refsec{showitworks}. We would argue that denigration along the lines of \refex{acausalncfdenigrated}, \refex{causalncfdenigrated}, \refex{match-acausal-denigrated}, and \refex{match-causal-denigrated}, which are repeated below as \refex{superman1-repeat}, \refex{superman2-repeat}, \refex{superman3-repeat}, and \refex{superman4-repeat}, respectively, causes felicity in reverse Sobel sequences by imposing context-/relevance-based restrictions on the reverse Sobel sequences' domains of quantification \parencites[see][]{Fintel1994}{Reimer1998}[amongst many others]{Stanley2000}.
-\pex\phantomsection
+\pex[nopreamble=true]\phantomsection
 \a\phantomsection\context{Concerning a dry match in a room with a large open source of water.}
     If I struck this match tomorrow and it was wet, it wouldn't light. But there is little chance of this match becoming wet; so, if I \MakeUppercase{were} to strike this match tomorrow, it would light.\labex{superman1-repeat}
 \a\phantomsection\context{Holding up a dry match (with no water around).}If I struck this match and it snapped, it would not light. But the chances of me snapping a match are really, really low; so, if I \MakeUppercase{were} to strike this match, it would light.\labex{superman2-repeat}
