@@ -1,6 +1,6 @@
 \chapter{Introduction}\labch{intro}
 In the field of formal semantics, pinning down the exact nature of the meaning of conditionals has been a long-standing and controversial topic. Our earliest sources on the meaning of conditionals date back to ancient Greece, where Philo the Dialectician, in a debate with his teacher Diodorus Cronus, argued that a conditional is true exactly when it is not the case that the antecedent is true and the consequent is false, as reported by Sextus Empiricus in the second century of the Common Era \parencite{Kneale1962}. This definition gave rise to the analysis of conditionals in \textcite{Frege1879} and \citepos{Whitehead1910} two-valued propositional framework that modern philosophisers refer to as the \enquote{material conditional}, as defined in \refdef{material}.
-\pex
+\ex\phantomsection
 $\intension[w,g]{If $\phi$, $\psi$}=\textiff\phi\supset\psi$\\
 \phantom{$\intension[w,g]{If $\phi$, $\psi$}=~$}$\textiff\phi\rightarrow\psi$\\
 \phantom{$\intension[w,g]{If $\phi$, $\psi$}=~$}$\textiff\neg\phi\lor\psi$\\
@@ -10,32 +10,32 @@ But, as already noted by \textcite{Frege1879} himself, this definition is woeful
 
 \section{Strict Semantics}
 To rectify this issue, providing a first step towards an intensional treatment of conditionals, \textcite[p.~33]{Peirce1896} and \textcite{Lewis1912,Lewis1914,Lewis1918} proposed an analysis of conditionals where the material conditional must not only be true but necessarily true; i.e., the material implication must be true in all (accessible) possible worlds. This approach is referred to as the strict approach to conditional semantics. Using \citepos{Kripke1963} modal logic semantics, \citepos{Lewis1912,Lewis1914,Lewis1918} definition may be expressed as shown in \refex{strict-intro}.
-\ex\label{ex:strict-intro}
+\ex\phantomsection\label{ex:strict-intro}
 $\intension[w,g]{If $\phi$, $\psi$.}=\textiff\square(\phi\supset\psi)$
 \xe
 This definition successfuly avoids the aforementioned paradox of material implication: Even if the antecedent is false in the actual world, we would still have to evaluate whether the material implication is also true in all possible worlds, including worlds where the antecedent is true.
 
 However, whilst being a definite improvement over the material conditional, this traditional strict conditional semantics still carries a number of issues that preclude it from being considered a real candidate for an accurate semantics of natural language conditionals. One of these issues, for example, relates to the fact that \citepos{Lewis1912,Lewis1914,Lewis1918} semantics would predict that conditionals are transitive by nature (i.e., when \enquote{If $\phi$, $\psi$} and \enquote{If $\psi$, $\chi$} are true, then we would expect \enquote{If $\phi$, $\chi$} to be true as well). Natural language conditionals are not, however, universally transitive by nature, as demonstrated by \refex{transitive}.
-\ex
+\ex\phantomsection
 If Brown wins the election, Smith will retire to private life. If Smith dies before the election, Brown will win it. \#Therefore, if Smith dies before the election, then he will retire to private life.\hfill\parencite[p.~166]{Adams1965}\labex{transitive}
 \xe
 Another issue is that of monotonicity. \textcite{Lewis1912,Lewis1914,Lewis1918} would predict that all conditional antecedents are purely downward monotone with regards to all possible worlds. This has two consequences of note: one positive and one negative. 
 
 The positive consequence of note would be that so-called weak negative polarity items would be licensed in the antecedent of conditionals according to their classical environment-/monotonicity-based licensing theory. Weak negative polarity items, such as \textit{any} or \textit{ever}, are words which are restricted in their distribution to certain contexts (most of which are perceived to be negative by nature). Their classical licensing theory posits that they may only ever occur in downward monotone environments \parencite{Ladusaw1980,Fauconnier1975a,Fauconnier1975b}. 
-\ex\label{def:dm-intro}%
+\ex\phantomsection\label{def:dm-intro}%
 \input{content/definitions/downward-monotonicity}
 \xe
 However, empirical data shows that negative polarity items also occur in the antecedent of conditionals:
-\ex
+\ex\phantomsection
 If John had read any book, he would've passed the test.\labex{npi-conditional-good-any-intro}
 \xe
 Since the strict approach to conditionals would render the antecedent of conditionals downward monotone by nature, this model would correctly predict that negative polarity items are licensed in this environment.
 
 The negative consequence of this presumed downward monotonicity, on the other hand, would be as follows: If we have a conditional that was evaluated to be true, any and all conditionals whose antecedents are mere specifications of the original antecedent must necessarily also be true with respect to the original consequent. However, as noted by \textcite[p.~10]{Lewis1973}, this is clearly not the case for all conditionals. In fact, \textcite{Lewis1973} noted that any conditional \enquote{If $\phi$, $\chi$} may have its antecedent further specified by some proposition $\psi$ such that it leads to the negation of the consequent, yielding a conditional along the lines of \enquote{If $\phi\land\psi$, $\neg\chi$}. In addition, the latter may follow the former in a sequence of conditionals without any feeling of contradiction of infelicity. This is shown in \refex{SS-nuclear-intro}.
-\ex\labex{SS-nuclear-intro}If the USA threw its weapons into the sea tomorrow, there would be war;\linebreak but if the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace.\hfill\parencite[p.~10]{Lewis1973}
+\ex\phantomsection\labex{SS-nuclear-intro}If the USA threw its weapons into the sea tomorrow, there would be war;\linebreak but if the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace.\hfill\parencite[p.~10]{Lewis1973}
 \xe
 Because the first verifiable mention of such conditional sequences in modern science was done by \textcite{Sobel1970}, such sentences are referred to as \textit{Sobel sequences}.
-\ex\labdef{SS-intro}\input{content/definitions/ss}\xe
+\ex\phantomsection\labdef{SS-intro}\input{content/definitions/ss}\xe
 Since the strict conditional semantics assumes that conditional antecedents are downward monotone by nature, we would erroneously predict all Sobel sequences to be contradictory and, therefore, to be infelicitous. This was one of the main motivations behind the development of the so-called variably-strict approach to conditional semantics \parencite{Stalnaker1968,Lewis1973}.
 
 
@@ -52,11 +52,11 @@ To this end, \textcite{Lewis1973} counts any additional deviation from the evalu
 \end{figure}
 
 \noindent We therefore define the variably-strict analysis's conditional semantics as in \refdef{variablystrict-intro}:
-\ex\labdef{variablystrict-intro}\input{content/definitions/variablystrict}\xe
+\ex\phantomsection\labdef{variablystrict-intro}\input{content/definitions/variablystrict}\xe
 Alternatively, the same underlying mechanism can be expressed in a more formalised fashion as shown in \refdef{variablystrictformal-intro}, where the accessibility function $f_\leqslant(p,w)$ returns the set of the $p$-worlds that are closest to the evaluation world $w$.\enlargethispage*{1.5\baselineskip}
-\ex\labdef{variablystrictformal-intro}\input{content/definitions/variablystrictformal}\xe\newpage
+\ex\phantomsection\labdef{variablystrictformal-intro}\input{content/definitions/variablystrictformal}\xe\newpage
 \noindent This effectively renders conditionals non-monotonic in their domain of quantification. 
-\ex\label{def:nm-intro}%
+\ex\phantomsection\label{def:nm-intro}%
 \input{content/definitions/non-monotonicity}
 \xe
 This has, again, one negative and one positive consequence of note.
@@ -73,8 +73,8 @@ For Sobel sequences, on the other hand, the result would be a bit more positive.
 \noindent Therefore, no conflicting statement is made, rendering Sobel sequences felicitous.
 
 Crucially, the order of the conditionals should be of no further relevance because the set of the closest $\phi$-worlds and the set of the closest $\phi\land\psi$-worlds are disjoint. This does not, however, appear to not be the case: Reverse Sobel sequences---defined in \refdef{rSS-intro}---have traditionally been observed to be infelicitous, even though they, as the name would imply, consist of the same conditionals as a Sobel sequence, merely in reverse order. The infelicity of such sequences is typically demonstrated with the counterpart to \refex{SS-nuclear-intro}, as seen in \refex{rSS-nuclear-intro}, that was originally provided by \textcite{Heim1994}.
-\ex\labdef{rSS-intro}\input{content/definitions/rss}\xe
-\ex\labex{rSS-nuclear-intro}If the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace;\\\ljudge\# but if the USA threw its weapons into the sea tomorrow, there would be war.\\\emptyfill\parencite{Heim1994}
+\ex\phantomsection\labdef{rSS-intro}\input{content/definitions/rss}\xe
+\ex\phantomsection\labex{rSS-nuclear-intro}If the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace;\\\ljudge\# but if the USA threw its weapons into the sea tomorrow, there would be war.\\\emptyfill\parencite{Heim1994}
 \xe
 
 The hereto illustrated variably-strict conditional analysis fails to predict the infelicity or perceived inconsistency of the reverse Sobel sequence, as the domains of quantification remain entirely disjoint, as seen in \reffig{stalnakerlewis-rSS-intro}:
@@ -88,7 +88,7 @@ The hereto illustrated variably-strict conditional analysis fails to predict the
 The infelicity of reverse Sobel sequences led to a renewed interest in the strict conditional analysis, as that approach correctly predicted the infelicity of reverse Sobel sequences. To account for regularly ordered Sobel sequences, however, the original model requires additional constraints on the domain of quantification, such that Sobel sequences do not yield a contradiction---without affecting the fact that reverse Sobel sequences do. This led to the inception of the (semi-)dynamic strict conditional line of thought, as originally put forth by \textcite{Fintel2001} and \textcite{Gillies2007}. 
 
 \textcite{Fintel2001} proposes that counterfactual conditionals are analysed as strict conditionals that apply to a contextually determined domain of quantification. Counterfactual conditionals also carry a presupposition of entertainability, which means that their antecedents must be possible with respect to the aforementioned contextually defined domain of quantification. If this presupposition is violated---that is, the contextually determined domain of quantification does not contain any antecedent world---then the contextual domain of quantification is expanded to include all possible worlds up to and including the closest possible antecedent worlds. For this reason, \textcite{Fintel2001} also refers to the contextually-expanding domain of quantification as a modal horizon. This operation is formally executed through the accessibility relation $f_\sigma$ as specified by the context $\sigma$ (which initially comprises only the evaluation world itself). If the context lacks any valid antecedent worlds, the respective counterfactual modifies $\sigma$ to include all worlds up to and including the closest antecedent worlds. The modified context is then maintained for any subsequent counterfactual conditionals, with the process of modifying $\sigma$ being repeated as necessary (i.e., whenever no valid antecedent world already exists in the modal horizon).\linebreak\newpage\noindent This entire process in formally defined in its entirety in \refdef{fintel-intro}.
-\pex\labdef{fintel-intro}\input{content/definitions/vonfintel}
+\pex\phantomsection\labdef{fintel-intro}\input{content/definitions/vonfintel}
 \xe
 This process is illustrated in \reffig{fintel-contextchange-intro} for the conditional \enquote{If p, q}:
 \begin{figure}[!htb]
@@ -116,17 +116,17 @@ But what are the consequences of this model for negative polarity items? The sem
 
 \section{Current Developments}
 In recent years, the debate on whether or not conditionals should be modelled in a (semi-)dynamic strict or in a variably-strict manner has resurged in importance. One of the main contributing factors of this resurgence was the discovery of some consistently felicitous reverse Sobel sequences \parencite{Moss2012}, as seen in \refex{moss-intro}.
-\pex\label{ex:moss-intro}
+\pex\phantomsection\label{ex:moss-intro}
 \contextpex{Suppose John and Mary are our mutual friends. John was going to ask Mary to marry him, but chickened out at the last minute. I know Mary much better than you do, and you ask me whether Mary might have said yes if John had proposed. I tell you that I swore to Mary that I would never tell anyone that information, which means that strictly speaking, I cannot answer your question. But I say that I will go so far as to tell you two facts:}
-\a If John had proposed to Mary and she had said yes, he would have been really happy.
-\a But if John had proposed, he would have been really unhappy.\\\emptyfill\parencite[p.~577]{Moss2012}
+\a\phantomsection If John had proposed to Mary and she had said yes, he would have been really happy.
+\a\phantomsection But if John had proposed, he would have been really unhappy.\\\emptyfill\parencite[p.~577]{Moss2012}
 \xe
 As the (semi-)dynamic strict approach would summarily rule out the felicity of \refex{moss-intro}, many semanticists have returned to a variably-strict semantics, as that framework does not intrinsically disallow felicitous reverse Sobel sequences. However, as an extremely large number of reverse Sobel sequences are, in fact, infelicitous, a number of supererogatory pragmatic mechanisms have been proposed in addition to a variably-strict semantics such that they selectively rule out some but not all reverse Sobel sequences \parencite{Moss2012,Klecha2011,Klecha2014,Klecha2015,Lewis2018,Krassnig2017,Krassnig2020}. We refer to \refch{SS} for details.
 
 In addition, the traditionalist monotonicity-/environment-based approach to negative polarity item licensing is gradually being superseded by operator-based approaches \parencite{Lee1994,Lahiri1998,Crnic2011,Crnic2014-dogma,Crnic2014-nm,Jeong2021} that would no longer automatically exclude the possibility of a variably-strict semantics. This development is in large part due to the fact that negative polarity items are sometimes, depending on the context, also licensed in environments that are non-monotone by nature. This is shown, for example, in \refex{nm-intro}.
-\pex\label{ex:nm-intro}
-\a Exactly four of my students have ever read a book.\label{ex:nm-intro1}
-\a \ljudge{\#}Exactly four hundred of my students have ever read a book.\label{ex:nm-intro2}
+\pex[nopreamble=true]\phantomsection\label{ex:nm-intro}%
+\a\phantomsection Exactly four of my students have ever read a book.\label{ex:nm-intro1}
+\a\phantomsection \ljudge{\#}Exactly four hundred of my students have ever read a book.\label{ex:nm-intro2}
 \xe
 For the operator-based approach, one of the most promising avenues is the hypothesis that negative polarity items are actually licensed by a covert \textit{even}-like operator that imposes a scalar probability presupposition upon any statement that wishes to license a negative polarity item. The increase in popularity of such approaches is in large part due to the fact that an environment-based licensing theory would have trouble accounting for why a negative polarity item is licensed in \refex{nm-intro1} but not in \refex{nm-intro2}, as the environment of both sentences should technically be the same (displaying only a difference in number). An operator-based licensing theory, on the other hand, might be able to account for this differences based upon the properties of the licensing operator \parencite[see][]{Crnic2011,Crnic2014-nm}. Not being restricted to a specific kind of monotone environment, both the variably-strict and (semi-)dynamic strict approaches to conditionals may be valid candidates and need to be reevaluated within the framework of such an operator-based licensing theory of negative polarity items to see if either approach has an explanatory advantage over the other.
 

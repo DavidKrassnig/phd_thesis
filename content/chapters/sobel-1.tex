@@ -3,15 +3,15 @@ In this chapter, we examine Sobel sequences as well as reverse Sobel sequences, 
 
 \section{Background}\labsec{sobelbg}
 Sobel sequences \parencite{Lewis1973,Sobel1970} are sequences of (typically counterfactual) conditionals where the second conditional's antecedent conjoins an additional proposition to the previous conditional's antecedent and results in the negation of the previous conditional's consequent. The most commonly cited example for Sobel sequences is \refex{SS-nuclear}, as originally provided by \textcite[p. 10]{Lewis1973}.
-\ex\labex{SS-nuclear}If the USA threw its weapons into the sea tomorrow, there would be war;\linebreak but if the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace.\hfill\parencite[p. 10]{Lewis1973}
+\ex\phantomsection\labex{SS-nuclear}If the USA threw its weapons into the sea tomorrow, there would be war;\linebreak but if the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace.\hfill\parencite[p. 10]{Lewis1973}
 \xe
 Although this example was originally put forth as a sequence of counterfactual conditionals, and most of the initial (and contemporary) research on Sobel sequences focused almost entirely on counterfactual Sobel sequences, \refex{SS-nuclear} is actually a sequence of future-less-vivid conditionals \parencite{Iatridou2000}. This is in line with subsequent research which showed that Sobel sequences are not restricted to counterfactuality. In fact, any type of sequence of conditionals---be they indicative \parencite{Williams2008}, predictive \parencite{Moss2012,Willer2013}, future-less-vivid, or counterfactual---may be a Sobel sequence, as pointed out by \textcite{Williams2008}, \textcite{Willer2017}, and \textcite{Klecha2014,Klecha2015}, amongst others. We would therefore define Sobel sequences as follows:
-\ex\labdef{SS}\input{content/definitions/ss}
+\ex\phantomsection\labdef{SS}\input{content/definitions/ss}
 \xe
 Originally, Sobel sequences were used to argue in favour of the non-monotonicity of counterfactual conditionals' domains of quantification: If counterfactual conditionals were indeed downward monotone, further restricting the antecedent with another proposition would not change the overall truth value of the conditional. In other words, a more restrictive antecedent cannot yield a different consequent than its less restrictive counterpart. If they were upward monotone, on the other hand, the initial conditional would be evaluated as false, as the truth value derived for the more domain-restricted second conditional would also be enforced for the less domain-restricted first conditional. As shown by the Sobel sequence in \refex{SS-nuclear}, it is clear that neither option appears to be the case.
 
 This was an important observation, as the predominant analysis at that time---known as the strict conditional analysis---predicted counterfactual conditionals to be downward monotone with regard to their quantificational domain.  It assumed that (subjunctive) conditionals were to be analysed as a necessity modal quantifying over the material implication, as originally proposed by \textcite[p. 33]{Peirce1896}, defended and elaborated upon by \textcite{Lewis1912,Lewis1914,Lewis1918}, and formalised below in its modern standard form, using \citepos{Kripke1963} modal logic semantics:
-\ex\labex{strict}$\intension{If $\phi$, $\psi$.}=\textiff\square(\phi\rightarrow\psi)$
+\ex\phantomsection\labex{strict}$\intension{If $\phi$, $\psi$.}=\textiff\square(\phi\rightarrow\psi)$
 \xe
 In other words, it was assumed that the consequent must be considered true for all possible worlds that satisfy the specifications of the antecedent. This assumption would have rendered the antecedent of conditionals downward monotonic. For Sobel sequences, that would have meant that the $\phi$-conditional also quantifies over the $\phi\land\psi$-worlds of the subsequent $\phi\land\psi$-conditional, thereby yielding contradictory claims concerning whether $\chi$ is true in these aforementioned worlds or not.
 \subsection{Variably-Strict Semantics}
@@ -27,7 +27,7 @@ To this end, \textcite{Lewis1973} counts any additional deviation from the evalu
 \end{figure}
 
 We therefore define the variably-strict analysis's conditional semantics as follows:
-\ex\labdef{variablystrict}\input{content/definitions/variablystrict}
+\ex\phantomsection\labdef{variablystrict}\input{content/definitions/variablystrict}
 \xe
 This effectively renders counterfactual conditionals non-monotonic in their domain of quantification. Applied to Sobel sequences, this would mean that the $\phi$-conditional no longer quantifies over the worlds of the $\phi\land\psi$-conditional. Instead, the two conditionals quantify over two entirely disjoint sets of worlds, as shown in \reffig{stalnakerlewis-SS}. As such, no contradictory claim is made, rendering Sobel sequences perfectly felicitous.
 \begin{figure}[!htb]
@@ -37,9 +37,9 @@ This effectively renders counterfactual conditionals non-monotonic in their doma
 \end{figure}\vspace{-3mm}
 
 Crucially, since the set of the closest $\phi$-worlds and the set of the closest $\phi\land\psi$-worlds are disjoint, the order in which conditionals make claims about them should be of no further relevance. However, this appears to not be the case: Reverse Sobel sequences---defined in \refdef{rSS}---have traditionally been observed to be infelicitous, even though they, as the name would imply, consist of the same conditionals as a Sobel sequence, merely in reverse order. The infelicity of such sequences is typically demonstrated with the counterpart to \refex{SS-nuclear}, as seen in \refex{rSS-nuclear}, that was originally provided by \textcite{Heim1994}.\vspace{-2mm}
-\ex\labdef{rSS}\input{content/definitions/rss}
+\ex\phantomsection\labdef{rSS}\input{content/definitions/rss}
 \xe\vspace{-14mm}
-\ex\labex{rSS-nuclear}If the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace;\\\ljudge\# but if the USA threw its weapons into the sea tomorrow, there would be war.\\\emptyfill\parencite{Heim1994}
+\ex\phantomsection\labex{rSS-nuclear}If the USA and the other nuclear powers all threw their weapons into the sea tomorrow, there would be peace;\\\ljudge\# but if the USA threw its weapons into the sea tomorrow, there would be war.\\\emptyfill\parencite{Heim1994}
 \xe
 
 Here, the hereto illustrated variably-strict conditional analysis fails to predict the infelicity or perceived inconsistency of the reverse Sobel sequence, as the domains of quantification remain entirely disjoint, as seen in \reffig{stalnakerlewis-rSS}:
@@ -51,7 +51,7 @@ Here, the hereto illustrated variably-strict conditional analysis fails to predi
 \noindent Since the sequence's two relevant domains of quantification are entirely disjoint, it makes---from a semantic point of view---no difference in which order a claim about the respective worlds is made. As such, it would falsely predict the reverse Sobel sequence's $\phi$-conditional to be felicitous.
 \subsection{(Semi-)Dynamic Strict Semantics}
 The infelicity of reverse Sobel sequences led to a return to the strict conditional analysis, as that approach correctly predicted the infelicity of such sequences. To also account for normal Sobel sequences, however, the original model required additional constraints on the domain of quantification, such that normal Sobel sequences do not yield a contradiction but that reverse Sobel sequences do. This led to the inception of the (semi-)dynamic strict conditional line of thought, as originally proposed by \textcite{Fintel2001} and \textcite{Gillies2007}. \textcite{Fintel2001} proposes that counterfactual conditionals are analysed as strict conditionals that range over a contextually determined domain of quantification. Counterfactual conditionals also come with an entertainability presupposition that their antecedents must be possible with respect to the aforementioned contextually set domain of quantification. If this presupposition is violated---that is, the contextually determined domain of quantification does not contain any world that the antecedent requires---then the contextual quantificational domain is expanded to encompass all possible worlds up to including the closest possible antecedent worlds. For this reason, \textcite{Fintel2001} also refers to the contextually-expanding domain of quantification as a modal horizon. This process is formally accomplished via the accessibility relation $f_\sigma$ as determined by the context $\sigma$ (which starts off as containing just the evaluation world itself). If the context does not contain any antecedent worlds, the counterfactual in question updates $\sigma$ such that $\sigma$ contains all worlds up to and including the closest antecedent worlds, as defined in \refdef{fintel}. The updated context is then kept for any subsequent counterfactual conditionals, with the process of updating $\sigma$ being reiterated if necessary.\vspace{-5mm}
-\pex\labdef{fintel}\input{content/definitions/vonfintel}\vspace*{-2mm}
+\pex\phantomsection\labdef{fintel}\input{content/definitions/vonfintel}\vspace*{-2mm}
 \xe
 This process is illustrated in \reffig{fintel-contextchange} for the conditional \enquote{If p, q}.\vspace{-2mm}
 \begin{figure}[!htb]
@@ -74,16 +74,16 @@ The subsequent $\phi$-conditional's domain of quantification already contains so
 \end{figure}
 
 \citepos{Gillies2007} model of conditionals is very similar to \citepos{Fintel2001}. His model, however, is fully dynamic and goes on to explain why possibility modals also appear to expand the modal horizon, as is seen in Hegel sequences such as \refex{hegel}:
-\ex\labex{hegel} If Sophie had gone to the parade, she would have seen Pedro dance;
+\ex\phantomsection\labex{hegel} If Sophie had gone to the parade, she would have seen Pedro dance;
 but, of course, if Sophie had gone to the parade, she might have been stuck behind
 someone tall and then wouldn’t have seen Pedro dance.\hfill\parencite[p. 342]{Gillies2007}
 \xe
 \section{Klecha (2014) -- Sobel Sequences and Causality}\labsec{sobelklecha}
 Whilst the traditional narrative was one of general reverse Sobel sequence infelicity, subsequent research has shown that this sense of infelicity is far from universally applicable. Below are example reverse Sobel sequences that were judged as felicitous:
-\ex\labex{ice}\context{Said to someone who had just been completely alone by a frozen lake.} If you had walked on the thin ice while being supported by someone on the shore, the ice wouldn't have broken. But, of course, if you had walked on the thin ice, the ice would have broken.\\%
+\ex\phantomsection\labex{ice}\context{Said to someone who had just been completely alone by a frozen lake.} If you had walked on the thin ice while being supported by someone on the shore, the ice wouldn't have broken. But, of course, if you had walked on the thin ice, the ice would have broken.\\%
 \emptyfill(adapted from \textcite[p. 166]{Bennett2003} by \textcite[p. 488]{Lewis2018})
 \xe
-\ex\labex{match}\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I had struck this match, it would have lit.\\%
+\ex\phantomsection\labex{match}\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I had struck this match, it would have lit.\\%
 \emptyfill(adapted from \textcite[p. 106]{Stalnaker1968} by \textcite[p. 487]{Lewis2018})
 \xe
 Whilst the conditions under which reverse Sobel sequences are interpreted felicitously are not perfectly known, \textcite{Klecha2014,Klecha2015} provided one major step towards unmuddling this issue. He maintains that two independent phenomena have mistakenly been grouped together under the term of Sobel sequences: acausal Sobel sequences and causal Sobel sequences.\footnote{Originally, \textcite{Klecha2014}, referred to acausal Sobel sequences as Unequivocal Sobel sequences and to causal Sobel sequences as Equivocal Sobel sequences. Later on, \textcite{Klecha2015} respectively refers to these phenomena as True Sobel sequences and Lewis sequences to more clearly illustrate that he considers them to be entirely independent phenomena. For the sake of terminological transparency, we refer to these phenomena as acausal and causal Sobel sequences, respectively.} 
@@ -93,39 +93,44 @@ The first type, acausal Sobel sequences, exhibits two distinct properties: non-u
 The second type, causal Sobel sequences, on the other hand, displays the opposite qualities: unidirectionality and equivocality. Unidirectionality refers to the observation that reverse causal Sobel sequences are infelicitous, even if their regularly ordered counterpart is felicitous. Equivocality refers to the observation that the speaker of a causal Sobel sequence appears to change their mind mid-sequence (e.g., upon noticing a hereto disregarded possible scenario that may falsify the $\phi$-conditional's consequent). 
 
 The defining characteristic between them is that acausal Sobel sequences' $\phi$-conditionals are strengthened with a causally unrelated proposition $\psi$ to yield the $\phi\land\psi$-conditional, whereas, for causal Sobel sequences, $\phi$ and $\psi$ are causally related such that $\phi$ precedes $\psi$ on some causal chain of events. The difference in antecedental intracausal dependency and the resulting difference in unidirectionality is most easily demonstrated with the examples \refex{klecha1} and \refex{klecha2}, where \refex{klecha1} presents a (reverse) acausal Sobel sequence and \refex{klecha2} a (reverse) causal Sobel sequence:\footnote{Note that these examples are not pure reverse causal and acausal Sobel sequences. Rather, they are reverse Sobel sequences that overlap with their regular Sobel sequence counterpart. This was done by \textcite{Klecha2014} to create a minimal pair whilst avoiding a possible source of infelicity for acausal reverse Sobel sequence. This is further elaborated upon in \refsec{ASS}. But native speakers that I have consulted also find the following plain minimal pair acceptable, if appropriately stressed:\vspace{0mm}
-\ex[exno=i] \contextpex{Concerning a dry match being displayed.}\\\speaker{S}If I had struck this match and it had been wet, it would not have lit; but if I \MakeUppercase{had} struck this match, it would have lit.
+\ex\phantomsection[exno=i] \contextpex{Concerning a dry match being displayed.}\\\speaker{S}If I had struck this match and it had been wet, it would not have lit; but if I \MakeUppercase{had} struck this match, it would have lit.
 \xe%
-\ex[exno=ii] \contextpex{Concerning a dry match being displayed.}\\\speaker{S}If I had struck this match and it had snapped, it would not have lit; \#but if I \MakeUppercase{had} struck this match, it would have lit.
+\ex\phantomsection[exno=ii] \contextpex{Concerning a dry match being displayed.}\\\speaker{S}If I had struck this match and it had snapped, it would not have lit; \#but if I \MakeUppercase{had} struck this match, it would have lit.
 \xe}\\
-\pex\labex{klecha1}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{klecha1}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}But if he had been standing there and wearing a helmet, you would not have.
 			\a	\speaker{Aaron}Exactly. But what I said is still right:  If you had been
 standing there, you would have been killed.\hfill\parencite[p. 152f]{Klecha2014}
 \xe
-\pex\labex{klecha2}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{klecha2}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
 			\a	\speaker{Aaron}\#Exactly. But what I said is still right:  If you had been
 standing there, you would have been killed.\hfill\parencite[adapted from][p. 153f]{Klecha2014}
 \xe
 In \refex{klecha1}, $\phi$ and $\psi$ are causally unrelated since Daryl wearing a helmet is in no obvious way connected to him standing where the steel beam had fallen. In \refex{klecha2}, they are causally connected, as him jumping out of the way in time is causally dependent on him standing where the steel beam had fallen. Both examples also perfectly illustrate the difference in equivocality. In \refex{klecha1}, both parties appear to argue in favour of the same point: Daryl should be wearing his helmet. This can be seen when Aaron agrees with Ida's argument that Daryl would have survived in the case of him having worn a helmet. It becomes even clearer, if the reaffirmation of the $\phi$-conditional is removed:\\\begin{minipage}{\linewidth}
-\pex\labex{klecha1-exactly}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{klecha1-exactly}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}And if you had been standing there and wearing a helmet, you would not have.
 			\a	\speaker{Aaron}Exactly.\hfill\parencite[p. 150]{Klecha2015}
 \xe\end{minipage}
 In \refex{klecha2}, on the other hand, Aaron and Ida appear to argue in favour of contrary positions: Aaron believes that Daryl would have died, had he stood at crash site, whereas Ida disputes that outcome with an alternative scenario. In a similar fashion of how removing the reaffirmation of the $\phi$-conditional more clearly demonstrates the unequivocality of the acausal Sobel sequence, does the removal of aforementioned affirmation clarify the equivocal nature of the causal Sobel sequence:
-\pex\labex{klecha2-exactly}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{klecha2-exactly}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
 			\a	\speaker{Aaron}\#Exactly.\hfill\parencite[p. 153f]{Klecha2015}
 \xe
 The difference in unidirectionality is also adequately demonstrated with \refex{klecha1} and \refex{klecha2}. There is one important caveat concerning acausal Sobel sequences according to Klecha, however: Acausal Sobel sequences are in and of themselves reversible, but that does not mean that reverse acausal Sobel sequences are actually felicitous in every context, as demonstrated below.
-\pex\labex{klecha-infelicitous}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
-\a\speaker{Ida}If you had been standing there and wearing a helmet, you
+\pex\phantomsection\labex{klecha-infelicitous}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\a\phantomsection\speaker{Ida}If you had been standing there and wearing a helmet, you
 wouldn’t have been killed.
-\a\speaker{Aaron}\#But if you had been standing there, you would have
+\a\phantomsection\speaker{Aaron}\#But if you had been standing there, you would have
 been killed.\\\emptyfill\parencite[p. 151]{Klecha2014}
 \xe
 In summary, \textcite{Klecha2014} tries to account for the empirical distribution in \reftab{yetanotherfriggintable}.
@@ -144,21 +149,20 @@ In summary, \textcite{Klecha2014} tries to account for the empirical distributio
 \noindent As such, there are two contrasts that currently need to be accounted for: (i) The difference in felicity between causal and acausal reverse Sobel sequence and (ii) the difference in felicity between some reverse acausal Sobel sequences. For the former, we provide \citepos{Klecha2014,Klecha2015} account in \refsec{ASS} and \refsec{CSS}. For the latter, we provide \citepos{Klecha2014,Klecha2015} attempt at an explanation in \refsec{ASS}.
 \subsection{Acausal Sobel Sequences}\labsec{ASS}
 Without any special intonation, the reverse acausal Sobel sequence in \refex{klecha-infelicitous} is generally considered infelicitous. \textcite[p. 151f]{Klecha2014} argues that the infelicity of infelicitous reverse acausal Sobel sequences can be ascribed to two possible sources: First, it is possible that \textit{would} is susceptible to modal subordination and the \textit{would} of the $\phi$-conditional is therefore interpreted not with respect to just $\phi$ but with respect to $\phi\land(\phi\land\psi)$, causing a contradictory reading. Second, it is possible that the $\phi$-conditional is infelicitous simply due to the fact that there is some pressure to stress its antecedent contrastively against the antecedent of the preceding $\phi\land\psi$-conditional. In cases where the $\phi$-conditional's antecedent happens to be a syntactic subset of the $\phi\land\psi$-conditional, as is the case in \refex{klecha-infelicitous}, \textcite{Klecha2014,Klecha2015} argues that this cannot be done, which therefore automatically renders the reverse acausal Sobel sequence infelicitous.\footnote{It should be noted that \parencite{Klecha2014,Klecha2015} does not explain why this ceases to be the case once the reverse acausal Sobel sequence is overlapped with its regularly ordered counterpart, as in \refex{klecha1}.} If, however, there is some element in the $\phi$-conditional's antecedent that is overtly different from the $\phi\land\psi$-conditional's counterpart, then that element is obligatorily stressed, resulting in felicity. An example of this is provided by the reverse Sobel sequence in \refex{contrast-host}, below.\footnote{Note that \refex{contrast-host} is a reverse Sobel sequence due to its sentences being interpreted as \textit{If Karlos had come to the party} and as \textit{If Karlos had come to and hosted the party}, where \textit{come to} is interpreted along the lines of being present, rather than it being an active act of Karlos that requires him to go somewhere that is not his own home. As such, Karlos hosting the party would entail Karlos coming to the party.}
-\pex\label{ex:contrast-host}
-\a\speaker{Ben}If Karlos had hosted the party, it would not have been a
-good time.
-\a\speaker{Martina}But if Karlos had \MakeUppercase{come} to the party, it would have
-been a good time.\hfill\parencite[p.~151]{Klecha2014}
+\pex[nopreamble=true]\phantomsection\label{ex:contrast-host}%
+\a\phantomsection\speaker{Ben}If Karlos had hosted the party, it would not have been a good time.
+\a\phantomsection\speaker{Martina}But if Karlos had \MakeUppercase{come} to the party, it would have been a good time.\hfill\parencite[p.~151]{Klecha2014}
 \xe
 Since it could be argued that this sequence's $\phi$-conditional carries an exhaustive reading (in the sense of \textit{Karlos had come but not hosted the party}), which may be responsible for the sequence's felicity, \textcite{Klecha2014} goes on to argue that this concern can be alleviated by overlapping the reverse acausal Sobel sequence with its regularly ordered counterpart, as seen below, which should prevent this particular reading. 
-\pex\contextpex{Karlos is known for being fun at parties. But his house is small and smelly.}
-\a\speaker{Martina}If Karlos had come to the party, it would have been a good time.
-\a\speaker{Ben}But if Karlos had hosted the party, it would not have been a good time.
-\a\speaker{Martina}Sure, but what I said is still right: If Karlos had come
+\pex\phantomsection%
+\contextpex{Karlos is known for being fun at parties. But his house is small and smelly.}
+\a\phantomsection\speaker{Martina}If Karlos had come to the party, it would have been a good time.
+\a\phantomsection\speaker{Ben}But if Karlos had hosted the party, it would not have been a good time.
+\a\phantomsection\speaker{Martina}Sure, but what I said is still right: If Karlos had come
 to the party, it would have been a good time.
 \xe
 However, the generalisation that contrastive stress is only possible if the second antecedent is not a subset of the first one is not entirely correct. We have already seen examples of reverse acausal Sobel sequences that do not fulfil this requirement yet still remain felicitous. An example of this would be \refex{match}, repeated below as \refex{match-repeat}, modified to indicate stress placement in the second antecedent.
-\ex\labex{match-repeat}\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
+\ex\phantomsection\labex{match-repeat}\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
 \emptyfill(adapted from \textcite[p. 106]{Stalnaker1968} by \textcite[p. 487]{Lewis2018})
 \xe
 In cases where there is no overtly different lexical item to be found, the required stress appears to obligatorily fall upon the auxiliary verb, should the conditional sequence contain any.\footnote{Note that we explore the question of whether or not this stress on the auxiliary verb is also an instance of contrastive focus/stress in \refch{pragmatics-SS}. For the sake of this chapter, we just group both types of stress together.} As such, we must amend our current empirical data on (reverse) Sobel sequences to reflect this previously unnoticed fact:
@@ -182,36 +186,41 @@ We follow \citepos{Klecha2014} analysis of imprecision, which was built upon the
 
 \subsubsection{Imprecision and Precisification}
 As \textcite[p. 352ff]{Lewis1979} has pointed out, we are allowed to utter---and evaluate as true---notions that are strictly considered objectively false, so long as these notions are \enquote{true enough} for the current discourse purpose. Consider the following examples:
-\pex\a France is hexagonal\hfill\parencite[p. 142]{Austin1976}\labex{france}
-\a This table is flat.\labex{table}\xe
+\pex[nopreamble=true]\phantomsection%
+\a\phantomsection\phantomsection France is hexagonal\hfill\parencite[p. 142]{Austin1976}\labex{france}
+\a\phantomsection\phantomsection This table is flat.\labex{table}\xe
 The sentence in \refex{france}, for example, is strictly speaking false, yet may be considered roughly true (i.e., \textit{true enough} to use \citepos{Lewis1979} terminology) for simple discussions on the shape of France. For discussions between cartographers, however, this statement would be evaluated as false---as it does not live up to the standards of precision expected from a discussion between cartographers \parencite[p. 142]{Austin1976}. Yet the sentence in \refex{table} would be considered true in nearly all feasible contexts (assuming that the table in question appears flat to the human eye), despite the fact that no man-made construct could ever be truly flat down to the molecular level \parencite[for details, see][]{Unger1975}. This shows that any discourse is subject to differing levels of precision---a crucial component of the \enquote{conversational score}, as argued by \textcite{Lewis1979}. Whether sentences such as \refex{france} and \refex{table} are evaluated as false or as true depends entirely upon which level of precision is set for the discourse in question. However, contrary to the other elements of the conversational score, the level of precision of any given discourse may fluctuate depending on the individual discourse moves it consists of. See below for an example:
-\pex\labex{flat}\contextpex{Katie and Lelia stand around a table made by humans.}
-\a\speaker{Katie}This table is flat.\hfill{\scshape loose claim}
-\a\speaker{Lelia}Not really. Nothing made by humans is actually flat.\hfill{\scshape rebuttal}
-\a\labex{flat-concession}\speaker{Katie}Well, okay, whatever. But you get my drift.\hfill{\scshape concession}\\
+\pex\phantomsection\labex{flat}%
+\contextpex{Katie and Lelia stand around a table made by humans.}
+\a\phantomsection\speaker{Katie}This table is flat.\hfill{\scshape loose claim}
+\a\phantomsection\speaker{Lelia}Not really. Nothing made by humans is actually flat.\hfill{\scshape rebuttal}
+\a\phantomsection\labex{flat-concession}\speaker{Katie}Well, okay, whatever. But you get my drift.\hfill{\scshape concession}\\
 \emptyfill\parencite[p. 113]{Klecha2014}
 \xe
 In \refex{flat}, Lelia elevates the level of precision and validly (though pedantically) disclaims Katie's previously true-enough proposition as false. The act of raising the level of precision is referred to as precisification. \textcite[p. 114]{Klecha2014} ascribes to speech acts such as the one in \refex{flat} three common properties: (i) pedantry, (ii) inessential disagreement, and (iii) unidirectionality.
 
 \textit{Pedantry} is defined as \enquote{a kind of intuition of mild uncooperativity} \parencite[p. 114]{Klecha2014}. Whilst Lelia's rebuttal is not entirely appropriate for most possible discourse contexts, it is also not totally inappropriate: Her unnecessary and unwarranted attempt at precisification and falsification may cause feelings of annoyance, it appears to not reach levels of uncooperativity as, for example, intentionally misinterpreting Katie's statement. \textcite{Klecha2014} demonstrated this by contrasting \refex{flat} with \refex{flat-beer}:
-\pex\labex{flat-beer}\contextpex{Katie and Lelia stand around a table made by humans.}\a\speaker{Katie}This table is flat.
-\a\speaker{Lelia}\#Well sure, but have you ever seen a carbonated table?
-\a\speaker{Katie}What are you talking about? I meant \MakeUppercase{flat} like \MakeUppercase{level}.\\\emptyfill\parencite[p. 114]{Klecha2014}
+\pex\phantomsection\labex{flat-beer}%
+\contextpex{Katie and Lelia stand around a table made by humans.}\a\phantomsection\speaker{Katie}This table is flat.
+\a\phantomsection\speaker{Lelia}\#Well sure, but have you ever seen a carbonated table?
+\a\phantomsection\speaker{Katie}What are you talking about? I meant \MakeUppercase{flat} like \MakeUppercase{level}.\\\emptyfill\parencite[p. 114]{Klecha2014}
 \xe
 Here, the insane interpretation of Lelia of \textit{flat} to mean decarbonated---an attribute that is only typically applied to drinks such as beer---is simply infelicitous rather than only being a pedantic interjection.
 
 \textit{Inessential Disagreement} is similar to faultless disagreement---typical of predicates expressing personal tastes and opinions, as seen in \refex{taste}---but, contrary to faultless disagreement, incorporates a sense of concession without actually changing ones opinion (i.e., a partial concession). In \refex{flat-concession}, the reluctance and defence of Katie's original position shows that she does not think that she is mistaken about the facts or willing to change her mind, but she acknowledges the truth of Lelia's statement, given a higher level of precision. This is opposite to faultless disagreement where the same discourse moves would seemingly involve changing ones mind and a sense of infelicity when it comes to the defence.\enlargethispage*{2\baselineskip}
 
-\pex\labex{taste}\contextpex{Raphael and Sterling eat a meal together.}\a\speaker{Raphael}This is delicious.
-\a\speaker{Sterling}No it isn’t.
-\a\speaker{Raphael}?Well, okay, whatever. ??But you get my drift.\\\emptyfill\parencite[adapted from][p. 114]{Klecha2014}
+\pex\phantomsection\labex{taste}%
+\contextpex{Raphael and Sterling eat a meal together.}\a\phantomsection\speaker{Raphael}This is delicious.
+\a\phantomsection\speaker{Sterling}No it isn’t.
+\a\phantomsection\speaker{Raphael}?Well, okay, whatever. ??But you get my drift.\\\emptyfill\parencite[adapted from][p. 114]{Klecha2014}
 \xe
 As such, \textit{partial concession} is considered a diagnostic of inessential disagreement.
 
 \textit{Unidirectionality}---or irreverisibility in the case of Sobel sequences---refers to the fact that levels of precision are far more easily increased than decreased \parencite{Lewis1979}: Discourse participants typically have to go along with whatever increase in precision has been introduced to the discourse, as previously seen in \refex{flat}, whereas implicit attempts to lower the standard of precision are ignored and any associated loose talk is evaluated with respect to the higher standard of precision in the discourse:
-\pex\labex{flat-reverse}\contextpex{Katie and Lelia stand around a table made by humans.}
-\a\speaker{Lelia}This table's surface is tilted by almost one tenth of a degree and contains a number of wooden bumps that are a few micrometers in height.\\\emptyfill{\scshape precise claim}
-\a\speaker{Katie}\#This table is flat.\hfill{\scshape loose claim}
+\pex\phantomsection\labex{flat-reverse}%
+\contextpex{Katie and Lelia stand around a table made by humans.}
+\a\phantomsection\speaker{Lelia}This table's surface is tilted by almost one tenth of a degree and contains a number of wooden bumps that are a few micrometers in height.\\\emptyfill{\scshape precise claim}
+\a\phantomsection\speaker{Katie}\#This table is flat.\hfill{\scshape loose claim}
 \xe
 
 \subsubsection{Imprecision and Its Relation to Causal Sobel Sequences}\labsec{css-bennett-explanation}
@@ -220,7 +229,7 @@ As such, \textit{partial concession} is considered a diagnostic of inessential d
 \textcite{Bennett2003} argues that the closeness of some world $w$ to the evaluation world $w_0$ is not decreased or increased by any differences that causally followed from some initial difference to the evaluation world. In other words: \textcite{Bennett2003} argues that the closeness metric is indifferent to any dissimilarity that follows from the antecedent on some causal chain of events. As such, when it comes to calculating the world closeness ordering, only the initial antecedent and matters causally unrelated to the antecedent affect the closeness of worlds. 
 
 \textcite{Bennett2003} provides motivation in the form of the following argument: If every kind of dissimilarity between worlds were to affect world closeness, then, for counterfactual conditionals, the set of closest antecedent worlds would typically consist of worlds that are near-totally identical to the evaluation world, excepting the proposition of the antecedent itself. This is especially problematic for changes that are likely to yield large-scale differences to the evaluation world. Take the 2016 US presidential election and its counterfactual possibilities for example:\vskip -2.25mm
-\ex\labex{hillary}If Hillary had won the US election, the USA would not have alienated the majority of its allies and would have remained a global diplomatic superpower.\xe\vskip -2.25mm
+\ex\phantomsection\labex{hillary}If Hillary had won the US election, the USA would not have alienated the majority of its allies and would have remained a global diplomatic superpower.\xe\vskip -2.25mm
 \noindent The counterfactual in \refex{hillary} would quantify over the closest antecedent worlds in which Hillary won the election and check whether the consequent applies to these worlds. However, a na\"ive similarity implementation \`a la \textcite{Lewis1973} would suggest that these closest worlds are actually worlds in which Hillary is a male Republican that shares most if not all of the rhetoric and policies of Donald Trump---as such worlds would arguably contain fewer dissimilarities to our current actual world. If, however, only those dissimilarities that are causally unrelated to the antecedent decrease world closeness, then any Trump-esque Hillary Clinton worlds would be considered rather remote to the actual world, as any such a change to the entity \textit{Hillary Clinton} would be causally unrelated to the antecedent, thereby decreasing world closeness. Any worlds where Hillary Clinton acted in accordance with her character as a female US democrat, on the other hand, would causally follow from the antecedent and therefore not decrease world closeness, regardless of how vastly different these acts would be to Trump's or how great the impact of these acts would be. As such, \refex{hillary} would definitely be evaluated as false by a na\"ive implementation of \textcite{Lewis1973}, but would probably evaluated as true by \textcite{Bennett2003}, since his implementation disregards the dissimilarity of events causally related to the antecedent.\footnote{Naturally, this evaluation depends upon the expectations people have concerning how Hillary Clinton would have acted as president of the USA, and, as such, may differ from reader to reader.}
 
 This also directly leads us to the problem of regular causal Sobel sequences and the standard Lewisian variably-strict account: Causal Sobel sequences' antecedents are, by definition, such that $\psi$ follows from $\phi$ on some causal chain of events. As such, \textcite{Bennett2003} would argue that the closest $\phi\land\psi$-worlds are a subset of the closest $\phi$-worlds (i.e. both sets of worlds are equal in closeness to the evaluation world). This would yield a contradictory reading where we first claim that all the closest $\phi$-worlds are $\chi$-worlds, and then claim that some of these $phi$-worlds (namely the $\phi\land\psi$-worlds) are actually not $\chi$-worlds after all. 
@@ -230,26 +239,30 @@ This also directly leads us to the problem of regular causal Sobel sequences and
 Conversely, \textcite{Klecha2014} explains the irreversibility of causal Sobel sequences via the unidirectional nature of precisification. For reverse causal Sobel sequences, the utterance of the $\phi\land\psi$-conditional already raises the level of precision such that the closest $\phi\land\psi$-worlds are available for evaluation. Since precisification is largely unidirectional, as demonstrated in \refex{flat-reverse}, the subsequent $\phi$-conditional is forced to maintain the same degree of precision when it comes to its evaluation, resulting in the closest $\phi$-worlds containing all of the closest $\phi\land\psi$-worlds. This would yield a contradictory reading, deriving the general infelicity of reverse causal Sobel sequences.
 
 \textcite{Klecha2014} argues in favour of imprecision due to the parallels between regular precisification examples, as in \refex{table-imprecision} and (reverse) causal Sobel sequences, as in \refex{klecha2}, repeated below as \refex{klecha2-repeat}. For instance, both disallow any repetition of the original utterance after some (precisifying) rebuttal and thus prevent the original speaker from maintaining their original belief without concessions:%
-\pex\labex{table-imprecision}\contextpex{Katie and Lelia stand around a table made by humans.}\vspace{-2mm}
-\a\speaker{Katie}This table is flat.
-\a\speaker{Lelia}Not really. Nothing made by humans is actually flat.
-\a\speaker{Katie}\#Exactly. But what I said is still right: This table is flat.\\
+\pex\phantomsection\labex{table-imprecision}%
+\contextpex{Katie and Lelia stand around a table made by humans.}\vspace{-2mm}
+\a\phantomsection\speaker{Katie}This table is flat.
+\a\phantomsection\speaker{Lelia}Not really. Nothing made by humans is actually flat.
+\a\phantomsection\speaker{Katie}\#Exactly. But what I said is still right: This table is flat.\\
 \emptyfill\parencite[adapted from][p. 113]{Klecha2014}
 \xe
-\pex\labex{klecha2-repeat}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{klecha2-repeat}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
 			\a	\speaker{Aaron}\#Exactly. But what I said is still right:  If you had been
 standing there, you would have been killed.\hfill\parencite[adapted from][p. 153f]{Klecha2014}
 \xe
 Both phenomena, however, allow for partial concessions, insofar as that the original asserter acknowledges the rebuttal but maintains the underlying motivation behind their original assertion, as shown in \refex{flat}---repeated below as \refex{flat-zzz}---and \refex{moreklechastuffzzz}.
-\pex\labex{flat-zzz}\contextpex{Katie and Lelia stand around a table made by humans.}
-\a\speaker{Katie}This table is flat.\hfill{\scshape loose claim}
-\a\speaker{Lelia}Not really. Nothing made by humans is actually flat.\hfill{\scshape rebuttal}
-\a\speaker{Katie}Well, okay, whatever. But you get my drift.\hfill{\scshape concession}\\
+\pex\phantomsection\labex{flat-zzz}%
+\contextpex{Katie and Lelia stand around a table made by humans.}
+\a\phantomsection\speaker{Katie}This table is flat.\hfill{\scshape loose claim}
+\a\phantomsection\speaker{Lelia}Not really. Nothing made by humans is actually flat.\hfill{\scshape rebuttal}
+\a\phantomsection\speaker{Katie}Well, okay, whatever. But you get my drift.\hfill{\scshape concession}\\
 \emptyfill\parencite[p. 113]{Klecha2014}
 \xe
-\pex\labex{moreklechastuffzzz}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{moreklechastuffzzz}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
 			\a	\speaker{Aaron}Well, okay, whatever. But you get my drift: It's not safe, so he should really be wearing a helmet.
@@ -258,24 +271,27 @@ Both phenomena, however, allow for partial concessions, insofar as that the orig
 
 \subsubsection{Observation Regarding Reversibility}\labsec{klecha-no}
 However, not all data points towards causal Sobel sequences being entirely unidirectional: As seen in \refex{rLS-felicitous}, reverse causal Sobel sequences are felicitous, if an interjection between the $\phi\land\psi$-conditional and the $\phi$-conditional denigrates the relevance or probability of the closest $\phi\land\psi$-worlds, the $\phi$-conditional may be uttered felicitously: 
-\pex\labex{rLS-felicitous}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl. Daryl is also known to possess exceptionally bad reflexes: Generally, nine out of ten attempts to evade something as fast as the falling steel beam result in failure.}
+\pex\phantomsection\labex{rLS-felicitous}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl. Daryl is also known to possess exceptionally bad reflexes: Generally, nine out of ten attempts to evade something as fast as the falling steel beam result in failure.}
 	\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
-	\a\labex{rLS-felicitous-phipsi}\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
-	\a\labex{rLS-felicitous-psi2}\speaker{Aaron}Sure, that may be possible, but the chances of that happening are like really, really low. So, my point stands: If he had stood there, he would have died.\hfill\parencite[adapted and modified from][p. 134]{Klecha2014}
+	\a\phantomsection\labex{rLS-felicitous-phipsi}\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
+	\a\phantomsection\labex{rLS-felicitous-psi2}\speaker{Aaron}Sure, that may be possible, but the chances of that happening are like really, really low. So, my point stands: If he had stood there, he would have died.\hfill\parencite[adapted and modified from][p. 134]{Klecha2014}
 \xe
 At first glance, this seems contrary to an imprecision-based analysis: Aside from the observation that precisification is not typically introduced via the conjunction \textit{but} (Sven Lauer, p.c.), precisification, does not always lose its unidirectionality, even if the precisified content is denigrated in its value. This can be seen in \refex{imprec-repeat}, a modified version of the earlier precisification example in \refex{table-imprecision}, which incorporates a denigration of the raised level of precision.
-\pex\labex{imprec-repeat}\contextpex{Katie and Lelia stand around a table made by humans.}
-\a\speaker{Katie}This table is flat.
-\a\speaker{Lelia}Not really. Nothing made by humans is actually flat.
-\a\speaker{Katie}True, but any bumps and indentations would be microscopic at best. So, my point stands: ??This table is flat. 
+\pex\phantomsection\labex{imprec-repeat}%
+\contextpex{Katie and Lelia stand around a table made by humans.}
+\a\phantomsection\speaker{Katie}This table is flat.
+\a\phantomsection\speaker{Lelia}Not really. Nothing made by humans is actually flat.
+\a\phantomsection\speaker{Katie}True, but any bumps and indentations would be microscopic at best. So, my point stands: ??This table is flat. 
 \xe
 Here, pointing out how minor in impact any deviance from true flatness would be does not majorly improve the felicity of the original utterance's repetition, whereas the reverse causal Sobel sequence in \refex{rLS-felicitous} was restorted to full felicity.
 
 However, departing from \citepos{Klecha2014} precisification example, a similar effect can be achieved with universal quantification-based precisification, as seen in \refex{rice}, which is more analogous to the underlying quantification mechanism in place for the analysis of conditional sentences anyhow:
-\pex\labex{rice}\contextpex{Some parents promised their child a bar of chocolate, if it cleaned its plate for dinner (i.e., ate everything it was given).}
-\a\speaker{P$_1$}Since you ate everything on your plate, I'll give you your chocolate.
-\a\speaker{P$_2$}But there are still two grains of rice on his plate!
-\a\speaker{P$_1$}Well, true. But let's be real here, those two grains amount to nothing, so my point stands: He ate everything on his plate, so he gets his chocolate. 
+\pex\phantomsection\labex{rice}%
+\contextpex{Some parents promised their child a bar of chocolate, if it cleaned its plate for dinner (i.e., ate everything it was given).}
+\a\phantomsection\speaker{P$_1$}Since you ate everything on your plate, I'll give you your chocolate.
+\a\phantomsection\speaker{P$_2$}But there are still two grains of rice on his plate!
+\a\phantomsection\speaker{P$_1$}Well, true. But let's be real here, those two grains amount to nothing, so my point stands: He ate everything on his plate, so he gets his chocolate. 
 \xe
 Not only is \textit{but} a valid conjunction for precisification concerning a universal quantification, but the denigration of said precisification also restores the previous imprecise statement to full felicity. This yields the following felicity distribution in \reftab{klecha-corrected}:
 \begin{table}[!htb]
@@ -293,7 +309,7 @@ Not only is \textit{but} a valid conjunction for precisification concerning a un
 \section{Lewis (2018) -- Relevance and World Closeness}\labsec{karenlewis}
 \textcite{Lewis2018} argues that \textcite{Fintel2001}, \textcite{Gillies2007}, and \textcite{Moss2012} were all partially right in their analysis of Sobel sequences and reverse Sobel sequences: She agrees with Moss that the effect of the first conditional on the context is pragmatic in nature, whereas she agrees with \textcite{Fintel2001} and \textcite{Gillies2007} that this pragmatic effect has a semantic influence on the interpretation of the second conditional. That is to say, Lewis argues that infelicitous reverse Sobel sequences are not merely infelicitous, but also inconsistent. She furthermore agrees with \textcite{Moss2012} that the variably-strict Stalnaker-Lewisian framework more accurately models conditional semantics. In fact, she carries over the majority of its basic framework: The only change that is made to the traditional model is that she no longer assumes that world closeness is equated with world similarity, but rather determined by a function that incorporates both similarity and relevance. It should be noted, however, that the similarity ordering Lewis employs is Lewisian rather than Bennettian.\footnote{Note that her world ordering is actually closer, by way of description, to Bennett's than it is to Lewis'. However, she herself admitted that she ignored their differences, which were not relevant to her present purposes \parencite[p. 488]{Lewis2018}.}  Compare the original definition in \refdef{variablystrict} with \citepos[p. 500]{Lewis2018} new definition in \refdef{klewis}:
 
-\ex\labdef{klewis}\input{content/definitions/variablystrict-karenlewis}
+\ex\phantomsection\labdef{klewis}\input{content/definitions/variablystrict-karenlewis}
 \xe
 
 The essential idea behind how relevance affects the closeness of worlds is that similarity provides the basic layout of worlds, which is then manipulated by relevance: Low relevance pulls worlds further away from the evaluation world, whereas high relevance pushes less similar worlds closer to it, so that these less similar worlds are --- if they are similar enough to the others --- amongst the closest worlds. The relevance of worlds, in turn, is largely manipulated by conversational context and discourse. That means that the world ordering is actively, but limitedly, determined by discourse participants: \enquote{They can indirectly affect what is (ir)relevant by changing the conversational purposes, by, for example, raising the standards of precision, making something salient, raising a new question under discussion, or refusing to accommodate a shift in conversational purpose.} \parencite[p. 500]{Lewis2018} Of these possibilities, the raising to salience is of special import to reverse Sobel sequences. Since discourse participants must take the antecedent of a conditional seriously,\footnote{As \textcite[p. 500]{Lewis2018} notes, this is done in various ways: e.g. via existence presuppositions \parencite{Fintel2001}, entertainability presuppositions \parencite{Gillies2007}, or pragmatic raising to salience of its possibility \parencite{Moss2012}: Crucially, however, all options take the antecedent seriously in one way or another.} in order to evaluate the counterfactual, the possibility of the antecedent is thereby automatically raised to salience \parencite{Lewis2018}. This salience can, given the right conditions, raise the relevance of the antecedent worlds. In terms of infelicitous reverse Sobel sequences, such as the one in \refex{klecha2}, this equates to the $\phi\land\psi$-worlds being pushed towards the evaluation world such that the $\phi\land\psi$-worlds are counted amongst the closest $\phi$-worlds. This pattern for infelicitous reverse Sobel sequences is visually shown in \reffig{lewis-heim-inconsistent}.
@@ -306,7 +322,7 @@ The essential idea behind how relevance affects the closeness of worlds is that 
 \noindent Since the $\phi\land\psi$-worlds are now just as close to the evaluation world as the $\phi$-worlds, the \enquote{If $\phi$, $\chi$} conditional would also quantify over these worlds, which leads to a contradictory statement.
 
 But not every salient world is a relevant world \textcite{Lewis2018}: Worlds that are too dissimilar to the actual world, for example, are not raised to enough relevance, regardless of salience. In \refex{ice}, for example, repeated below as \refex{ice-repeat}, it was specified that the person in question was very much alone by the frozen lake. 
-\ex\labex{ice-repeat}\context{Said to someone who had just been completely alone by a frozen lake.} If you had walked on the thin ice while being supported by someone on the shore, the ice wouldn't have broken. But, of course, if you had walked on the thin ice, the ice would have broken.\\%
+\ex\phantomsection\labex{ice-repeat}\context{Said to someone who had just been completely alone by a frozen lake.} If you had walked on the thin ice while being supported by someone on the shore, the ice wouldn't have broken. But, of course, if you had walked on the thin ice, the ice would have broken.\\%
 \emptyfill(adapted from \textcite[p. 166]{Bennett2003} by \textcite[p. 488]{Lewis2018})
 \xe
 When talking about whether or not that person would have broken through the ice, had they walked upon it, the possibility of a person spontaneously appearing as if out of thin air is simply not relevant. Whilst the corresponding $\phi\land\psi$-worlds are certainly raised to salience, they are not relevant enough to justify pushing them to the closest $\phi$-worlds. As such, there are three identifiable criteria for reverse Sobel sequence infelicity:
@@ -333,7 +349,8 @@ As noted by \textcite{Krassnig2017}, \textcite{Lewis2018} makes no distinction b
 In this, causal Sobel sequences differ from the analysis of acausal Sobel sequences: In order to make the $\phi$-conditional a true statement, causal Sobel sequences require low relevance to interfere with the similarity ordering, whereas acausal Sobel sequences require nothing of the sort.
 
 Having demonstrated that causal Sobel sequences pose no immediate problem, we turn to their reverse counterparts. There are two ways a reverse causal Sobel sequence can be judged as infelicitous: A pure reverse causal Sobel sequence requires no special steps. The initial discourse context acknowledges the relevance of the $\phi\land\psi$-worlds and thereby does not pull them further away from the evaluation world. The $\phi$-conditional also ranges over the $\phi\land\psi$-worlds, leading to a contradictory statement. A more interesting case is the reverse causal Sobel sequence in \refex{klecha2}, repeated below as \refex{klecha2-repeat2}, where the reverse causal Sobel sequence is embedded within a standard causal Sobel sequence. 
-\pex\labex{klecha2-repeat2}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
+\pex\phantomsection\labex{klecha2-repeat2}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl.}
 			\a	\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
 			\a	\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
 			\a	\speaker{Aaron}\#Exactly. But what I said is still right:  If you had been
@@ -348,17 +365,18 @@ Since the $\phi\land\psi$-worlds were originally moved further away from the eva
 The first criteria is automatically fulfilled, as the possibility of an antecedent is always raised to salience. The second criteria is also automatically fulfilled, since $\phi\land\psi$-worlds and $\phi$-worlds are equally similar in causal Sobel sequences. Therefore, the sole deciding factor for causal Sobel sequences is the relevance to the current discourse. This criteria is also, in most cases, automatically fulfilled: We would argue that any question under discussion that considers it relevant whether or not $\chi$ would follow from $\phi$ would also be sensitive to any possibility $\psi$ that is directly or indirectly caused by $\phi$ and that could possibly prevent $\chi$ from happening.
 
 Positing all of Lewis' criteria would also predict, however, that the worlds in question must not be intrinsically irrelevant: They must be considered at least realistic, even if highly improbable, by the discourse participants. We would therefore predict that some reverse causal Sobel sequences are consistent, even if no explicit questioning of the relevance of $\phi\land\psi$-worlds takes place (as was indirectly done in \refex{rLS-felicitous-psi2}). This prediction appears to hold true, considering the reverse causal Sobel sequence in \refex{quantum}.
-\ex\labex{quantum}\textit{Speaker A transported a vase between two points, in a barren stone room lacking any soft surfaces that might cushion a potential fall of the vase.}\\
+\ex\phantomsection\labex{quantum}\textit{Speaker A transported a vase between two points, in a barren stone room lacking any soft surfaces that might cushion a potential fall of the vase.}\\
 \ljudge{A: }If I had dropped that vase, it would have broken.\\
 \ljudge{B: }But if you had dropped that vase and that drop caused it to quantum-tunnel to a cushy pillow, it would not have.\\
 \ljudge{A: }Okay, but what I said is still true: If I had dropped it, it would have broken.
 \xe
 
 Finally, we need to account for the felicitous reverse causal Sobel sequence in \refex{rLS-felicitous}, repeated below as \refex{rLS-felicitous-repeat}, where the relevance of the $\phi\land\psi$-worlds was overtly denigrated. 
-\pex\labex{rLS-felicitous-repeat}\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl. Daryl is also known to possess exceptionally bad reflexes: Generally, nine out of ten attempts to evade something as fast as the falling steel beam result in failure.}
-	\a\labex{rLS-felicitous-phi-repeat}\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
-	\a\labex{rLS-felicitous-phipsi-repeat}\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
-	\a\labex{rLS-felicitous-psi2-repeat}\speaker{Aaron}Sure, that may be possible, but the chances of that happening are like really, really low. So, my point stands: If he had stood there, he would have died.\hfill\parencite[adapted and modified from][p. 134]{Klecha2014}
+\pex\phantomsection\labex{rLS-felicitous-repeat}%
+\contextpex{Construction workers Daryl, Aaron, and Ida, stand around a construction site.  Daryl is not wearing a helmet.  A large beam falls from above them and lands where no one was standing, but near to Daryl. Daryl is also known to possess exceptionally bad reflexes: Generally, nine out of ten attempts to evade something as fast as the falling steel beam result in failure.}
+	\a\phantomsection\labex{rLS-felicitous-phi-repeat}\speaker{Aaron}Daryl, if you had been standing there, you would have been killed.
+	\a\phantomsection\labex{rLS-felicitous-phipsi-repeat}\speaker{Ida}But if he had been standing there and he saw the shadow of the falling beam and managed to jump out of the way in time, he would not have.
+	\a\phantomsection\labex{rLS-felicitous-psi2-repeat}\speaker{Aaron}Sure, that may be possible, but the chances of that happening are like really, really low. So, my point stands: If he had stood there, he would have died.\hfill\parencite[adapted and modified from][p. 134]{Klecha2014}
 \xe
 Here, the explanation of its felicity is simplistically straightforward within \citepos{Lewis2018} amended framework. The probability of the $\phi\land\psi$-worlds are explicitly asserted to be highly improbable. In most cases, probability and relevance are almost intrinsically tied together.  By questioning their probability, the speaker also implicitly questioned their relevance to the discourse. In doing so, the discourse participant pushes the $\phi\land\psi$-worlds further away from the evaluation world, again, which leaves them free to reassert their original conditional without inconsistency. 
 
@@ -398,34 +416,34 @@ The disjoint domain hypothesis serves two purposes: (i) It tests whether reverse
 
 \subsubsection{Materials}\labsec{materials}
 In order to test the dissimilar worlds hypothesis, we created five experimental items which contain a reverse Sobel sequence each and were presented with two different contexts: Differing as little as possible, they either indicate that the $\phi\land\psi$-worlds and $\phi$-worlds are very similar to one another or very dissimilar to one another. These respectively represent the {\scshape similar} and {\scshape dissimilar} conditions. From a syntactic point of view, all conditionals are future-less-vivids and, deviating from the classical examples, contain the auxiliary verb \textit{did} in front of the $\phi$-antecedent's main verb. The auxiliary verb was inserted in order to ensure that the $\phi$-conditional's antecedent is not a syntactic subset of the $\phi\land\psi$-conditional's antecedent. This was necessary, since \textcite[p. 135]{Klecha2015} posited that the $\phi$-antecedent being a syntactic subset of the previous conditional's antecedent would automatically render the reverse Sobel sequence infelicitous, as some form of contrastive stress in the second conditional is required. The attentive reader may have noticed that we already encountered a counterexample to this restriction in \refex{match}=\refex{match-repeat}, repeated again below as \refex{match-repeat2}. 
-\ex\labex{match-repeat2}\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
+\ex\phantomsection\labex{match-repeat2}\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
 \emptyfill(adapted from \textcite[p. 106]{Stalnaker1968} by \textcite[p. 487]{Lewis2018})
 \xe
 However, preliminary testing with native speakers of English ($n=12$) prior to the experiment has shown (i) that the auxiliary verb \textit{had} appears obligatorily stressed in this reverse Sobel sequence, even though it is present in either of the sequence's conditionals, and that (ii) this reverse Sobel sequence is rendered less acceptable by turning it into the future-less-vivid conditional in \refex{match-flv}. 
-\ex\context{Holding up a dry match, with no water around.}If I struck this match and it was soaked, it would not light. ?But if I struck this match, it would light.\labex{match-flv}
+\ex\phantomsection\context{Holding up a dry match, with no water around.}If I struck this match and it was soaked, it would not light. ?But if I struck this match, it would light.\labex{match-flv}
 \xe
 Introducing either \textit{did} or \textit{were to} then improved the acceptability for the same native speakers of English, as seen in \refex{match-flv-did} and \refex{match-flv-were}, respectively.\\
-\begin{minipage}{\linewidth}\pex\contextpex{Holding up a dry match, with no water around.}
-\a If I struck this match and it was soaked, it would not light. But if I \MakeUppercase{did} strike this match, it would light.\labex{match-flv-did}
-\a If I struck this match and it was soaked, it would not light. But if I \MakeUppercase{were} to strike this match, it would light.\labex{match-flv-were}
+\begin{minipage}{\linewidth}\pex\phantomsection\contextpex{Holding up a dry match, with no water around.}
+\a\phantomsection\phantomsection If I struck this match and it was soaked, it would not light. But if I \MakeUppercase{did} strike this match, it would light.\labex{match-flv-did}
+\a\phantomsection\phantomsection If I struck this match and it was soaked, it would not light. But if I \MakeUppercase{were} to strike this match, it would light.\labex{match-flv-were}
 \xe\end{minipage}
 As the consulted native speakers unanimously agreed with this observation, we decided not to experimentally verify this and decided on using \textit{did} for the sake of simplicity in our experiment. For more on the necessity of contrastive stress and its placement on the auxiliary verb, we refer to \refsec{introspection}.
 
     
 In total, this led us to the experimental pattern in \refdef{pattern-lewis}, which, in turn, led us to our experimental items, as seen in \refex{pattern-lewis}. The remainder of the experimental target items may be found in \refapp{items}.
-\ex \context{Context text common to either condition combined with \ldots \\
+\ex\phantomsection \context{Context text common to either condition combined with \ldots \\
     \ljudge{(i) } \ldots text that sets the $\phi\land\psi$-worlds and $\phi$-worlds as similar to one another.\\
     \ljudge{(ii) } \ldots text that sets the $\phi\land\psi$-worlds and $\phi$-worlds as dissimilar to one another.}
     \speaker{S}If $\phi\land\psi$, (then) $\neg\chi$; but if did-$\phi$, (then) $\chi$.\labdef{pattern-lewis}
 \xe
-\ex\context{Andy's friend Michael plans to go to a cabin in the woods during the semester break. He is not convinced, however, that it will be a fun trip, because he is terrified of storms and he would have no way out if one took place.\\
+\ex\phantomsection\context{Andy's friend Michael plans to go to a cabin in the woods during the semester break. He is not convinced, however, that it will be a fun trip, because he is terrified of storms and he would have no way out if one took place.\\
     \ljudge{(i) } His trip would be during an average month of the year and Andy thinks that a storm would be possible but not too likely.\\
     \ljudge{(ii) } His trip would be during the driest month of the year and Andy thinks that a storm would be impossible or at the very least extremely unlikely.}
     \speaker{Andy}If you went to the cabin and a storm came, your trip would be horrible; but if you \MakeUppercase{did} go to the cabin, it would be a pretty good trip.\labex{pattern-lewis}
 \xe
 
 In order to test the disjoint domain hypothesis, we furthermore created five experimental items that also contain a reverse Sobel sequence each, but which were presented with only one context. These represent the {\scshape disjoint} condition. Aside from the context, and a subsequent sentence explicating the purpose of the reverse Sobel sequence, these items are identical in shape to the previously shown experimental items. However, there is one difference which pertains to the hypothesis tested: Whilst the $\phi$-conditional remains a standard future-less-vivid conditional, the $\phi\land\psi$-conditional concerns itself with an epistemically excluded possibility because $\psi$ is either contrary to fact or has been excluded as a possibility by the speaker, though it retains the same overt tense structure as the other conditionals. This shift from epistemically excluded to live possibilities is motivated by the fact that both variably-strict and (semi-)dynamic strict conditional models would generally assume that conditionals about live possibilities would not take epistemically excluded worlds into account. As such, either approach should predict felicity. See \refex{Klecha} for an example item. The remaining experimental target items may be found in \refapp{items}.
-\ex\context{Alex and her friend Steve enter a construction site. Steve doesn't wear his helmet, but carries it around in his hand. This annoys Alex, since it's a dangerous site.}
+\ex\phantomsection\context{Alex and her friend Steve enter a construction site. Steve doesn't wear his helmet, but carries it around in his hand. This annoys Alex, since it's a dangerous site.}
 \speaker{Alex}If some construction material fell on your head right now and you wore a helmet, you would probably survive the incident; but if some construction material \MakeUppercase{did} fall on your head right now, you would certainly die. So, wear your goddamn helmet.\labex{Klecha}
 \xe
 
@@ -555,7 +573,7 @@ Excluding, for the sake of argument, the possibility of there being an inherent 
 In \refsec{firsthypo}, we argued that the experimental results suggest that relevance and dissimilarity may not be the only important factors for the acceptability of reverse Sobel sequences -- perhaps not even the main ones. What, then, renders reverse Sobel sequences acceptable in the rare instances when this is the case? From the results of the {\scshape disjoint} condition, we know that its ingredients are a recipe for (limited) success. Recalling the conditions for their creation from \refsec{materials}, we know them to be (i) establishing the $\phi\land\psi$-conditional as pertaining to epistemically excluded possibilities, whilst making the $\phi$-conditional a regular future-less-vivid conditional pertaining to live possibilities and (ii) having both sequence conditionals share a common discourse goal explicitly named by a sentence following the reverse Sobel sequence. As such, we tried to pin down what makes a reverse Sobel sequence acceptable by systematically creating reverse Sobel sequences with only one of these features or even neither of them whilst trying to keep the changes to a minimum. As we demonstrate on the following pages, native speaker acceptability judgements showed that (i) causal relations between the antecedent's propositions has the effect \textcite{Klecha2014} observed, (ii) reverse causal Sobel sequences are only felicitous if the relevance of $\phi\land\psi$ is denigrated or $\phi\land\psi$ is considered an epistemically excluded possibility, (iii) non-counterfactual reverse Sobel sequences are infelicitous unless the possibility of $\phi\land\psi$ is overtly denigrated, and that (iv) a unified discourse purpose is not required for felicity. 
 
 First, we show that a unified discourse purpose is not required for felicity with the already existing example \refex{match}, repeated below as \refex{match-repeat3}:
-\ex\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
+\ex\phantomsection\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
 \emptyfill(adapted from \textcite[p. 106]{Stalnaker1968} by \textcite[p. 487]{Lewis2018})\labex{match-repeat3}
 \xe
 Arguably, \refex{match-repeat3} is felicitous, even though there is no inherently clear discourse purpose shared by both conditionals. It could be argued that the shared purpose behind the sequence is to make the point that wet matches don't generally light when struck, but contexts are easily imaginable where the reverse Sobel sequence is merely uttered to reflect the reality of the match's dryness and what would have happened to it, if it had been struck. If this were to already count as a shared discourse purpose, it would be so broad in range that almost any non-incoherent discourse could be constructed as having a shared purpose in that sense, rendering it a non-factor anyhow.
@@ -566,45 +584,45 @@ Having excluded a shared discourse purpose as a relevant factor, we would posit 
 \end{table}
 
 Crucially, it would appear that non-counterfactual and non-epistemically excluded possibility reverse Sobel sequences are typically infelicitous, as demonstrated with the reverse Sobel sequences in \refex{matchtomorrow} and \refex{matchsnapnocf}:
-\ex\context{Concerning a dry match in a room with a large open source of water.}
+\ex\phantomsection\context{Concerning a dry match in a room with a large open source of water.}
     If I struck this match tomorrow and it was wet, it wouldn't light; \#but if I \MakeUppercase{were} to strike this match tomorrow, it would light.\labex{matchtomorrow}
 \xe
-\ex\context{Holding up a dry match (with no water around).}If I struck this match and it snapped, it would not light. \#But if I \MakeUppercase{were} to strike this match, it would light.\labex{matchsnapnocf}
+\ex\phantomsection\context{Holding up a dry match (with no water around).}If I struck this match and it snapped, it would not light. \#But if I \MakeUppercase{were} to strike this match, it would light.\labex{matchsnapnocf}
 \xe
 This extends to all forms of non-counterfactual reverse Sobel sequences. As such, not only are future-less-vivid sequences infelicitous (as shown in \refex{matchtomorrow} and \refex{matchsnapnocf}), but their indicative counterparts as well, as shown in \refex{matchtomorrow-indicative} and \refex{matchsnapnocf-indicative}.
-\ex\context{Concerning a dry match in a room with a large open source of water.}
+\ex\phantomsection\context{Concerning a dry match in a room with a large open source of water.}
     If I strike this match tomorrow and it is wet, it will not light; \#but if I \MakeUppercase{do} strike this match tomorrow, it will light.\labex{matchtomorrow-indicative}
 \xe
-\ex\context{Holding up a dry match (with no water around).}If I strike this match and it snaps, it will not light. \#But if I \MakeUppercase{do} strike this match, it will light.\labex{matchsnapnocf-indicative}
+\ex\phantomsection\context{Holding up a dry match (with no water around).}If I strike this match and it snaps, it will not light. \#But if I \MakeUppercase{do} strike this match, it will light.\labex{matchsnapnocf-indicative}
 \xe
 
 This may only be remedied by overtly questioning the relevance of $\phi\land\psi$ (or implicitly knowing of the quasi-impossibility and resulting irrelevance of $\psi$). If this is appropriately done, the reverse Sobel sequence is rendered felicitous, regardless of whether or not there is a causal relation between $\phi$ and $\psi$. This is demonstrated by \refex{acausalncfdenigrated}-\refex{causalncfdenigrated-indicative}.
-\ex\context{Concerning a dry match in a room with a large open source of water.}
+\ex\phantomsection\context{Concerning a dry match in a room with a large open source of water.}
     If I struck this match tomorrow and it was wet, it wouldn't light. But there is little chance of this match becoming wet; so, if I \MakeUppercase{were} to strike this match tomorrow, it would light.\labex{acausalncfdenigrated}
 \xe
-\ex\context{Holding up a dry match (with no water around).}If I struck this match and it snapped, it would not light. But the chances of me snapping a match are really, really low; so, if I \MakeUppercase{were} to strike this match, it would light.\labex{causalncfdenigrated}
+\ex\phantomsection\context{Holding up a dry match (with no water around).}If I struck this match and it snapped, it would not light. But the chances of me snapping a match are really, really low; so, if I \MakeUppercase{were} to strike this match, it would light.\labex{causalncfdenigrated}
 \xe
-\ex\context{Concerning a dry match in a room with a large open source of water.}
+\ex\phantomsection\context{Concerning a dry match in a room with a large open source of water.}
     If I strike this match tomorrow and it is wet, it will not light. But there is little chance of this match becoming wet; so, if I \MakeUppercase{do} strike this match tomorrow, it will light.\labex{acausalncfdenigrated-indicative}
 \xe
-\ex\context{Holding up a dry match (with no water around).}If I strike this match and it snaps, it will not light. But the chances of me snapping a match are really, really low; so, if I \MakeUppercase{do} strike this match, it will light.\labex{causalncfdenigrated-indicative}
+\ex\phantomsection\context{Holding up a dry match (with no water around).}If I strike this match and it snaps, it will not light. But the chances of me snapping a match are really, really low; so, if I \MakeUppercase{do} strike this match, it will light.\labex{causalncfdenigrated-indicative}
 \xe
 
 If a reverse Sobel sequence is counterfactual by nature, it would appear that they are always felicitous so long as $\phi$ and $\psi$ are causally unrelated (i.e., they are an acausal Sobel sequence), regardless of how dissimilar the worlds are to each other. This is demonstrated by \refex{match-repeat4} and \refex{match-similar}:
-\ex\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
+\ex\phantomsection\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.\\%
 \emptyfill(adapted from \textcite[p. 106]{Stalnaker1968} by \textcite[p. 487]{Lewis2018})\labex{match-repeat4}
 \xe
-\ex\labex{match-similar}\context{Talking about a match that was dry but in a room with a large and open source of water; though the match did not get wet until being held by the speaker, it easily could have, had it moved even a little bit differently.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.
+\ex\phantomsection\labex{match-similar}\context{Talking about a match that was dry but in a room with a large and open source of water; though the match did not get wet until being held by the speaker, it easily could have, had it moved even a little bit differently.}If I had struck this match and it had been soaked, it would not have lit. But if I \MakeUppercase{had} struck this match, it would have lit.
 \xe
 
 If there was some causal relation between $\phi$ and $\psi$, however, then, as \textcite{Klecha2014} already observed, the reverse Sobel sequence would be infelicitous, barring any intervention, as seen in \refex{matchsnapcf}:
-\ex\context{Holding up a dry match (with no water around).}If I had struck this match and it had snapped, it would not have lit. \#But if I \MakeUppercase{had} struck this match, it would have lit.\labex{matchsnapcf}
+\ex\phantomsection\context{Holding up a dry match (with no water around).}If I had struck this match and it had snapped, it would not have lit. \#But if I \MakeUppercase{had} struck this match, it would have lit.\labex{matchsnapcf}
 \xe
 
 Finally, causal and acausal reverse Sobel sequence may be rendered felicitous, if the relevance of $\phi\land\psi$ is appropriately denigrated via questioning its probability, as seen with the reverse Sobel sequences in \refex{match-acausal-denigrated} and \refex{match-causal-denigrated}:
-\ex\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But, as we know, this match is dry, so if I \MakeUppercase{had} struck this match, it would have lit.\labex{match-acausal-denigrated}
+\ex\phantomsection\context{Holding up a dry match, with no water around.}If I had struck this match and it had been soaked, it would not have lit. But, as we know, this match is dry, so if I \MakeUppercase{had} struck this match, it would have lit.\labex{match-acausal-denigrated}
 \xe
-\ex\context{Holding up a dry match (with no water around).}If I had struck this match and it had snapped, it wouldn't have lit. But the chances of the match breaking would've been very, very, \MakeUppercase{very} low, since I know what I'm doing. So, if I \MakeUppercase{had} struck this match, it would have lit.\labex{match-causal-denigrated}
+\ex\phantomsection\context{Holding up a dry match (with no water around).}If I had struck this match and it had snapped, it wouldn't have lit. But the chances of the match breaking would've been very, very, \MakeUppercase{very} low, since I know what I'm doing. So, if I \MakeUppercase{had} struck this match, it would have lit.\labex{match-causal-denigrated}
 \xe
 
 With this, we may have identified the factor that threw off the results for the {\scshape similar} reverse Sobel sequences in \refsec{experiment}. In fact, considering the results from our experiment and that we have found no reverse Sobel sequences for which dissimilarity appears to play a role in felicity (short of the $\phi\land\psi$-worlds being so dissimilar that they ought to be considered excluded possibilities), we would argue that \citepos{Lewis2018} criterion of worlds having to be \enquote{similar enough} may be formally dropped: In the terminology of \textcite{Lewis2018}, any two sets of worlds appear similar enough so long as there is no counterfactuality or epistemically excluded possibility involved. Only if a reverse Sobel sequence involves a set of counterfactual or epistemically excluded worlds does similarity play a role in whether or not the sequence is rendered felicitous or infelicitous (in the sense of $\phi$ and $\phi\land\psi$ should not be equal in similarity). 
