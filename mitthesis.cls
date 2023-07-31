@@ -220,15 +220,8 @@
 %	into 1in margin.
 %  Draft mode brings the header back down.
 
-
-%%% FOR ONLINE PUBLICATION
 \setlength{\oddsidemargin}{0.13in}	% 1.25in left margin 
 \setlength{\evensidemargin}{0.13in}	% 1.25in left margin (even pages)
-
-%%% FOR PRINT
-% \setlength{\oddsidemargin}{0.35in}	% 1.25in left margin 
-% \setlength{\evensidemargin}{-0.075in}	% 1.25in left margin (even pages)
-%
 \setlength{\topmargin}{0.0in}		% 1in top margin
 \setlength{\textwidth}{6.0in}		% 6.0in text - 1.25in rt margin
 \setlength{\textheight}{9in}		% Body ht for 1in margins

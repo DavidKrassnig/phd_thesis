@@ -1,26 +1,47 @@
 %!/bin/bash
-if test -f "main.tex"; then
-	pdflatex main.tex
+if test -f "main_digital.tex"; then
+	pdflatex main_digital.tex
 else
 	exit 1
 fi
 
-biber main
+biber main_digital
 
-pdflatex main.tex
+pdflatex main_digital.tex
 
-if test -f "main.pdf"; then
-	ps2pdf14 -dPDFSETTINGS=/prepress main.pdf main_online.pdf
+if test -f "main_digital.pdf"; then
+	ps2pdf14 -dPDFSETTINGS=/prepress main_digital.pdf main_online.pdf
 else
 	exit 1
 fi
 
-cp mitthesis_offline.cls mitthesis.cls
+if test -f "main_online.pdf"; then
+	rm main_digital.pdf
+    mv main_online.pdf main_digital.pdf
+else
+	exit 1
+fi
 
-pdflatex main.tex
-ps2pdf14 -dPDFSETTINGS=/prepress main.pdf main_offline.pdf
 
-cp mitthesis_online.cls mitthesis.cls
+if test -f "main_print.tex"; then
+	pdflatex main_print.tex
+else
+	exit 1
+fi
+
+biber main_print
+pdflatex main_print.tex
+if test -f "main_digital.pdf"; then
+	ps2pdf14 -dPDFSETTINGS=/prepress main_print.pdf main_offline.pdf
+else
+	exit 1
+fi
+if test -f "main_offline.pdf"; then
+	rm main_print.pdf
+    mv main_offline.pdf main_print.pdf
+else
+	exit 1
+fi
 
 echo "Deleting auxiliary files..."
 find . -name "*.aux" -type f -delete
@@ -34,5 +55,4 @@ find . -name "*.blg" -type f -delete
 find . -name "*.lof" -type f -delete
 find . -name "*.lot" -type f -delete
 find . -name "*.run.xml" -type f -delete
-rm main.pdf
 echo "Done."
